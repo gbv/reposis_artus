@@ -2,37 +2,39 @@
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
 
-  <section title="Willkommen bei MIR!" xml:lang="de">
-        <div class="jumbotwo" >
-            <div class="row">
+  <section title="Bibliographie der internationalen Artusgesellschaft" xml:lang="de">
+    <div class="jumbotwo" />
 
-                <div class="col-12">
-                    <h2>Mods Institutional Repository (MIR)</h2>
-                </div>
+    <h1>Bibliographie der internationalen Artusgesellschaft</h1>
 
-                <div class="col-md-4">
-                    <h3><span class="fas fa-check"></span> fertig</h3>
-                    <p>MIR ist eine MyCoRe-Software, die mit nur wenigen Anpassungen
-                    - so wie sie ist - als Repositorium eingesetzt werden kann.</p>
-                    <p><a class="btn btn-secondary" href="https://www.mycore.de/documentation/getting_started/gs_mir_install/" role="button">weitere Informationen »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3><span class="fas fa-bolt"></span> mächtig</h3>
-                    <p>MIR verwendet das mächtige und bewährte MODS-Datenmodell. Den
-                    Kern der Webanwendung bildet MyCoRe mit einer Vielzahl von Funktionen.</p>
-                    <p><a class="btn btn-secondary" href="https://www.mycore.de/site/features/" role="button">weitere Informationen »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h3><span class="fas fa-heart"></span> lebendig</h3>
-                    <p>MIR basiert auf dem Software-Kern MyCoRe, der kontinuierlich
-                    weiter entwickelt wird. Eine lebendige Community setzt MIR in
-                    ihren Anwendungen ein.</p>
-                    <p><a class="btn btn-secondary" href="https://www.mycore.de/site/community/contact/" role="button">weitere Informationen »</a></p>
-                </div>
-            </div>
-        </div>
+    <p>
+      BIAS (Bibliography of the International Arthurian Society) ist ein Werkzeug für alle, die sich für die Erforschung des Stoffkreises um König Artus in Geschichte, Literatur und materieller Überlieferung interessieren.
+    </p>
+
+    <p>
+      BIAS ist eine umfassende Forschungsbibliographie zur Matière de Bretagne, die jährlich seit Mitte des 20. Jahrhunderts Editionen mittelalterlicher Texte und aktuelle wissenschaftliche Literatur zu ihnen verzeichnet.
+    </p>
+
+    <p>
+      Mit dieser Datenbank können Sie:
+    </p>
+    <ul>
+      <li>nach Titeln und Autor*innen von Primär- und Sekundärtexten suchen,</li>
+      <li>knappe Inhaltsangaben zu Forschungsliteratur in den Sprachen der Artusgesellschaft (Deutsch, Englisch, Französisch) finden,</li>
+      <li>durch Publikationszeiträume oder geographische Sektionen der Artusgesellschaft browsen,</li>
+      <li>mit dem Schlagwortverzeichnis nach bestimmten Themengebieten und Primärtexten suchen,</li>
+      <li>Online-Zugänge zu E-Books, Artikeln und anderen digitalen Ressourcen finden.</li>
+    </ul>
+
+    <p>
+      Bitte beachten Sie, dass die Datenbank ständig aktualisiert und laufend erweitert wird. Derzeit ist die Forschungsliteratur der Jahrgänge 2015–2022 verzeichnet.
+    </p>
+
+    <p>
+      Aktuell liegt die Datenbank in einer Beta-Version vor. Wir arbeiten daran, weitere Literatur und Neuerscheinung einzupflegen. Wenn Sie etwas vermissen oder Verbesserungsideen haben, melden Sie sich gerne unter: <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
+    </p>
   </section>
   <meta>
-    <log date="2015-05-22" time="11:12" labelPath=" » Start" lastEditor="Kathleen Neumann" />
+    <log date="2025-04-29" time="13:03" labelPath=" » Start" lastEditor="Tilo Neumann" />
   </meta>
 </MyCoReWebPage>

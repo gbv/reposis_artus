@@ -22,9 +22,9 @@
       <div id="project_logo_box">
         <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
            class="">
-          <span id="logo_mir">mir</span>
-          <span id="logo_modul">mycore</span>
-          <span id="logo_slogan">mods institutional repository</span>
+           <img
+             src="{$WebApplicationBaseURL}images/ias-logo.svg"
+             alt="IAS Logo" />
         </a>
       </div>
     </div>
@@ -96,12 +96,6 @@
   <xsl:template name="mir.jumbotwo">
     <!-- show only on startpage -->
     <xsl:if test="//div/@class='jumbotwo'">
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Mit MIR wird alles gut!</h1>
-          <h2>your repository - just out of the box</h2>
-        </div>
-      </div>
     </xsl:if>
   </xsl:template>
 
