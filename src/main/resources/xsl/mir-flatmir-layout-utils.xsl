@@ -146,6 +146,8 @@
         <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
+    <!-- Requires jQuery! -->
+    <script src="https://jira.gbv.de/plugins/servlet/issueCollectorBootstrap.js?collectorId=c6b1dfb7&amp;locale=de_DE"></script>
   </xsl:template>
 
 </xsl:stylesheet>
