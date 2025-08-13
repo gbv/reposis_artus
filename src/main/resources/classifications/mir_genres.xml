@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_genres">
+  <label xml:lang="de" text="Genre" description="Liste der Publikationsarten" />
+  <label xml:lang="en" text="genre" description="A list of publication types" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_genres" />
+  <categories>
+    <category ID="article">
+      <label xml:lang="de" text="Artikel / Aufsatz" />
+      <label xml:lang="en" text="Article / Chapter" />
+      <label xml:lang="it" text="Articolo / Saggio" />
+      <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+      <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Article schemaOrg:ScholarlyArticle" />
+      <category ID="chapter">
+        <label xml:lang="de" text="Buchkapitel" />
+        <label xml:lang="en" text="Book chapter" />
+        <label xml:lang="it" text="Capitolo di libro" />
+        <label xml:lang="x-hosts" text="book collection" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Chapter" />
+      </category>
+      <category ID="entry">
+        <label xml:lang="de" text="Lexikoneintrag" />
+        <label xml:lang="en" text="Encyclopedia entry" />
+        <label xml:lang="it" text="Entrata Lessicale" />
+        <label xml:lang="x-hosts" text="lexicon" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Article" />
+      </category>
+      <category ID="preface">
+        <label xml:lang="de" text="Vorwort / Nachwort" />
+        <label xml:lang="en" text="Preface (foreword) / Postface" />
+        <label xml:lang="it" text="Prefazione / Epilogo" />
+        <label xml:lang="x-hosts" text="journal collection festschrift proceedings lexicon" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Chapter" />
+      </category>
+      <category ID="speech">
+        <label xml:lang="de" text="Vortrag" />
+        <label xml:lang="en" text="Lecture / Speech" />
+        <label xml:lang="it" text="Conferenza" />
+        <label xml:lang="x-hosts" text="proceedings standalone" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Other schemaOrg:Article" />
+      </category>
+      <category ID="review">
+        <label xml:lang="de" text="Rezension" />
+        <label xml:lang="en" text="Review" />
+        <label xml:lang="it" text="Recensione" />
+        <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Recension schemaOrg:Review" />
+      </category>
+    </category>
+    <category ID="thesis">
+      <label xml:lang="de" text="Hochschulschriften" />
+      <label xml:lang="en" text="Thesis" />
+      <label xml:lang="it" text="Tesi universitaria" />
+      <label xml:lang="x-group" text="true" />
+      <label xml:lang="x-hosts" text="series standalone" />
+      <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:WorkingPaper schemaOrg:Thesis XMetaDissPlusThesisLevel:other" />
+      <category ID="exam">
+        <label xml:lang="de" text="Staatsexamensarbeit" />
+        <label xml:lang="en" text="Exam" />
+        <label xml:lang="it" text="Esame" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:MasterThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:Staatsexamen" />
+      </category>
+      <category ID="dissertation">
+        <label xml:lang="de" text="Dissertation" />
+        <label xml:lang="en" text="Dissertation" />
+        <label xml:lang="it" text="Tesi di Dottorato di ricerca" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:PhDThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:thesis.doctoral" />
+      </category>
+      <category ID="habilitation">
+        <label xml:lang="de" text="Habilitation" />
+        <label xml:lang="en" text="Habilitation" />
+        <label xml:lang="it" text="Tesi di abilitazione alla libera docenza" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:Habilitation schemaOrg:Thesis XMetaDissPlusThesisLevel:thesis.habilitation" />
+      </category>
+      <category ID="diploma_thesis">
+        <label xml:lang="de" text="Diplomarbeit" />
+        <label xml:lang="en" text="Diploma thesis" />
+        <label xml:lang="it" text="Tesi di diploma" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:MasterThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:Diplom" />
+      </category>
+      <category ID="master_thesis">
+        <label xml:lang="de" text="Abschlussarbeit (Master)" />
+        <label xml:lang="en" text="Master thesis" />
+        <label xml:lang="it" text="Tesi di specializzazione" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:MasterThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:master" />
+      </category>
+      <category ID="bachelor_thesis">
+        <label xml:lang="de" text="Abschlussarbeit (Bachelor)" />
+        <label xml:lang="en" text="Bachelor thesis" />
+        <label xml:lang="it" text="Tesi di laurea triennale" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:BachelorThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:bachelor" />
+      </category>
+      <category ID="student_resarch_project">
+        <label xml:lang="de" text="Studienarbeit" />
+        <label xml:lang="en" text="Student research project" />
+        <label xml:lang="it" text="Tesina" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:StudyThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:other" />
+      </category>
+      <category ID="magister_thesis">
+        <label xml:lang="de" text="Magisterarbeit" />
+        <label xml:lang="en" text="Magister thesis" />
+        <label xml:lang="it" text="Magisterarbeit" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:MasterThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:M.A." />
+      </category>
+    </category>
+    <category ID="collection">
+      <label xml:lang="de" text="Sammelwerk" />
+      <label xml:lang="en" text="Collection" />
+      <label xml:lang="it" text="Compilazione" />
+      <label xml:lang="x-hosts" text="series standalone" />
+      <label xml:lang="x-mapping" text="marcgt:series diniPublType2022:EditedCollection schemaOrg:Book" />
+      <category ID="festschrift">
+        <label xml:lang="de" text="Festschrift" />
+        <label xml:lang="en" text="Festschrift" />
+        <label xml:lang="it" text="Commemorativo" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:festschrift diniPublType2022:Report schemaOrg:Report" />
+      </category>
+      <category ID="proceedings">
+        <label xml:lang="de" text="Tagungsband" />
+        <label xml:lang="en" text="Proceedings" />
+        <label xml:lang="it" text="Procedimento" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:conference_publication diniPublType2022:ConferenceProceedings schemaOrg:Book" />
+      </category>
+      <category ID="lexicon">
+        <label xml:lang="de" text="Lexikon" />
+        <label xml:lang="en" text="Lexicon" />
+        <label xml:lang="it" text="Lessico" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:encyclopedia diniPublType2022:Book schemaOrg:Book" />
+      </category>
+    </category>
+    <category ID="book">
+      <label xml:lang="de" text="Buch" />
+      <label xml:lang="en" text="Book" />
+      <label xml:lang="it" text="Libro" />
+      <label xml:lang="x-hosts" text="series standalone" />
+      <label xml:lang="x-mapping" text="marcgt:book diniPublType2022:Book schemaOrg:Book" />
+      <category ID="monograph">
+        <label xml:lang="de" text="Monografie" />
+        <label xml:lang="en" text="Monograph" />
+      </category>
+    </category>
+    <category ID="journal">
+      <label xml:lang="de" text="Zeitschrift" />
+      <label xml:lang="en" text="Journal" />
+      <label xml:lang="it" text="Rivista" />
+      <label xml:lang="x-hosts" text="standalone" />
+      <label xml:lang="x-mapping" text="marcgt:journal diniPublType2022:Periodical schemaOrg:Periodical" />
+      <category ID="issue">
+        <label xml:lang="de" text="Zeitschriftenheft" />
+        <label xml:lang="en" text="Journal Issue" />
+        <label xml:lang="x-hosts" text="standalone journal series" />
+        <label xml:lang="x-mapping" text="marcgt:issue diniPublType2022:PeriodicalPart schemaOrg:PublicationIssue" />
+      </category>
+    </category>
+    <category ID="newspaper">
+      <label xml:lang="de" text="Zeitung" />
+      <label xml:lang="en" text="Newspaper" />
+      <label xml:lang="it" text="Giornale" />
+      <label xml:lang="x-hosts" text="standalone" />
+      <label xml:lang="x-mapping" text="marcgt:newspaper diniPublType2022:Periodical schemaOrg:Periodical" />
+    </category>
+    <category ID="series">
+      <label xml:lang="de" text="Serie" />
+      <label xml:lang="en" text="Series" />
+      <label xml:lang="it" text="Collana" />
+      <label xml:lang="x-hosts" text="standalone" />
+      <label xml:lang="x-mapping" text="marcgt:series diniPublType2022:Other schemaOrg:BookSeries" />
+    </category>
+  </categories>
+</mycoreclass>
