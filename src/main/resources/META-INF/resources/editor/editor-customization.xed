@@ -10,6 +10,13 @@
     -->
   </xed:modify>
 
+  <xed:template id="genres.monograph">
+    <xed:include ref="embargo.datetimepicker" />
+    <xed:include ref="rights" />
+    <xed:include ref="title.original" />
+    <xed:include ref="author.repeated" />
+    <xed:include ref="genres.book.common" />
+  </xed:template>
 
   <!-- ========== overwrite mir templates and set them empty ========== -->
 

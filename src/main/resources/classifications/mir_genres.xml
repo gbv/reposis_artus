@@ -147,6 +147,8 @@
       <category ID="monograph">
         <label xml:lang="de" text="Monografie" />
         <label xml:lang="en" text="Monograph" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:book diniPublType2022:Book schemaOrg:Book" />
       </category>
     </category>
     <category ID="journal">
