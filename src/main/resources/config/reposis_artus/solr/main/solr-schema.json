@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "add-field": {
+      "name": "artus.sections",
+      "type": "string",
+      "indexed": true
+    }
+  }
+]

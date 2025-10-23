@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="artus_sections">
+    <label xml:lang="de" text="Sektionen" description="Liste der Sektionen"/>
+    <label xml:lang="en" text="Sections" description="A list of sections"/>
+    <categories>
+        <category ID="AAG">
+            <label xml:lang="de" text="Australia, Austria and Germany"/>
+            <label xml:lang="en" text="Australia, Austria and Germany"/>
+        </category>
+        <category ID="FGBI">
+            <label xml:lang="de" text="France, Great Britain and Ireland"/>
+            <label xml:lang="en" text="France, Great Britain and Ireland"/>
+        </category>
+        <category ID="IJNF">
+            <label xml:lang="de" text="Italy, Japan, Netherlands and Flanders"/>
+            <label xml:lang="en" text="Italy, Japan, Netherlands and Flanders"/>
+        </category>
+        <category ID="NARSSPS">
+            <label xml:lang="de" text="North America, Romania, Scandinavia, Spain and Portugal, Switzerland"/>
+            <label xml:lang="en" text="North America, Romania, Scandinavia, Spain and Portugal, Switzerland"/>
+        </category>
+    </categories>
+</mycoreclass>
