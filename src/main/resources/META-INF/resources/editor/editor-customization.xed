@@ -10,6 +10,11 @@
     -->
   </xed:modify>
 
+    <xed:modify ref="genres.dissertation">
+        <xed:include ref="related.item.search.of.all.items" />
+        <xed:include ref="validation-rules.dissertation"/>
+    </xed:modify>
+
   <xed:template id="genres.monograph">
     <xed:include ref="title.original" />
     <xed:include ref="author.repeated" />
@@ -93,6 +98,16 @@
     <xed:validate xpath="//mods:part/@order" type="integer" display="global" i18n="mir.validation.order" />
   </xed:template>
 
+<!--    Dissertations must have a related item. This rule does not apply to other genres-->
+    <xed:template id="validation-rules.dissertation">
+        <xed:validate
+                xpath="//mods:relatedItem/mods:titleInfo/mods:title"
+                required="true"
+                min="1"
+                display="global"
+                i18n="mir.validation.relatedItem.title">
+        </xed:validate>
+    </xed:template>
 
   <!-- ========== project specific templates ========== -->
 
