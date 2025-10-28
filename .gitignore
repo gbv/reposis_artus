@@ -1,4 +1,6 @@
 # application specific files on server
+yarn.lock
+node_modules/
 jwt.secret
 *.resolved.properties
 *.active.properties
@@ -6,10 +8,9 @@ jwt.secret
 resources/META-INF/persistence.xml
 data/
 lib/h2-1.4.196.jar
-
 # Compiled class file
 *.class
-
+*.cmd
 # Log file
 *.log
 
