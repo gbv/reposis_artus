@@ -60,6 +60,13 @@
         <label xml:lang="x-hosts" text="series standalone" />
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:MasterThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:Staatsexamen" />
       </category>
+      <category ID="unpublished_dissertation">
+        <label xml:lang="de" text="Unveröffentlichte Dissertation" />
+        <label xml:lang="en" text="Unpublished dissertation" />
+        <label xml:lang="it" text="Tesi di Dottorato non pubblicata" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType2022:PhDThesis schemaOrg:Thesis XMetaDissPlusThesisLevel:thesis.doctoral" />
+      </category>
       <category ID="dissertation">
         <label xml:lang="de" text="Dissertation" />
         <label xml:lang="en" text="Dissertation" />
