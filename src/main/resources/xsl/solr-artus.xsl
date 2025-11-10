@@ -22,6 +22,12 @@
                 <xsl:value-of select="substring-after(@valueURI, '#')" />
             </field>
         </xsl:for-each>
+        <xsl:for-each select="//mods:mods/mods:classification[
+        @authorityURI='https://arthurianbibliography.info/classifications/artus_parts']">
+            <field name="artus_parts">
+                <xsl:value-of select="substring-after(@valueURI, '#')" />
+            </field>
+        </xsl:for-each>
 
     </xsl:template>
 

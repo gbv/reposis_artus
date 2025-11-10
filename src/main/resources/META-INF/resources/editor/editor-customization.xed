@@ -2,86 +2,85 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
-  <!-- ========== extend editor-genres.xed ========== -->
-  <xed:modify ref="admin.fields">
+    <!-- ========== extend editor-genres.xed ========== -->
+    <xed:modify ref="admin.fields">
 
         <xed:include ref="artus.sections" after="genre"/>
-
-    <!-- for details see
-         https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
-         https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
-    -->
-  </xed:modify>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+        <!-- for details see
+             https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
+             https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
+        -->
+    </xed:modify>
 
     <xed:modify ref="genres.dissertation">
         <xed:include ref="related.item.search.of.all.items" />
         <xed:include ref="validation-rules.dissertation"/>
     </xed:modify>
 
-  <xed:template id="genres.monograph">
-    <xed:include ref="title.original" />
-    <xed:include ref="author.repeated" />
-    <xed:include ref="genres.book.common" />
-  </xed:template>
+    <xed:template id="genres.monograph">
+        <xed:include ref="title.original"/>
+        <xed:include ref="author.repeated"/>
+        <xed:include ref="genres.book.common"/>
+    </xed:template>
 
-  <!-- ========== overwrite mir templates and set them empty ========== -->
+    <!-- ========== overwrite mir templates and set them empty ========== -->
 
-  <xed:template id="sdnb">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="sdnb">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="sdnb.repeat">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="sdnb.repeat">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="institutes">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="institutes">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="institutes.repeat">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="institutes.repeat">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.journal.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.journal.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.book.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.book.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.collection.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.collection.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.festschrift.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.festschrift.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.lexicon.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.lexicon.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.proceedings.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.proceedings.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="shelfmark.proceedings.relItemsearch">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="shelfmark.proceedings.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
 
-  <xed:template id="embargo">
-      <!-- do nothing -->
-  </xed:template>
+    <xed:template id="embargo">
+        <!-- do nothing -->
+    </xed:template>
 
   <xed:template id="embargo.datetimepicker">
       <!-- do nothing -->
   </xed:template>
-
 
     <!--    Dissertations must have a related item. This rule does not apply to other genres-->
     <xed:template id="validation-rules.dissertation">
@@ -151,5 +150,33 @@
         </xed:bind>
     </xed:template>
 
+    <xed:template id="artus.parts">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
+            </label>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
+                    set="artus_parts"/>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
+                <div class="col-md-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
+            </xed:bind>
+            <xed:validate
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
+                    required="true" i18n="mir.validation.artus_parts"
+                    display="global"/>
+        </div>
+    </xed:template>
 </xed:template>
 
