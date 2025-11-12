@@ -16,9 +16,10 @@
 
 
     <xsl:template match="mods:mods" mode="artus">
-        <xsl:for-each select="//mods:classification[@authority='artus_sections']">
-            <field name="artus.sections">
-                <xsl:value-of select="." />
+        <xsl:for-each select="//mods:mods/mods:classification[
+        @authorityURI='https://arthurianbibliography.info/classifications/artus_sections']">
+            <field name="artus_sections">
+                <xsl:value-of select="substring-after(@valueURI, '#')" />
             </field>
         </xsl:for-each>
 

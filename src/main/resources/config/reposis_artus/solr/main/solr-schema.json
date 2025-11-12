@@ -1,7 +1,7 @@
 [
   {
     "add-field": {
-      "name": "artus.sections",
+      "name": "artus_sections",
       "type": "string",
       "indexed": true
     }

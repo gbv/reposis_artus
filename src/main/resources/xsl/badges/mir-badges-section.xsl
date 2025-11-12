@@ -13,8 +13,8 @@
 
     <xsl:template match="doc" mode="resultList">
         <xsl:apply-imports/>
-        <xsl:if test="str[@name='artus.sections']">
-        <xsl:for-each select="str[@name='artus.sections']/text()">
+        <xsl:if test="str[@name='artus_sections']">
+        <xsl:for-each select="str[@name='artus_sections']/text()">
             <xsl:variable name="label">
                 <xsl:variable name="displayname" select="document(concat('callJava:org.mycore.common.xml.MCRXMLFunctions:getDisplayName:artus_sections:', .))"/>
                 <xsl:choose>
@@ -32,7 +32,7 @@
                 <xsl:with-param name="of-type" select="'hit_section'"/>
                 <xsl:with-param name="badge-type" select="'badge-secondary'"/>
                 <xsl:with-param name="link"
-                                select="concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=', 'artus.sections', ':','%22', $categid, '%22')"/>
+                                select="concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=', 'artus_sections', ':','%22', $categid, '%22')"/>
                 <xsl:with-param name="label"
                                 select="$label"/>
                 <xsl:with-param name="tooltip" select="$tooltip-sections"/>
@@ -44,21 +44,27 @@
 
     <xsl:template match="mycoreobject" mode="mycoreobject-badge">
         <xsl:apply-imports/>
-        <xsl:for-each select="//mods:mods/mods:classification[@authority='artus_sections']">
-            <xsl:variable name="class" select="@authority"/>
-            <xsl:variable name="categid" select="."/>
+        <xsl:for-each select="//mods:mods/mods:classification[
+        @authorityURI='https://arthurianbibliography.info/classifications/artus_sections']">
+            <xsl:variable name="categid" select="substring-after(@valueURI, '#')"/>
+            <xsl:variable name="class">
+                <xsl:value-of select="substring-after(@valueURI, '#')" />
+            </xsl:variable>
             <xsl:variable name="label"
-                          select="document(concat('classification:metadata:-1:children:', $class, ':', $categid))
+                          select="document(concat('classification:metadata:-1:children:artus_sections', ':', $categid))
                 //category/label[@xml:lang=$CurrentLang]/@text"/>
+
+            <!-- Generate the badge -->
             <xsl:call-template name="output-badge">
                 <xsl:with-param name="of-type" select="'hit_section'"/>
                 <xsl:with-param name="badge-type" select="'badge-secondary'"/>
                 <xsl:with-param name="label" select="$label"/>
                 <xsl:with-param name="link"
-                                select="concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=', 'artus.sections', ':','%22', $categid, '%22')"/>
+                                select="concat($ServletsBaseURL,
+                               'solr/find?condQuery=*&amp;fq=artus_sections:%22',
+                               $categid, '%22')"/>
                 <xsl:with-param name="tooltip" select="$tooltip-sections"/>
             </xsl:call-template>
-
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
