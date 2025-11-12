@@ -120,6 +120,11 @@
                     </div>
                     <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false" />
                 </xed:bind>
+
+                <xed:validate
+                        xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
+                        required="true" i18n="mir.validation.artus_sections"
+                        display="global"/>
             </div>
         </xed:template>
 
