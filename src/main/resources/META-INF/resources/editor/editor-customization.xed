@@ -95,6 +95,9 @@
 
 
   <!-- ========== project specific templates ========== -->
+    <xed:template id="genres.unpublished_dissertation">
+        <xed:include ref="genres.dissertation" />
+    </xed:template>
 
 
 </xed:template>
