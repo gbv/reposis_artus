@@ -8,7 +8,29 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-
+  // ARTUS-52 make result list more compact
+  // TODO: remove this when solution was done in MIR
+  .result_body .result_list #hit_list {
+    font-size: .875rem;
+    .hit_item {
+      .hit_title {
+        font-size: 1rem;
+        margin: 5px;
+      }
+      .hit_source {
+        margin-top: 10px;
+      }
+      .hit_abstract {
+        display: none;
+      }
+      .hit_counter {
+        width: 54px;
+      }
+      .hit_icon {
+        height: 75px;
+      }
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

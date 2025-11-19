@@ -4,11 +4,19 @@
 
   <!-- ========== extend editor-genres.xed ========== -->
   <xed:modify ref="admin.fields">
+
+        <xed:include ref="artus.sections" after="genre"/>
+
     <!-- for details see
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
     -->
   </xed:modify>
+
+    <xed:modify ref="genres.dissertation">
+        <xed:include ref="related.item.search.of.all.items" />
+        <xed:include ref="validation-rules.dissertation"/>
+    </xed:modify>
 
   <xed:template id="genres.monograph">
     <xed:include ref="title.original" />
@@ -74,28 +82,74 @@
       <!-- do nothing -->
   </xed:template>
 
-  <!-- ========== validation ========== -->
-  <xed:template id="validation-rules">
-    <xed:load-resource name="mir_genres" uri="classification:metadata:-1:children:mir_genres" />
-    <xed:validate xpath="//mods:mods/mods:genre[@authorityURI=$mir_genres/label[@xml:lang='x-uri']/@text]/@valueURIxEditor" required="true"
-      i18n="mir.validation.genre" display="global" />
 
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='isbn']|//mods:relatedItem[contains(@xlink:href,'mods_00000000')]/mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='issn']|//mods:relatedItem[contains(@xlink:href,'mods_00000000')]/mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" i18n="mir.validation.issn" display="global" />
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='doi']" matches="10\.\d+.*" i18n="mir.validation.doi" display="global" />
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='hdl']" matches="\S+/\S+" i18n="mir.validation.handle" display="global" />
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" i18n="mir.validation.urn" display="global" />
-    <xed:validate xpath="//mods:mods/mods:identifier[@type='ppn']" class="org.mycore.mir.validation.MIRValidationHelper" method="validatePPN" display="global" i18n="mir.validation.ppn" />
-    <xed:validate xpath="//mods:url|//mods:abstract/@xlink:href" matches="(ftp|http|https)://[\w\d.]+\S*" i18n="mir.validation.url" display="global" />
-    <xed:validate xpath="//mods:*[@encoding='w3cdtf'][not(ancestor::mods:recordInfo)]|//mods:mods/mods:accessCondition[@type='embargo']" matches="\d{4}(\-\d{2}(\-\d{2})?)?" type="datetime" format="yyyy;yyyy-MM;yyyy-MM-dd" i18n="mir.validation.date"
-      display="global" />
-    <xed:validate xpath="//mods:*[@encoding='iso8601']" matches="\d{4}(\d{2}(\d{2})?)?(T\d{2}\d{2}\d{2})?(\/\d{4}(\d{2}(\d{2})?)?(T\d{2}\d{2}\d{2})?)?" display="global"  i18n="mir.validation.date.iso8601"/>
-    <xed:validate xpath="//mods:part/@order" type="integer" display="global" i18n="mir.validation.order" />
-  </xed:template>
-
+    <!--    Dissertations must have a related item. This rule does not apply to other genres-->
+    <xed:template id="validation-rules.dissertation">
+        <xed:validate
+                xpath="//mods:relatedItem/mods:titleInfo/mods:title"
+                required="true"
+                min="1"
+                display="global"
+                i18n="mir.validation.relatedItem.title">
+        </xed:validate>
+    </xed:template>
 
   <!-- ========== project specific templates ========== -->
+    <xed:template id="artus.sections">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
+            </label>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
+                    set="artus_sections"/>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
+                <div class="col-md-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false"/>
+            </xed:bind>
+            <xed:validate
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
+                    required="true" i18n="mir.validation.artus_sections"
+                    display="global"/>
+        </div>
+    </xed:template>
+<!--    Overwrite rights template-->
+    <xed:template id="rights">
 
+        <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
+                  initially="rights_reserved">
+            <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
+
+                <div class="form-group row required {$xed-validation-marker}" name="mir-license">
+                    <label class="col-md-3 col-form-label text-right">
+                        <xed:output i18n="mir.rights"/>
+                        <xed:output value="$attrName"/>
+                        :
+                    </label>
+                    <div class="col-md-6">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select"/>
+                            </option>
+                            <xed:include
+                                    uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
+                        </select>
+                    </div>
+                    <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
+                </div>
+            </xed:if>
+        </xed:bind>
+    </xed:template>
 
 </xed:template>
 
