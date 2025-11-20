@@ -95,6 +95,10 @@
     </xed:template>
 
   <!-- ========== project specific templates ========== -->
+    <xed:template id="genres.unpublished_dissertation">
+        <xed:include ref="genres.dissertation" />
+    </xed:template>
+
     <xed:template id="artus.sections">
         <div class="form-group row">
             <label class="col-md-3 col-form-label text-right">
