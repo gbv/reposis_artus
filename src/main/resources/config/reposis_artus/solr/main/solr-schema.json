@@ -5,5 +5,12 @@
       "type": "string",
       "indexed": true
     }
+  },
+  {
+    "add-field": {
+      "name": "artus_parts",
+      "type": "string",
+      "indexed": true
+    }
   }
 ]
