@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+    <section xml:lang="de" title="Hinweis zur Barrierefreiheit">
+        <head>
+            <meta name="title" content="Hinweis zur Barrierefreiheit"/>
+        </head>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="page-header">Erklärung zur Barrierefreiheit</h1>
+
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>Diese Seite befindet sich noch im Aufbau. Für weitere Informationen besuchen Sie bitte
+                    <a href="https://www.gbv.de/erklaerung-zur-barrierefreiheit" target="_blank">die Seite der GBV für
+                        Barrierefreiheit
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section xml:lang="en" title="Accessibility Notice">
+        <head>
+            <meta name="title" content="Accessibility Notice"/>
+        </head>
+        <div class="row">
+            <div class="col-12">
+
+                <h1 class="page-header">Accessibility Statement</h1>
+
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>This page is still under construction. For further information, please visit the page of
+                    <a href="https://www.gbv.de/erklaerung-zur-barrierefreiheit" target="_blank">GBV on accessibility
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section xml:lang="fr" title="Avis sur l’accessibilité">
+        <head>
+            <meta name="title" content="Avis sur l’accessibilité"/>
+        </head>
+        <div class="row">
+            <div class="col-12">
+
+                <h1 class="page-header">Déclaration d’accessibilité</h1>
+
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>Cette page est encore en cours de construction. Pour plus d’informations, veuillez consulter la page
+                    de
+                    <a href="https://www.gbv.de/erklaerung-zur-barrierefreiheit" target="_blank">GBV concernant
+                        l’accessibilité
+                    </a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <meta>
+        <log lastEditor="Antonia Friedrich" date="2025-11-25" time="15:49"/>
+    </meta>
+</MyCoReWebPage>
