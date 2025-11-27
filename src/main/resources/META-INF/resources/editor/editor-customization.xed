@@ -6,7 +6,7 @@
 
     <xed:modify ref="admin.fields">
         <xed:include ref="artus.sections" after="genre"/>
-
+        <xed:include ref="artus.parts" after="artus.sections"/>
     <!-- for details see
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
@@ -210,5 +210,33 @@
         </xed:bind>
     </xed:template>
 
+    <xed:template id="artus.parts">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
+            </label>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
+                    set="artus_parts"/>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
+                <div class="col-md-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
+            </xed:bind>
+            <xed:validate
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
+                    required="true" i18n="mir.validation.artus_parts"
+                    display="global"/>
+        </div>
+    </xed:template>
 </xed:template>
 
