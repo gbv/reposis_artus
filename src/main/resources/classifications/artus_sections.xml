@@ -3,23 +3,68 @@
              xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="artus_sections">
     <label xml:lang="de" text="Sektionen" description="Liste der Sektionen"/>
     <label xml:lang="en" text="Sections" description="A list of sections"/>
+    <label xml:lang="fr" text="Sections" description="Liste des sections"/>
     <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus_sections" />
     <categories>
-        <category ID="AAG">
-            <label xml:lang="de" text="Australia, Austria and Germany"/>
-            <label xml:lang="en" text="Australia, Austria and Germany"/>
+        <category ID="australia">
+            <label xml:lang="de" text="Australia"/>
+            <label xml:lang="en" text="Australia"/>
+            <label xml:lang="fr" text="Australia"/>
         </category>
-        <category ID="FGBI">
-            <label xml:lang="de" text="France, Great Britain and Ireland"/>
-            <label xml:lang="en" text="France, Great Britain and Ireland"/>
+        <category ID="austria_and_germany">
+            <label xml:lang="de" text="Austria and Germany"/>
+            <label xml:lang="en" text="Austria and Germany"/>
+            <label xml:lang="fr" text="Austria and Germany"/>
         </category>
-        <category ID="IJNF">
-            <label xml:lang="de" text="Italy, Japan, Netherlands and Flanders"/>
-            <label xml:lang="en" text="Italy, Japan, Netherlands and Flanders"/>
+        <category ID="france">
+            <label xml:lang="de" text="France"/>
+            <label xml:lang="en" text="France"/>
+            <label xml:lang="fr" text="France"/>
         </category>
-        <category ID="NARSSPS">
-            <label xml:lang="de" text="North America, Romania, Scandinavia, Spain and Portugal, Switzerland"/>
-            <label xml:lang="en" text="North America, Romania, Scandinavia, Spain and Portugal, Switzerland"/>
+        <category ID="great_britain_and_ireland">
+            <label xml:lang="de" text="Great Britain and Ireland"/>
+            <label xml:lang="en" text="Great Britain and Ireland"/>
+            <label xml:lang="fr" text="Great Britain and Ireland"/>
+        </category>
+        <category ID="italy">
+            <label xml:lang="de" text="Italy"/>
+            <label xml:lang="en" text="Italy"/>
+            <label xml:lang="fr" text="Italy"/>
+        </category>
+        <category ID="japan">
+            <label xml:lang="de" text="Japan"/>
+            <label xml:lang="en" text="Japan"/>
+            <label xml:lang="fr" text="Japan"/>
+        </category>
+        <category ID="netherlands_and_flanders">
+            <label xml:lang="de" text="Netherlands and Flanders"/>
+            <label xml:lang="en" text="Netherlands and Flanders"/>
+            <label xml:lang="fr" text="Netherlands and Flanders"/>
+        </category>
+        <category ID="north_america">
+            <label xml:lang="de" text="North America"/>
+            <label xml:lang="en" text="North America"/>
+            <label xml:lang="fr" text="North America"/>
+        </category>
+        <category ID="romania">
+            <label xml:lang="de" text="Romania"/>
+            <label xml:lang="en" text="Romania"/>
+            <label xml:lang="fr" text="Romania"/>
+        </category>
+        <category ID="scandinavia">
+            <label xml:lang="de" text="Scandinavia"/>
+            <label xml:lang="en" text="Scandinavia"/>
+            <label xml:lang="fr" text="Scandinavia"/>
+        </category>
+        <category ID="spain_and_portugal">
+            <label xml:lang="de" text="Spain and Portugal"/>
+            <label xml:lang="en" text="Spain and Portugal"/>
+            <label xml:lang="fr" text="Spain and Portugal"/>
+        </category>
+        <category ID="switzerland">
+            <label xml:lang="de" text="Switzerland"/>
+            <label xml:lang="en" text="Switzerland"/>
+            <label xml:lang="fr" text="Switzerland"/>
         </category>
     </categories>
 </mycoreclass>
