@@ -101,34 +101,16 @@
 
   <xsl:template name="mir.footer">
     <div class="footer-menu">
-      <ul class="nav">
-        <li class="nav-item">
-          <a
-            href="{$WebApplicationBaseURL}content/brand/contact.xml"
-            class="nav-link"
-          >
-            <xsl:value-of select="i18n:translate('artus.contact')"/>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-          href="{$WebApplicationBaseURL}content/brand/impressum.xml" class="nav-link">
-            <xsl:value-of select="i18n:translate('artus.imprint')"/>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{$WebApplicationBaseURL}content/brand/privacy.xml" class="nav-link">
-              <xsl:value-of select="i18n:translate('artus.privacy')"/>
-          </a>
-        </li>
-          <li class="nav-item">
-              <a
-                  href="{$WebApplicationBaseURL}content/brand/accessibility.xml" class="nav-link">
-                        <xsl:value-of select="i18n:translate('artus.accessibility')"/>
-                    </a>
-          </li>
-            </ul>
-        </div>
+
+        <ul id="pp_footer-nav" class="nav justify-content-center">
+          <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+        </ul>
+      </div>
+
+      <!--        <li class="nav-item">-->
+<!--          <a-->
+<!--            href="{$WebApplicationBaseURL}content/brand/contact.xml"-->
+
         <div class="container">
             <div class="row">
                 <div class="col artus-address">
