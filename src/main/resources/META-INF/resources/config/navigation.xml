@@ -7,18 +7,27 @@
   <menu id="brand" dir="/content/brand">
     <label xml:lang="de">MIR-Menü</label>
     <label xml:lang="en">MIR menu</label>
-    <item href="/content/index.xml" type="intern">
-      <label xml:lang="de">Start</label>
-      <label xml:lang="en">Start</label>
-    </item>
     <item href="/content/brand/impressum.xml" type="intern">
       <label xml:lang="de">Impressum</label>
       <label xml:lang="en">Impressum</label>
+      <label xml:lang="fr">Mentions légales</label>
     </item>
     <item href="/content/brand/contact.xml" type="intern">
       <label xml:lang="de">Kontakt</label>
       <label xml:lang="en">Contact</label>
+      <label xml:lang="fr">Contact</label>
     </item>
+    <item href="/content/brand/accessibility.xml" type="intern">
+      <label xml:lang="de">Barrierefreiheit</label>
+      <label xml:lang="en">Accessibility Notice</label>
+      <label xml:lang="fr">Avis sur l’accessibilité</label>
+    </item>
+    <item href="/content/brand/privacy.xml" type="intern">
+      <label xml:lang="de">Datenschutzerklärung</label>
+      <label xml:lang="en">Privacy Policy</label>
+      <label xml:lang="fr">Politique de confidentialité</label>
+    </item>
+
   </menu>
   <menu id="below" dir="/content/below">
     <label xml:lang="de">Footer-Menü</label>
