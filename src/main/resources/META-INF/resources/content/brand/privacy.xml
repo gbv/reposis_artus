@@ -1,0 +1,49 @@
+<MyCoReWebPage>
+    <section xml:lang="de" title="Datenschutzerklärung">
+        <head>
+            <meta name="title" content="Datenschutzerklärung"/>
+        </head>
+        <div>
+            <h1 class="page-header">Datenschutzerklärung</h1>
+            <p>
+                Diese Seite befindet sich noch im Aufbau. Für weitere Informationen besuchen Sie bitte
+                <a href="https://www.gbv.de/datenschutz">Die Datenschutzseite der GBV | VZG</a>
+
+            </p>
+        </div>
+    </section>
+
+    <section xml:lang="en" title="Privacy Policy">
+        <head>
+            <meta name="title" content="Privacy Policy"/>
+
+        </head>
+        <div>
+            <h1 class="page-header">Privacy Policy</h1>
+            <p>
+                This page is still under construction. For further information, please visit the privacy page of
+                <a href="https://www.gbv.de/datenschutz">GBV | VZG </a>
+            </p>
+
+        </div>
+    </section>
+
+    <section xml:lang="fr" title="Politique de confidentialité">
+        <head>
+            <meta name="title" content="Politique de confidentialité"/>
+        </head>
+        <div>
+            <h1 class="page-header">Politique de confidentialité</h1>
+            <p>
+                Cette page est encore en cours de construction. Pour plus d’informations, veuillez consulter la page de la
+                politique de confidentialité de <a href="https://www.gbv.de/datenschutz">GBV | VZG</a>
+            </p>
+
+        </div>
+    </section>
+
+    <meta>
+        <log lastEditor="Antonia Friedrich" date="2025-11-25" time="15:49"/>
+    </meta>
+</MyCoReWebPage>
+

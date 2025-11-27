@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+    <section xml:lang="de" title="Impressum">
+        <head>
+            <meta name="title" content="Impressum"/>
+            <meta name="description" content="Impressum und Pflichtangaben zur Anbieterkennzeichnung"/>
+        </head>
+        <div>
+            <h1 class="page-header">Impressum</h1>
+            <p>
+                Diese Seite befindet sich noch im Aufbau. Für weitere Informationen besuchen Sie bitte
+                <a href="https://ias-sia-iag.org/accueil-fr/mentions-legales/" target="_blank">Die Impressumseite der internationalen
+                    Artus-Gesellschaft
+                </a>
+            </p>
+
+        </div>
+    </section>
+    <section xml:lang="en" title="Impressum">
+        <head>
+            <meta name="title" content="Legal Notice"/>
+            <meta name="description" content="Impressum und Pflichtangaben zur Anbieterkennzeichnung"/>
+        </head>
+        <div>
+            <h1 class="page-header">Legal Notice</h1>
+            <p>
+                This page is still under construction. For further information, please visit the contact page of
+                <a href="https://ias-sia-iag.org/accueil-fr/mentions-legales/" target="_blank">the International Arthurian Society</a>
+
+            </p>
+        </div>
+    </section>
+    <section xml:lang="fr" title="Impressum">
+        <head>
+            <meta name="title" content="Mentions légales"/>
+            <meta name="description" content="Impressum und Pflichtangaben zur Anbieterkennzeichnung"/>
+        </head>
+
+        <div>
+            <h1 class="page-header">Mentions légales</h1>
+            <p>
+                Cette page est encore en cours de construction. Pour plus d’informations, veuillez consulter la page des
+                Mentions légales de la
+                <a href="https://ias-sia-iag.org/accueil-fr/mentions-legales/" target="_blank">Société internationale Arthurienne</a>
+
+            </p>
+        </div>
+    </section>
+
+    <meta>
+        <log lastEditor="Antonia Friedrich" date="2025-11-25" time="15:49"/>
+    </meta>
+</MyCoReWebPage>
