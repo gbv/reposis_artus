@@ -46,7 +46,6 @@ $(document).ajaxComplete(function () {
             "article",
             "collection",
             "thesis",
-            "unpublished_dissertation",
             "dissertation"
 
         ].includes($(this).val());
