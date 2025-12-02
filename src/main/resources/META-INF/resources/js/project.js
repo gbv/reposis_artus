@@ -38,4 +38,14 @@ $(document).ready(function() {
 
 
 
+        const searchForm = document.querySelector("form"); // adjust selector if needed
+        const searchInput = document.getElementById("searchInput");
+        searchForm.addEventListener("submit", function(event) {
+            if (searchInput.value.trim() === "") {
+                searchInput.value = "*";
+            }
+
+        });
+
+
 });
