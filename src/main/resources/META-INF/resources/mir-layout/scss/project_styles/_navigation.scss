@@ -63,6 +63,38 @@
     }
   }
 
+// main nav
+.mir-prop-nav {
+    .navbar-nav {
+        > li > a
+        {
+            color: $link-color;
+            .caret {
+                border-top-color: $link-color;
+            }
+            &:hover,
+            &:focus
+            {
+                color: $link-hover-color;
+            }
+        }
+        // active entry
+        > li.active > a {
+            color: $link-color;
+            background-color: transparent;
+            &:hover,
+            &:focus
+            {
+                color: $link-hover-color;
+                background-color: transparent;
+            }
+            .caret {
+              border-top-color: $link-color;
+            }
+        }
+    }
+}
+
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
