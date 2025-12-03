@@ -5,9 +5,21 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-.page-header {
-  font-size: 1.5rem;
-}
+  .page-header {
+    font-size: 1.5rem;
+  }
+
+  // links in running texts has a underline
+  p {
+    a:not(.btn):not(.badge) {
+      text-decoration: underline dotted;
+      &:hover,
+      &:focus {
+        text-decoration: underline solid;
+      }
+    }
+  }
+
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower

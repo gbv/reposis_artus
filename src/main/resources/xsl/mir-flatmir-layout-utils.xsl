@@ -101,32 +101,27 @@
 
   <xsl:template name="mir.footer">
     <div class="footer-menu">
+      <ul class="nav project-footer-nav">
+        <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+      </ul>
+    </div>
 
-        <ul id="pp_footer-nav" class="nav justify-content-center">
-          <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
-        </ul>
-      </div>
-
-      <!--        <li class="nav-item">-->
-<!--          <a-->
-<!--            href="{$WebApplicationBaseURL}content/brand/contact.xml"-->
-
-        <div class="container">
-            <div class="row">
-                <div class="col artus-address">
-                    Internationale Artusgesellschaft |
-                    Bangor University College Road Bangor UK |
-                    arthurianbibliography@uni-marburg.de |
-                    <a href="https://ias-sia-iag.org/" target="_blank">
-                        <p>ias-sia-iag.org</p>
-                    </a>
-                </div>
-                <div class="col-auto artus-copyright">
-                    <xsl:value-of select="i18n:translate('artus.copyright')"/>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row project-info-row">
+        <div class="col artus-address">
+          Internationale Artusgesellschaft |
+          Bangor University College Road Bangor UK |
+          arthurianbibliography@uni-marburg.de |
+          <a href="https://ias-sia-iag.org/" target="_blank">
+            ias-sia-iag.org
+          </a>
         </div>
-    </xsl:template>
+        <div class="col-auto artus-copyright">
+          <xsl:value-of select="i18n:translate('artus.copyright')"/>
+        </div>
+      </div>
+    </div>
+  </xsl:template>
 
   <xsl:template name="mir.powered_by">
     <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
