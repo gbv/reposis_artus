@@ -34,19 +34,39 @@ $(document).ready(function () {
             }
             btn.addEventListener('click', onClick);
         });
+    const searchForm = document.querySelector("form"); // adjust selector if needed
+    const searchInput = document.getElementById("searchInput");
+    searchForm.addEventListener("submit", function(event) {
+        if (searchInput.value.trim() === "") {
+            searchInput.value = "*";
+        }
 
+    });
+    const genreSelect = document.querySelector(
+        'select[name*="mods:genre"][name$="@valueURIxEditor"]'
+    );
 
+    if (genreSelect) {
+        const wasReviewSelected = (genreSelect.value === "review");
+        const reviewOption = genreSelect.querySelector('option[value="review"]');
+        //remove the option review, so it can not be selected
+        if (reviewOption) reviewOption.remove();
+        if (wasReviewSelected) {
+            //if it was selected before reset publikationstyp to "Bitte wählen"
+            const emptyOption = genreSelect.querySelector('option[value=""]');
+            if (emptyOption) emptyOption.selected = true;
+            genreSelect.dispatchEvent(new Event("change"));
+            const relatedItemSelect = document.querySelector('select[name*="mods:relatedItem"]');
 
-        const searchForm = document.querySelector("form"); // adjust selector if needed
-        const searchInput = document.getElementById("searchInput");
-        searchForm.addEventListener("submit", function(event) {
-            if (searchInput.value.trim() === "") {
-                searchInput.value = "*";
+            if (relatedItemSelect) {
+                //also if review was previously selected the relation of the related item should be "Rezension von"
+                const reviewOfOpt = relatedItemSelect.querySelector('option[value="reviewOf"]');
+                if (reviewOfOpt) {
+                    reviewOfOpt.selected = true;
+                }
             }
-
-        });
-
-
+        }
+    }
 });
 //Deletes all selectable genre options except those listed
 $(document).ajaxComplete(function () {
