@@ -8,7 +8,7 @@
       <label xml:lang="de" text="Artikel / Aufsatz" />
       <label xml:lang="en" text="Article / Chapter" />
       <label xml:lang="it" text="Articolo / Saggio" />
-      <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+      <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings " />
       <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Article schemaOrg:ScholarlyArticle" />
       <category ID="chapter">
         <label xml:lang="de" text="Buchkapitel" />
@@ -42,7 +42,7 @@
         <label xml:lang="de" text="Rezension" />
         <label xml:lang="en" text="Review" />
         <label xml:lang="it" text="Recensione" />
-        <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
+        <label xml:lang="x-hosts" text="journal newspaper collection festschrift collection proceedings book article thesis" />
         <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Recension schemaOrg:Review" />
       </category>
     </category>
