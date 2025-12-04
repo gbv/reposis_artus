@@ -6,9 +6,28 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-#powered_by {
-  background-color: $a-green-button;
-}
+  .project-footer-nav {
+    margin: 2rem 0;
+    justify-content: center;
+  }
+  .project-info-row {
+    border-top: 1px solid $gray-400;
+    padding: 2rem 0;
+  }
+
+  .flatmir-footer a {
+    color: white;
+    &:hover,
+    &:focus {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  #powered_by {
+    background-color: $a-green-button;
+    padding: 1rem 0;
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

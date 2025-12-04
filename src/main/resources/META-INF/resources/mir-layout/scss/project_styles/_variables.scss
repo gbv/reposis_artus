@@ -19,7 +19,7 @@ $a-green-tile:    #5c7454;
 $a-green-button:  #344238;
 $a-gray-menu:     #f0f0f0;
 $a-purple:        #561c8c;
-$a-black-text:    #333333;
+$a-black-text:    #222222;
 
 // --------------------------------------------------
 //  overwrite bootstrap
@@ -37,3 +37,19 @@ $font-family-serif:       Merriweather, -apple-system, BlinkMacSystemFont, "Sego
 $font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base:        $font-family-serif;
 $font-size-base:          1rem;
+
+$link-color:            $a-green-tile;
+$link-hover-color:      $a-green-button;
+$link-decoration:       none !default;
+$link-hover-decoration: underline !default;
+
+// navbar adjustments
+// bootswatch flatly uses fixed $success color
+// now you can adjust those values
+$mir-navlink-color: white;
+$mir-navlink-hover-color: white;
+$mir-navlink-active-color: white;
+// dark mode colors from flatly were not useful
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;

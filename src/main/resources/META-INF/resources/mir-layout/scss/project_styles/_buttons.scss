@@ -6,7 +6,16 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-
+  // removes text decoration from links with badge class
+  a {
+    &.badge {
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
