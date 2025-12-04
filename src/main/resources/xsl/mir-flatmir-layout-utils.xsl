@@ -62,9 +62,11 @@
               </xsl:for-each>
               <xsl:call-template name="mir.basketMenu" />
             </ul>
-
+            <xsl:variable name="core">
+              <xsl:call-template name="getLayoutSearchSolrCore" />
+            </xsl:variable>
             <form
-              action="{$WebApplicationBaseURL}servlets/solr/find"
+              action="{$WebApplicationBaseURL}servlets/solr/{$core}"
               class="searchfield_box form-inline my-2 my-lg-0"
               role="search">
               <input
@@ -75,11 +77,8 @@
                 type="text"
                 aria-label="Search" />
               <xsl:choose>
-                <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
-                  <input name="owner" type="hidden" value="createdby:*" />
-                </xsl:when>
                 <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+                  <input name="owner" type="hidden" value="createdby:*" />
                 </xsl:when>
               </xsl:choose>
               <button type="submit" class="btn btn-primary my-2 my-sm-0">
@@ -135,8 +134,15 @@
         <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
-    <!-- Requires jQuery! -->
-    <script src="https://jira.gbv.de/plugins/servlet/issueCollectorBootstrap.js?collectorId=c6b1dfb7&amp;locale=de_DE"></script>
   </xsl:template>
-
+  <xsl:template name="getLayoutSearchSolrCore">
+    <xsl:choose>
+      <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+        <xsl:text>find</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>findPublic</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 </xsl:stylesheet>
