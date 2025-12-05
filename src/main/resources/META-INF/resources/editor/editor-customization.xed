@@ -5,7 +5,6 @@
     <!-- ========== extend editor-genres.xed ========== -->
 
   <xed:modify ref="admin.fields">
-    <xed:modify ref="admin.fields">
         <xed:include ref="artus.sections" after="genre"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
     <!-- for details see
