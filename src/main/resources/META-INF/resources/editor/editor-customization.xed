@@ -19,60 +19,78 @@
     </xed:modify>
     <xed:modify ref="genres.book.common">
         <xed:include ref="artus.sections" after="year.issued"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.journal.common">
         <xed:include ref="artus.sections" after="title.abbreviated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.publication.common">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.report.common">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.av.common">
         <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.issue">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
 
 
     <xed:modify ref="genres.thesis.common">
         <xed:include ref="artus.sections" after="creator.place.college"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
 
     <xed:modify ref="genres.teaching_material">
         <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.entry">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.preface">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.interview">
         <xed:include ref="artus.sections" after="author.interviewee.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.speech">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.patent">
         <xed:include ref="artus.sections" after="inventor.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.poster">
         <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.research_data">
         <xed:include ref="artus.sections" after="research.data.person.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.lecture">
         <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.picture">
         <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.blog">
         <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
 
 
