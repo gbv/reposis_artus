@@ -16,13 +16,13 @@
 
 
     <xsl:template match="mods:mods" mode="artus">
-        <xsl:for-each select="//mods:mods/mods:classification[
+        <xsl:for-each select="mods:classification[
         @authorityURI='https://arthurianbibliography.info/classifications/artus_sections']">
             <field name="artus_sections">
                 <xsl:value-of select="substring-after(@valueURI, '#')" />
             </field>
         </xsl:for-each>
-        <xsl:for-each select="//mods:mods/mods:classification[
+        <xsl:for-each select="mods:classification[
         @authorityURI='https://arthurianbibliography.info/classifications/artus_parts']">
             <field name="artus_parts">
                 <xsl:value-of select="substring-after(@valueURI, '#')" />
