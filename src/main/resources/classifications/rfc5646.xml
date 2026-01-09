@@ -220,5 +220,23 @@
       <label xml:lang="x-bibl" text="run" />
       <label xml:lang="de" text="Kirundisch" />
     </category>
+    <category ID="cy">
+      <label xml:lang="de" text="Walisisch"/>
+      <label xml:lang="en" text="Welsh"/>
+      <label xml:lang="x-bibl" text="wel"/>
+      <label xml:lang="x-term" text="cym"/>
+    </category>
+    <category ID="is">
+      <label xml:lang="de" text="Isländisch"/>
+      <label xml:lang="en" text="Icelandic"/>
+      <label xml:lang="x-bibl" text="ice"/>
+      <label xml:lang="x-term" text="isl"/>
+    </category>
+    <category ID="sh-sr">
+      <label xml:lang="de" text="Serbisch"/>
+      <label xml:lang="en" text="Serbian"/>
+      <label xml:lang="x-bibl" text="srp"/>
+      <label xml:lang="x-term" text="srp"/>
+    </category>
   </categories>
 </mycoreclass>
