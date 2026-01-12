@@ -1,14 +1,14 @@
 [
   {
     "add-field": {
-      "name": "artus_sections",
+      "name": "artus.sections",
       "type": "string",
       "indexed": true
     }
   },
   {
     "add-field": {
-      "name": "artus_parts",
+      "name": "artus.parts",
       "type": "string",
       "indexed": true
     }

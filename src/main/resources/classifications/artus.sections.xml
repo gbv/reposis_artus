@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="artus_sections">
+             xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="artus.sections">
     <label xml:lang="de" text="Sektionen" description="Liste der Sektionen"/>
     <label xml:lang="en" text="Sections" description="A list of sections"/>
     <label xml:lang="fr" text="Sections" description="Liste des sections"/>
-    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus_sections" />
+    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus.sections" />
     <categories>
         <category ID="australia">
             <label xml:lang="de" text="Australia"/>
