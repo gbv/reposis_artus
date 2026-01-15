@@ -4,7 +4,7 @@
     <label xml:lang="de" text="Sektionen" description="Liste der Sektionen"/>
     <label xml:lang="en" text="Sections" description="A list of sections"/>
     <label xml:lang="fr" text="Sections" description="Liste des sections"/>
-    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus.sections" />
+    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus_sections" />
     <categories>
         <category ID="australia">
             <label xml:lang="de" text="Australia"/>

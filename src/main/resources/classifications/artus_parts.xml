@@ -3,7 +3,7 @@
              xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="artus.parts">
     <label xml:lang="de" text="Parts" description="Liste der Parts"/>
     <label xml:lang="en" text="Parts" description="A list of parts"/>
-    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus.parts" />
+    <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus_parts" />
     <categories>
         <category ID="TTA">
             <label xml:lang="de" text="Texte, Übersetzungen und Adaptionen"/>
