@@ -16,7 +16,7 @@
         <xsl:if test="str[@name='artus.sections']">
         <xsl:for-each select="str[@name='artus.sections']/text()">
             <xsl:variable name="label">
-                <xsl:variable name="displayname" select="document(concat('callJava:org.mycore.common.xml.MCRXMLFunctions:getDisplayName:artus.sections:', .))"/>
+                <xsl:variable name="displayname" select="document(concat('callJava:org.mycore.common.xml.MCRXMLFunctions:getDisplayName:artus_sections:', .))"/>
                 <xsl:choose>
                 <xsl:when
                         test="string-length($displayname) > 30">
@@ -45,13 +45,13 @@
     <xsl:template match="mycoreobject" mode="mycoreobject-badge">
         <xsl:apply-imports/>
         <xsl:for-each select="//mods:mods/mods:classification[
-        @authorityURI='https://arthurianbibliography.info/classifications/artus.sections']">
+        @authorityURI='https://arthurianbibliography.info/classifications/artus_sections']">
             <xsl:variable name="categid" select="substring-after(@valueURI, '#')"/>
             <xsl:variable name="class">
                 <xsl:value-of select="substring-after(@valueURI, '#')" />
             </xsl:variable>
             <xsl:variable name="label"
-                          select="document(concat('classification:metadata:-1:children:artus.sections', ':', $categid))
+                          select="document(concat('classification:metadata:-1:children:artus_sections', ':', $categid))
                 //category/label[@xml:lang=$CurrentLang]/@text"/>
 
             <!-- Generate the badge -->

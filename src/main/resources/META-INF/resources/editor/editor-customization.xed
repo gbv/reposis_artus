@@ -178,24 +178,24 @@
                 <xed:output i18n="component.mods.metaData.dictionary.artus.sections"/>
             </label>
             <xed:bind
-                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.sections']/@displayLabel"
-                    set="artus.sections"/>
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
+                    set="artus_sections"/>
             <xed:bind
-                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.sections']/@valueURIxEditor">
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
                 <div class="col-md-6">
                     <div class="controls">
                         <select class="form-control form-control-inline">
                             <option value="">
                                 <xed:output i18n="mir.select.optional"/>
                             </option>
-                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus.sections"/>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"/>
                         </select>
                     </div>
                 </div>
                 <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false"/>
             </xed:bind>
             <xed:validate
-                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.sections']/@valueURIxEditor"
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
                     required="true" i18n="mir.validation.artus.sections"
                     display="global"/>
         </div>
@@ -234,24 +234,24 @@
                 <xed:output i18n="component.mods.metaData.dictionary.artus.parts"/>
             </label>
             <xed:bind
-                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.parts']/@displayLabel"
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
                     set="artus.parts"/>
             <xed:bind
-                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.parts']/@valueURIxEditor">
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
                 <div class="col-md-6">
                     <div class="controls">
                         <select class="form-control form-control-inline">
                             <option value="">
                                 <xed:output i18n="mir.select.optional"/>
                             </option>
-                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus.parts"/>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
                         </select>
                     </div>
                 </div>
                 <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
             </xed:bind>
             <xed:validate
-                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus.parts']/@valueURIxEditor"
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
                     required="true" i18n="mir.validation.artus.parts"
                     display="global"/>
         </div>
