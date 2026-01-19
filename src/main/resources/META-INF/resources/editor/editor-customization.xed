@@ -235,7 +235,7 @@
             </label>
             <xed:bind
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
-                    set="artus_parts"/>
+                    set="artus.parts"/>
             <xed:bind
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
                 <div class="col-md-6">

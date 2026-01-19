@@ -13,8 +13,8 @@
 
     <xsl:template match="doc" mode="resultList">
         <xsl:apply-imports/>
-        <xsl:if test="str[@name='artus_sections']">
-        <xsl:for-each select="str[@name='artus_sections']/text()">
+        <xsl:if test="str[@name='artus.sections']">
+        <xsl:for-each select="str[@name='artus.sections']/text()">
             <xsl:variable name="label">
                 <xsl:variable name="displayname" select="document(concat('callJava:org.mycore.common.xml.MCRXMLFunctions:getDisplayName:artus_sections:', .))"/>
                 <xsl:choose>
@@ -32,7 +32,7 @@
                 <xsl:with-param name="of-type" select="'hit_section'"/>
                 <xsl:with-param name="badge-type" select="'badge-secondary'"/>
                 <xsl:with-param name="link"
-                                select="concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=', 'artus_sections', ':','%22', $categid, '%22')"/>
+                                select="concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=', 'artus.sections', ':','%22', $categid, '%22')"/>
                 <xsl:with-param name="label"
                                 select="$label"/>
                 <xsl:with-param name="tooltip" select="$tooltip-sections"/>
@@ -61,7 +61,7 @@
                 <xsl:with-param name="label" select="$label"/>
                 <xsl:with-param name="link"
                                 select="concat($ServletsBaseURL,
-                               'solr/find?condQuery=*&amp;fq=artus_sections:%22',
+                               'solr/find?condQuery=*&amp;fq=artus.sections:%22',
                                $categid, '%22')"/>
                 <xsl:with-param name="tooltip" select="$tooltip-sections"/>
             </xsl:call-template>
