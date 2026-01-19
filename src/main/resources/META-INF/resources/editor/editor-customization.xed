@@ -175,7 +175,7 @@
     <xed:template id="artus.sections">
         <div class="form-group row">
             <label class="col-md-3 col-form-label text-right">
-                <xed:output i18n="component.mods.metaData.dictionary.artus.sections"/>
+                <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
             </label>
             <xed:bind
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
@@ -196,7 +196,7 @@
             </xed:bind>
             <xed:validate
                     xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
-                    required="true" i18n="mir.validation.artus.sections"
+                    required="true" i18n="mir.validation.artus_sections"
                     display="global"/>
         </div>
     </xed:template>
@@ -231,7 +231,7 @@
     <xed:template id="artus.parts">
         <div class="form-group row">
             <label class="col-md-3 col-form-label text-right">
-                <xed:output i18n="component.mods.metaData.dictionary.artus.parts"/>
+                <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
             </label>
             <xed:bind
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
@@ -252,7 +252,7 @@
             </xed:bind>
             <xed:validate
                     xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
-                    required="true" i18n="mir.validation.artus.parts"
+                    required="true" i18n="mir.validation.artus_parts"
                     display="global"/>
         </div>
     </xed:template>

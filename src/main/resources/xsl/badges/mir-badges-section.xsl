@@ -9,7 +9,7 @@
     <xsl:include href="resource:xsl/badges/mir-badges-style-template.xsl"/>
 
     <xsl:variable name="tooltip-sections"
-                  select="substring-before(document('i18n:component.mods.metaData.dictionary.artus.sections')/i18n/text(), ':')"/>
+                  select="substring-before(document('i18n:component.mods.metaData.dictionary.artus_sections')/i18n/text(), ':')"/>
 
     <xsl:template match="doc" mode="resultList">
         <xsl:apply-imports/>

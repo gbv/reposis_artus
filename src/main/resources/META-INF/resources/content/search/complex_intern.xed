@@ -102,14 +102,14 @@
                                 xpath="condition[@field='artus.sections'][2]/@value"
                                 id="artus.sections"
                                 uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"
-                                i18n="component.mods.metaData.dictionary.artus.sections"
+                                i18n="component.mods.metaData.dictionary.artus_sections"
                                 tooltip="artus.help.artus.sections" />
                   <!--  Parts  -->
                   <mir:template name="selectInput"
                        xpath="condition[@field='artus.parts'][3]/@value"
                        id="artus.parts"
                        uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"
-                       i18n="component.mods.metaData.dictionary.artus.parts"
+                       i18n="component.mods.metaData.dictionary.artus_parts"
                        tooltip="artus.help.artus.parts"/>
                                     <!-- DNB Sachgruppe -->
                   <mir:template name="selectInput"
