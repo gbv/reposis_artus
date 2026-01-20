@@ -1,4 +1,5 @@
 update classification from uri resource:classifications/rfc5646.xml
 load classification from uri resource:classifications/artus_sections.xml
-load classification from uri resource:classifications/artus.parts.xml
+load classification from uri resource:classifications/artus_parts.xml
 reload solr configuration main in core main
+
