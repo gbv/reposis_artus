@@ -34,14 +34,7 @@ $(document).ready(function () {
             }
             btn.addEventListener('click', onClick);
         });
-    const searchForm = document.querySelector("form"); // adjust selector if needed
-    const searchInput = document.getElementById("searchInput");
-    searchForm.addEventListener("submit", function(event) {
-        if (searchInput.value.trim() === "") {
-            searchInput.value = "*";
-        }
 
-    });
     const genreSelect = document.querySelector(
         'select[name*="mods:genre"][name$="@valueURIxEditor"]'
     );
