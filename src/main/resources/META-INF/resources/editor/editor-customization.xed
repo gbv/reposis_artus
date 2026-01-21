@@ -2,248 +2,248 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
-  <!-- ========== extend editor-genres.xed ========== -->
+    <!-- ========== extend editor-genres.xed ========== -->
 
   <xed:modify ref="admin.fields">
-    <xed:include ref="artus.sections" after="genre"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
+        <xed:include ref="artus.sections" after="genre"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
     <!-- for details see
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
     -->
-  </xed:modify>
+    </xed:modify>
 
-  <xed:modify ref="genres.dissertation">
+    <xed:modify ref="genres.dissertation">
     <xed:include ref="artus.sections" after="titles.thesis"/>
     <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.book.common">
-    <xed:include ref="artus.sections" after="year.issued"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.journal.common">
-    <xed:include ref="artus.sections" after="title.abbreviated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.publication.common">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.report.common">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.av.common">
-    <xed:include ref="artus.sections" after="name.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.issue">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
+    </xed:modify>
+    <xed:modify ref="genres.book.common">
+        <xed:include ref="artus.sections" after="year.issued"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.journal.common">
+        <xed:include ref="artus.sections" after="title.abbreviated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.publication.common">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.report.common">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.av.common">
+        <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.issue">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
 
 
-  <xed:modify ref="genres.thesis.common">
-    <xed:include ref="artus.sections" after="creator.place.college"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
+    <xed:modify ref="genres.thesis.common">
+        <xed:include ref="artus.sections" after="creator.place.college"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
 
-  <xed:modify ref="genres.teaching_material">
-    <xed:include ref="artus.sections" after="name.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.entry">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.preface">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.interview">
-    <xed:include ref="artus.sections" after="author.interviewee.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.speech">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.patent">
-    <xed:include ref="artus.sections" after="inventor.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.poster">
-    <xed:include ref="artus.sections" after="author.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.research_data">
-    <xed:include ref="artus.sections" after="research.data.person.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.lecture">
-    <xed:include ref="artus.sections" after="name.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.picture">
-    <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-  <xed:modify ref="genres.blog">
-    <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
-  </xed:modify>
-
-
-  <xed:template id="genres.monograph">
-    <xed:include ref="title.original"/>
-    <xed:include ref="author.repeated"/>
-    <xed:include ref="genres.book.common"/>
-  </xed:template>
-
-  <!-- ========== overwrite mir templates and set them empty ========== -->
-
-  <xed:template id="sdnb">
-    <!-- do nothing -->
-
-  </xed:template>
-
-  <xed:template id="sdnb.repeat">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="institutes">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="institutes.repeat">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.journal.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.book.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.collection.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.festschrift.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.lexicon.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.proceedings.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="shelfmark.proceedings.relItemsearch">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="embargo">
-    <!-- do nothing -->
-  </xed:template>
-
-  <xed:template id="embargo.datetimepicker">
-    <!-- do nothing -->
-  </xed:template>
+    <xed:modify ref="genres.teaching_material">
+        <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.entry">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.preface">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.interview">
+        <xed:include ref="artus.sections" after="author.interviewee.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.speech">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.patent">
+        <xed:include ref="artus.sections" after="inventor.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.poster">
+        <xed:include ref="artus.sections" after="author.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.research_data">
+        <xed:include ref="artus.sections" after="research.data.person.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.lecture">
+        <xed:include ref="artus.sections" after="name.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.picture">
+        <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
+    <xed:modify ref="genres.blog">
+        <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
+        <xed:include ref="artus.parts" after="artus.sections"/>
+    </xed:modify>
 
 
-  <!-- ========== project specific templates ========== -->
-  <xed:template id="artus.sections">
-    <div class="form-group row">
-      <label class="col-md-3 col-form-label text-right">
-        <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
-      </label>
-      <xed:bind
-        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
-        set="artus_sections"/>
-      <xed:bind
-        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
-        <div class="col-md-6">
-          <div class="controls">
-            <select class="form-control form-control-inline">
-              <option value="">
-                <xed:output i18n="mir.select.optional"/>
-              </option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"/>
-            </select>
-          </div>
+    <xed:template id="genres.monograph">
+        <xed:include ref="title.original"/>
+        <xed:include ref="author.repeated"/>
+        <xed:include ref="genres.book.common"/>
+    </xed:template>
+
+    <!-- ========== overwrite mir templates and set them empty ========== -->
+
+    <xed:template id="sdnb">
+        <!-- do nothing -->
+
+    </xed:template>
+
+    <xed:template id="sdnb.repeat">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="institutes">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="institutes.repeat">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.journal.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.book.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.collection.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.festschrift.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.lexicon.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.proceedings.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="shelfmark.proceedings.relItemsearch">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="embargo">
+        <!-- do nothing -->
+    </xed:template>
+
+    <xed:template id="embargo.datetimepicker">
+        <!-- do nothing -->
+    </xed:template>
+
+
+    <!-- ========== project specific templates ========== -->
+    <xed:template id="artus.sections">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
+            </label>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
+                    set="artus_sections"/>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
+                <div class="col-md-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false"/>
+            </xed:bind>
+            <xed:validate
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
+                    required="true" i18n="mir.validation.artus_sections"
+                    display="global"/>
         </div>
-        <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false"/>
-      </xed:bind>
-      <xed:validate
-        xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
-        required="true" i18n="mir.validation.artus_sections"
-        display="global"/>
-    </div>
-  </xed:template>
-  <!--    Overwrite rights template-->
-  <xed:template id="rights">
+    </xed:template>
+    <!--    Overwrite rights template-->
+    <xed:template id="rights">
 
-    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
-              initially="rights_reserved">
-      <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
+        <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
+                  initially="rights_reserved">
+            <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
 
-        <div class="form-group row required {$xed-validation-marker}" name="mir-license">
-          <label class="col-md-3 col-form-label text-right">
-            <xed:output i18n="mir.rights"/>
-            <xed:output value="$attrName"/>
-            :
-          </label>
-          <div class="col-md-6">
-            <select class="form-control form-control-inline">
-              <option value="">
-                <xed:output i18n="mir.select"/>
-              </option>
-              <xed:include
-                uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
-            </select>
-          </div>
-          <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
+                <div class="form-group row required {$xed-validation-marker}" name="mir-license">
+                    <label class="col-md-3 col-form-label text-right">
+                        <xed:output i18n="mir.rights"/>
+                        <xed:output value="$attrName"/>
+                        :
+                    </label>
+                    <div class="col-md-6">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select"/>
+                            </option>
+                            <xed:include
+                                    uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
+                        </select>
+                    </div>
+                    <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
+                </div>
+            </xed:if>
+        </xed:bind>
+    </xed:template>
+
+    <xed:template id="artus.parts">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label text-right">
+                <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
+            </label>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
+                    set="artus_parts"/>
+            <xed:bind
+                    xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
+                <div class="col-md-6">
+                    <div class="controls">
+                        <select class="form-control form-control-inline">
+                            <option value="">
+                                <xed:output i18n="mir.select.optional"/>
+                            </option>
+                            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
+                        </select>
+                    </div>
+                </div>
+                <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
+            </xed:bind>
+            <xed:validate
+                    xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
+                    required="true" i18n="mir.validation.artus_parts"
+                    display="global"/>
         </div>
-      </xed:if>
-    </xed:bind>
-  </xed:template>
-
-  <xed:template id="artus.parts">
-    <div class="form-group row">
-      <label class="col-md-3 col-form-label text-right">
-        <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
-      </label>
-      <xed:bind
-        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
-        set="artus_parts"/>
-      <xed:bind
-        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
-        <div class="col-md-6">
-          <div class="controls">
-            <select class="form-control form-control-inline">
-              <option value="">
-                <xed:output i18n="mir.select.optional"/>
-              </option>
-              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
-            </select>
-          </div>
-        </div>
-        <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
-      </xed:bind>
-      <xed:validate
-        xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
-        required="true" i18n="mir.validation.artus_parts"
-        display="global"/>
-    </div>
-  </xed:template>
+    </xed:template>
 </xed:template>
 
