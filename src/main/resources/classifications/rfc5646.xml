@@ -188,7 +188,13 @@
       <label xml:lang="en" text="Latin" />
       <label xml:lang="x-bibl" text="lat" />
       <label xml:lang="x-term" text="lat" />
-      <label xml:lang="de" text="Lateinisch" />
+      <label xml:lang="de" text="Latein" />
+    </category>
+    <category ID="gmh">
+      <label text="Middle High German (ca. 1050-1500)" xml:lang="en"/>
+      <label text="Mittelhochdeutsch" xml:lang="de"/>
+      <label text="gmh" xml:lang="x-bibl"/>
+      <label text="gmh" xml:lang="x-term"/>
     </category>
     <category ID="id">
       <label xml:lang="x-bibl" text="ind" />
@@ -220,6 +226,31 @@
       <label xml:lang="x-bibl" text="run" />
       <label xml:lang="de" text="Kirundisch" />
     </category>
+    <category ID="non">
+      <label text="Old Norse" xml:lang="en"/>
+      <label text="Altnordisch" xml:lang="de"/>
+      <label text="non" xml:lang="x-bibl"/>
+      <label text="non" xml:lang="x-term"/>
+    </category>
+    <category ID="ang">
+      <label text="Old English (ca. 450-1100)" xml:lang="en"/>
+      <label text="Altenglisch" xml:lang="de"/>
+      <label text="ang" xml:lang="x-bibl"/>
+      <label text="ang" xml:lang="x-term"/>
+    </category>
+    <category ID="dum">
+      <label text="Middle Dutch (ca. 1050-1350)" xml:lang="en"/>
+      <label text="Mittelniederländisch" xml:lang="de"/>
+      <label text="dum" xml:lang="x-bibl"/>
+      <label text="dum" xml:lang="x-term"/>
+    </category>
+    <category ID="frm">
+      <label text="Middle French (ca. 1400-1600)" xml:lang="en"/>
+      <label text="Mittelfranzösisch" xml:lang="de"/>
+      <label text="frm" xml:lang="x-bibl"/>
+      <label text="frm" xml:lang="x-term"/>
+    </category>
+
     <category ID="cy">
       <label xml:lang="de" text="Walisisch"/>
       <label xml:lang="en" text="Welsh"/>
@@ -237,6 +268,35 @@
       <label xml:lang="en" text="Serbian"/>
       <label xml:lang="x-bibl" text="srp"/>
       <label xml:lang="x-term" text="srp"/>
+    </category>
+    <category ID="enm">
+      <label text="Middle English (1100-1500)" xml:lang="en"/>
+      <label text="Mittelenglisch" xml:lang="de"/>
+      <label text="enm" xml:lang="x-bibl"/>
+      <label text="enm" xml:lang="x-term"/>
+    </category>
+    <category ID="fro">
+      <label text="Old French (842-ca. 1400)" xml:lang="en"/>
+      <label text="Altfranzösisch" xml:lang="de"/>
+      <label text="fro" xml:lang="x-bibl"/>
+      <label text="fro" xml:lang="x-term"/>
+    </category>
+    <category ID="ca">
+      <label text="Catalan" xml:lang="en"/>
+      <label text="Katalanisch" xml:lang="de"/>
+      <label text="cat" xml:lang="x-bibl"/>
+      <label text="cat" xml:lang="x-term"/>
+    </category>
+    <category ID="gl">
+      <label text="Galician" xml:lang="en"/>
+      <label text="Galicisch" xml:lang="de"/>
+      <label text="glg" xml:lang="x-bibl"/>
+      <label text="glg" xml:lang="x-term"/>
+    </category>
+    <category ID="pro">
+      <label text="Old Provençal (to 1500)" xml:lang="en"/>
+      <label text="pro" xml:lang="x-bibl"/>
+      <label text="pro" xml:lang="x-term"/>
     </category>
   </categories>
 </mycoreclass>
