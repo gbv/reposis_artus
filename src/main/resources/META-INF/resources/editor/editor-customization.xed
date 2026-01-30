@@ -14,8 +14,8 @@
     </xed:modify>
 
     <xed:modify ref="genres.dissertation">
-        <xed:include ref="related.item.search.of.all.items"/>
-        <xed:include ref="validation-rules.dissertation"/>
+    <xed:include ref="artus.sections" after="titles.thesis"/>
+    <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
     <xed:modify ref="genres.book.common">
         <xed:include ref="artus.sections" after="year.issued"/>
@@ -159,17 +159,6 @@
         <!-- do nothing -->
     </xed:template>
 
-
-    <!--    Dissertations must have a related item. This rule does not apply to other genres-->
-    <xed:template id="validation-rules.dissertation">
-        <xed:validate
-                xpath="//mods:relatedItem/mods:titleInfo/mods:title"
-                required="true"
-                min="1"
-                display="global"
-                i18n="mir.validation.relatedItem.title">
-        </xed:validate>
-    </xed:template>
 
     <!-- ========== project specific templates ========== -->
     <xed:template id="artus.sections">
