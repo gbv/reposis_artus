@@ -113,10 +113,41 @@
         <xed:include ref="title.original"/>
         <xed:include ref="author.repeated"/>
         <xed:include ref="genres.book.common"/>
-
     </xed:template>
 
-    <!-- ========== overwrite mir templates and set them empty ========== -->
+  <xed:template id="title.original.nonrequired">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.title.type.original"/>
+      </legend>
+
+      <xed:bind xpath="mods:titleInfo">
+        <div class="mir-fieldset-content">
+
+          <!-- normales Titelfeld -->
+          <mir:textfield
+            xpath="mods:title"
+            label="mir.title"
+            placeholder="{i18n:artus.title.nonrequired}"
+            help-text="{i18n:mir.help.title}"/>
+
+          <mir:textfield
+            xpath="mods:subTitle"
+            label="mir.title.subTitle"
+            help-text="{i18n:mir.help.title.subTitle}"/>
+
+          <!-- verstecktes Feld als Fallback -->
+          <input type="hidden"
+                 id="autoReviewTitle"
+                 data-xpath="mods:title"/>
+
+        </div>
+      </xed:bind>
+
+    </fieldset>
+
+  </xed:template>
+  <!-- ========== overwrite mir templates and set them empty ========== -->
 
     <xed:template id="sdnb">
         <!-- do nothing -->
@@ -208,30 +239,30 @@
     <!--    Overwrite rights template-->
     <xed:template id="rights">
 
-        <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
-                  initially="rights_reserved">
-            <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
+    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
+              initially="rights_reserved">
+      <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
 
-                <div class="form-group row required {$xed-validation-marker}" name="mir-license">
-                    <label class="col-md-3 col-form-label text-right">
-                        <xed:output i18n="mir.rights"/>
-                        <xed:output value="$attrName"/>
-                        :
-                    </label>
-                    <div class="col-md-6">
-                        <select class="form-control form-control-inline">
-                            <option value="">
-                                <xed:output i18n="mir.select"/>
-                            </option>
-                            <xed:include
-                                    uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
-                        </select>
-                    </div>
-                    <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
-                </div>
-            </xed:if>
-        </xed:bind>
-    </xed:template>
+        <div class="form-group row required {$xed-validation-marker}" name="mir-license">
+          <label class="col-md-3 col-form-label text-right">
+            <xed:output i18n="mir.rights"/>
+            <xed:output value="$attrName"/>
+            :
+          </label>
+          <div class="col-md-6">
+            <select class="form-control form-control-inline">
+              <option value="">
+                <xed:output i18n="mir.select"/>
+              </option>
+              <xed:include
+                uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
+            </select>
+          </div>
+          <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
+        </div>
+      </xed:if>
+    </xed:bind>
+  </xed:template>
 
     <xed:template id="artus.parts">
         <div class="form-group row">
@@ -261,10 +292,8 @@
                     display="global"/>
         </div>
     </xed:template>
-
   <xed:template id="author.metadataContact.repeated">
     <mir:role.repeated role="mdc" label="mir.role.metadataContact" help-text="{i18n:mir.help.role.author}" />
   </xed:template>
-
 </xed:template>
 

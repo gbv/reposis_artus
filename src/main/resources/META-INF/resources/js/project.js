@@ -16,31 +16,23 @@ $(document).ready(function () {
         return true;
     });
 
-    const genreSelect = document.querySelector(
-        'select[name*="mods:genre"][name$="@valueURIxEditor"]'
-    );
 
-    if (genreSelect) {
-        const wasReviewSelected = (genreSelect.value === "review");
-        const reviewOption = genreSelect.querySelector('option[value="review"]');
-        //remove the option review, so it can not be selected
-        if (reviewOption) reviewOption.remove();
-        if (wasReviewSelected) {
-            //if it was selected before reset publikationstyp to "Bitte wählen"
-            const emptyOption = genreSelect.querySelector('option[value=""]');
-            if (emptyOption) emptyOption.selected = true;
-            genreSelect.dispatchEvent(new Event("change"));
-            const relatedItemSelect = document.querySelector('select[name*="mods:relatedItem"]');
-
-            if (relatedItemSelect) {
-                //also if review was previously selected the relation of the related item should be "Rezension von"
-                const reviewOfOpt = relatedItemSelect.querySelector('option[value="reviewOf"]');
-                if (reviewOfOpt) {
-                    reviewOfOpt.selected = true;
-                }
+    //We do not want to use the standard action mapping for adding reviews with "create-child"
+    $("a[href*='editor-admins.xed']").each(function () {
+        try {
+            const url = new URL($(this).attr("href"));
+            if (
+                url.pathname.endsWith("editor-admins.xed") &&
+                url.searchParams.has("relatedItemId") &&
+                url.searchParams.get("genre") === "review"
+            ) {
+                url.pathname = url.pathname.replace("editor-admins.xed", "editor-review.xed");
+                $(this).attr("href", url.toString());
             }
+        } catch (e) {
+            console.warn("Invalid URL skipped:", $(this).attr("href"));
         }
-    }
+    });
 });
 //Deletes all selectable genre options except those listed
 $(document).ajaxComplete(function () {
@@ -66,3 +58,7 @@ $(document).ajaxComplete(function () {
             .includes($(this).val());
     }).remove();
 });
+
+
+
+
