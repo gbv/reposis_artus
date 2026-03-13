@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+This is an editor for reviews. Since reviews can not actually be of the genre review and the editor shall be simpler
+than the admin editor, this editor helps achieve that exactly.
+   -->
+
+<MyCoReWebPage>
+  <section title="Rezension erstellen" xml:lang="de"/>
+  <section title="Create review" xml:lang="en"/>
+  <section xml:lang="all">
+    <xed:form xmlns:xed="http://www.mycore.de/xeditor"
+              xmlns:cmd="http://www.cdlib.org/inside/diglib/copyrightMD"
+              method="post" role="form"
+              class="form-horizontal">
+
+      <xed:preload uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed"/>
+      <xed:preload uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-customization.xed"/>
+      <xed:preload uri="{$MIR.EditorForms.CustomIncludes}"/>
+      <xed:include ref="in.out"/>
+      <h1>
+        <xed:output i18n="mir.form.editor.dynamic.header"/>
+        <xed:output i18n="metaData.review"/>
+      </h1>
+      <xed:bind xpath="/mycoreobject">
+        <script type="text/javascript" src="{$WebApplicationBaseURL}js/reviews.js"></script>
+        <xed:include ref="mycore.common"/>
+        <xed:bind xpath="metadata/def.modsContainer[@class='MCRMetaXML'][@notinherit='true']/modsContainer/mods:mods">
+          <xed:bind xpath="mods:typeOfResource/@mcr:categId" initially="typeOfResource:text"/>
+          <xed:include ref="review.fields"/>
+        </xed:bind>
+      </xed:bind>
+
+      <xed:template id="review.fields">
+        <xed:include ref="failed-validation-messages"/>
+        <xed:include ref="title.original.nonrequired"/>
+        <xed:include ref="note.content.invisible"/>
+        <xed:include ref="genre"/>
+        <xed:include ref="artus.sections"/>
+        <xed:include ref="artus.parts"/>
+        <xed:include ref="author.repeated"/>
+        <xed:if test="$host='standalone'">
+          <xed:include ref="year.issued"/>
+          <xed:include ref="extent"/>
+        </xed:if>
+        <xed:include ref="language"/>
+        <xed:include ref="identifier.managed"/>
+        <xed:include ref="subject.simple"/>
+        <xed:include ref="abstract.simple"/>
+        <xed:include ref="rights" />
+        <xed:include ref="comment"/>
+        <xed:include ref="related.item.search.of.all.items"/>
+
+        <xed:include ref="cancel.submit" />
+        <xed:include ref="cleanup-rules" />
+        <xed:include ref="validation-rules" />
+
+        <xed:include ref="javascript" />
+        <!-- frame for modal window -->
+        <xed:include ref="modal.name" />
+        <xed:include ref="modal.body" />
+      </xed:template>
+
+
+
+    </xed:form>
+  </section>
+
+</MyCoReWebPage>
+
