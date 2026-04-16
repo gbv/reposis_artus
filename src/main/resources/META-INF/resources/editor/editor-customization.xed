@@ -7,7 +7,6 @@
   <xed:modify ref="admin.fields">
         <xed:include ref="artus.sections" after="genre"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
-    <xed:include ref="author.metadataContact.repeated" after="artus.parts"/>
 
     <!-- for details see
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
@@ -15,11 +14,11 @@
     -->
     </xed:modify>
 
-    <xed:modify ref="genres.dissertation">
-    <xed:include ref="artus.sections" after="titles.thesis"/>
-    <xed:include ref="artus.parts" after="artus.sections"/>
+<!--    <xed:modify ref="genres.dissertation">-->
+<!--    <xed:include ref="artus.sections" after="titles.thesis"/>-->
+<!--    <xed:include ref="artus.parts" after="artus.sections"/>-->
 
-    </xed:modify>
+<!--    </xed:modify>-->
     <xed:modify ref="genres.book.common">
         <xed:include ref="artus.sections" after="year.issued"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
@@ -53,9 +52,9 @@
 
 
     <xed:modify ref="genres.thesis.common">
+      <xed:include ref="author.metadataContact.repeated" after="creator.college"/>
         <xed:include ref="artus.sections" after="creator.place.college"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
     </xed:modify>
 
     <xed:modify ref="genres.teaching_material">
