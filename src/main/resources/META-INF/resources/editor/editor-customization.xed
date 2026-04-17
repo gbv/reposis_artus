@@ -14,11 +14,6 @@
     -->
     </xed:modify>
 
-<!--    <xed:modify ref="genres.dissertation">-->
-<!--    <xed:include ref="artus.sections" after="titles.thesis"/>-->
-<!--    <xed:include ref="artus.parts" after="artus.sections"/>-->
-
-<!--    </xed:modify>-->
     <xed:modify ref="genres.book.common">
         <xed:include ref="artus.sections" after="year.issued"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
