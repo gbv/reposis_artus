@@ -4,6 +4,12 @@
   <label xml:lang="de" text="Sprache" description="nach RFC 5646" />
   <label xml:lang="en" text="Language" description="as defined in RFC 5646" />
   <categories>
+    <category ID="an">
+      <label text="Aragonese" xml:lang="en"/>
+      <label text="Aragonesisch" xml:lang="de"/>
+      <label text="arg" xml:lang="x-bibl"/>
+      <label text="arg" xml:lang="x-term"/>
+    </category>
     <category ID="de">
       <label xml:lang="en" text="German" />
       <label xml:lang="x-bibl" text="ger" />
@@ -286,6 +292,12 @@
       <label text="Katalanisch" xml:lang="de"/>
       <label text="cat" xml:lang="x-bibl"/>
       <label text="cat" xml:lang="x-term"/>
+    </category>
+    <category ID="ga">
+      <label text="Irish" xml:lang="en"/>
+      <label text="Irisch" xml:lang="de"/>
+      <label text="gle" xml:lang="x-bibl"/>
+      <label text="gle" xml:lang="x-term"/>
     </category>
     <category ID="gl">
       <label text="Galician" xml:lang="en"/>
