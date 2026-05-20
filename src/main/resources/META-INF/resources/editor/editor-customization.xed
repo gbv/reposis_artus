@@ -47,7 +47,6 @@
 
 
     <xed:modify ref="genres.thesis.common">
-      <xed:include ref="author.metadataContact.repeated" after="creator.college"/>
         <xed:include ref="artus.sections" after="creator.place.college"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
     </xed:modify>
@@ -295,5 +294,17 @@
   <xed:template id="author.metadataContact.repeated">
     <mir:role.repeated role="mdc" label="mir.role.metadataContact" help-text="{i18n:mir.help.role.author}" />
   </xed:template>
+
+
+  <xed:template id="thesis.advisor.reviewer.all.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='mdc']" />
+    <mir:person.repeated help-text="{i18n:mir.help.thesis.advisor.reviewer}">
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:marcrelator" />
+    </mir:person.repeated>
+  </xed:template>
+
+
 </xed:template>
 
