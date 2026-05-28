@@ -21,7 +21,7 @@
         </nav>
       </div>
       <div id="project_logo_box">
-        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
+        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
            class="">
            <img
              src="{$WebApplicationBaseURL}images/ias-logo.svg"
