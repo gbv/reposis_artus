@@ -26,6 +26,7 @@ $(document).ready(function () {
                 url.searchParams.has("relatedItemId") &&
                 url.searchParams.get("genre") === "review"
             ) {
+                url.searchParams.set("genre", "article");
                 url.pathname = url.pathname.replace("editor-admins.xed", "editor-review.xed");
                 $(this).attr("href", url.toString());
             }
