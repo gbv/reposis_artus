@@ -266,7 +266,7 @@
     <xed:template id="artus.parts">
         <div class="form-group row">
             <label class="col-md-3 col-form-label text-right">
-                <xed:output i18n="component.mods.metaData.dictionary.artus_parts"/>
+                <xed:output i18n="component.mods.metaData.dictionary.artus.parts"/>
             </label>
             <xed:bind
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
