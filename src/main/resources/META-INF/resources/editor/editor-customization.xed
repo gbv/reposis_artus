@@ -6,6 +6,8 @@
 
   <xed:modify ref="admin.fields">
         <xed:include ref="artus.sections" after="genre"/>
+        <xed:include ref="subject.simple" after="subject.complex"/>
+        <xed:remove ref="subject.complex"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
 
     <!-- for details see
