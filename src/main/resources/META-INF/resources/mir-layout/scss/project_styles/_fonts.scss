@@ -1,4 +1,66 @@
-/* font family definition
- * - add the needed fonts here
- */
+/* font family definition */
 
+ @font-face {
+    font-family: 'Effloresce Antique';
+    src: url('../../../../fonts/EffloresceAntique-Regular.eot');
+    src: url('../../../../fonts/EffloresceAntique-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../../fonts/EffloresceAntique-Regular.woff2') format('woff2'),
+        url('../../../../fonts/EffloresceAntique-Regular.woff') format('woff'),
+        url('../../../../fonts/EffloresceAntique-Regular.ttf') format('truetype'),
+        url('../../../../fonts/EffloresceAntique-Regular.svg#EffloresceAntique-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Effloresce';
+    src: url('../../../../fonts/Effloresce-BoldItalic.eot');
+    src: url('../../../../fonts/Effloresce-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../../../fonts/Effloresce-BoldItalic.woff2') format('woff2'),
+        url('../../../../fonts/Effloresce-BoldItalic.woff') format('woff'),
+        url('../../../../fonts/Effloresce-BoldItalic.ttf') format('truetype'),
+        url('../../../../fonts/Effloresce-BoldItalic.svg#Effloresce-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Effloresce';
+    src: url('../../../../fonts/Effloresce-Bold.eot');
+    src: url('../../../../fonts/Effloresce-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../../../fonts/Effloresce-Bold.woff2') format('woff2'),
+        url('../../../../fonts/Effloresce-Bold.woff') format('woff'),
+        url('../../../../fonts/Effloresce-Bold.ttf') format('truetype'),
+        url('../../../../fonts/Effloresce-Bold.svg#Effloresce-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Effloresce';
+    src: url('../../../../fonts/Effloresce-Italic.eot');
+    src: url('../../../../fonts/Effloresce-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../../../fonts/Effloresce-Italic.woff2') format('woff2'),
+        url('../../../../fonts/Effloresce-Italic.woff') format('woff'),
+        url('../../../../fonts/Effloresce-Italic.ttf') format('truetype'),
+        url('../../../../fonts/Effloresce-Italic.svg#Effloresce-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Effloresce';
+    src: url('../../../../fonts/Effloresce-Regular.eot');
+    src: url('../../../../fonts/Effloresce-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../../fonts/Effloresce-Regular.woff2') format('woff2'),
+        url('../../../../fonts/Effloresce-Regular.woff') format('woff'),
+        url('../../../../fonts/Effloresce-Regular.ttf') format('truetype'),
+        url('../../../../fonts/Effloresce-Regular.svg#Effloresce-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

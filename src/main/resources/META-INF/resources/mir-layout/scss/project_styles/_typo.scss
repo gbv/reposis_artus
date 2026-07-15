@@ -7,7 +7,24 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
+  .page-header {
+    font-size: 1.5rem;
+  }
 
+  a {
+    text-underline-offset: .2rem;
+  }
+
+  // links in running texts has a underline
+  p {
+    a:not(.btn):not(.badge) {
+      text-decoration: underline dotted;
+      &:hover,
+      &:focus {
+        text-decoration: underline solid;
+      }
+    }
+  }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {

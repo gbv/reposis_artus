@@ -11,114 +11,109 @@
 
   <xsl:template name="mir.navigation">
 
-    <div id="header_box" class="container">
-      <div id="project_logo_box">
+    <div class="header container-lg">
+      <div class="header__logo">
         <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}">
-          <span id="logo_mir">mir</span>
-          <span id="logo_modul">mycore</span>
-          <span id="logo_slogan">mods institutional repository</span>
+           <img
+             src="{$WebApplicationBaseURL}images/ias-logo-small-inverted.svg"
+             alt="IAS Logo" />
         </a>
       </div>
-      <div id="options_nav_box" class="mir-prop-nav">
-        <nav class="navbar navbar-light navbar-expand-sm">
-          <ul class="navbar-nav">
-            <xsl:call-template name="mir.loginMenu" />
-            <xsl:call-template name="mir.languageMenu" />
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="mir-main-nav bg-primary">
-      <div class="container">
+      <div class="header__menu mir-main-nav">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mir-main-nav-collapse-box"
-              aria-controls="mir-main-nav-collapse-box"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              id="mir-main-nav-collapse-box"
-              class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
-
-              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <xsl:call-template name="mir.generate_single_menu_entry">
-                  <xsl:with-param name="menuID" select="'main'"/>
-                </xsl:call-template>
-                <xsl:for-each select="$loaded_navigation_xml/menu">
-                  <xsl:choose>
-                    <!-- Ignore some menus, they are shown elsewhere in the layout -->
-                    <xsl:when test="@id='main'"/>
-                    <xsl:when test="@id='brand'"/>
-                    <xsl:when test="@id='below'"/>
-                    <xsl:when test="@id='user'"/>
-                    <xsl:otherwise>
-                      <xsl:apply-templates select="."/>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </xsl:for-each>
-                <xsl:call-template name="mir.basketMenu" />
-              </ul>
-
-              <xsl:variable name="core">
-                <xsl:call-template name="getLayoutSearchSolrCore" />
-              </xsl:variable>
-            <form
-              action="{$WebApplicationBaseURL}servlets/solr/{$core}"
-              class="searchfield_box d-flex"
-              role="search">
-              <!-- Check if 'initialCondQuery' exists and extract its value if it does -->
-              <xsl:variable name="initialCondQuery" select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']" />
-
-              <input
-                name="condQuery"
-                placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-                class="form-control me-sm-2 search-query"
-                id="searchInput"
-                type="text"
-                aria-label="Search" />
-
-              <input type="hidden" id="initialCondQueryMirFlatmirLayout" name="initialCondQuery">
-                <xsl:attribute name="value">
-                  <xsl:choose>
-                    <xsl:when test="$initialCondQuery">
-                      <xsl:value-of select="$initialCondQuery"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:value-of select="'*'"/>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </xsl:attribute>
-              </input>
-
-              <xsl:choose>
-                <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
-                  <input name="owner" type="hidden" value="createdby:*" />
-                </xsl:when>
-                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
-                </xsl:when>
-              </xsl:choose>
-
-              <button type="submit" class="btn btn-primary my-2 my-sm-0">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-            </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mir-main-nav-collapse-box"
+            aria-controls="mir-main-nav-collapse-box"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="mir-main-nav-collapse-box"
+            class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <xsl:for-each select="$loaded_navigation_xml/menu">
+                <xsl:choose>
+                  <xsl:when test="@id='main'"/>
+                  <xsl:when test="@id='brand'"/>
+                  <xsl:when test="@id='below'"/>
+                  <xsl:when test="@id='user'"/>
+                  <xsl:otherwise>
+                    <xsl:apply-templates select="."/>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each>
+              <xsl:call-template name="mir.basketMenu" />
+            </ul>
           </div>
-
         </nav>
       </div>
+      <div class="header__search">
+        <xsl:variable name="core">
+          <xsl:call-template name="getLayoutSearchSolrCore" />
+        </xsl:variable>
+        <form
+          action="{$WebApplicationBaseURL}servlets/solr/{$core}"
+          class="searchfield_box d-flex"
+          role="search">
+          <xsl:variable name="initialCondQuery" select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='initialCondQuery']" />
+
+          <input
+            name="condQuery"
+            placeholder="{i18n:translate('mir.navsearch.placeholder')}"
+            class="form-control search-query"
+            id="searchInput"
+            type="text"
+            aria-label="Search" />
+
+          <input type="hidden" id="initialCondQueryMirFlatmirLayout" name="initialCondQuery">
+            <xsl:attribute name="value">
+              <xsl:choose>
+                <xsl:when test="$initialCondQuery">
+                  <xsl:value-of select="$initialCondQuery"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="'*'"/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:attribute>
+          </input>
+
+          <xsl:choose>
+            <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
+              <input name="owner" type="hidden" value="createdby:*" />
+            </xsl:when>
+            <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+              <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+            </xsl:when>
+          </xsl:choose>
+
+          <button type="submit" class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="header__options">
+        <div class="header__lang mir-prop-nav">
+          <nav class="navbar navbar-dark navbar-expand-sm">
+            <ul class="navbar-nav">
+              <xsl:call-template name="mir.languageMenu" />
+            </ul>
+          </nav>
+        </div>
+        <div class="header__login">
+          <nav class="navbar navbar-dark navbar-expand-sm">
+            <ul class="navbar-nav">
+              <xsl:call-template name="mir.loginMenu" />
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
+
   </xsl:template>
 
   <xsl:template name="mir.jumbotwo">
@@ -130,6 +125,7 @@
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row project-info-row">
+        <!--
         <div class="col artus-address">
           Internationale Artusgesellschaft |
           Bangor University College Road Bangor UK |
@@ -138,12 +134,18 @@
             ias-sia-iag.org
           </a>
         </div>
+        -->
         <div class="col-auto artus-copyright">
           <xsl:variable name="tmp" select="calendar:new()" />
           <xsl:text>© </xsl:text>
           <xsl:value-of select="calendar:get($tmp, 1)" />
           <xsl:text> | </xsl:text>
           <xsl:value-of select="i18n:translate('artus.copyright')"/>
+        </div>
+        <div class="col footer-menu">
+          <ul class="internal_links">
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
+          </ul>
         </div>
       </div>
     </div>

@@ -14,8 +14,44 @@
 //  project settings
 // --------------------------------------------------
 
-
+$a-green-logo:    #96b77e;
+$a-green-tile:    #5c7454;
+$a-green-button:  #344238;
+$a-gray-menu:     #f0f0f0;
+$a-purple:        #561c8c;
+$a-black-text:    #222222;
 
 // --------------------------------------------------
 //  overwrite bootstrap
 // --------------------------------------------------
+
+$primary: $a-green-tile;
+$secondary: $a-green-button;
+
+$body-color: $a-black-text;
+
+$web-font-path:           "https://webfonts.gbv.de/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+$font-family-sans-serif:  Montserrat, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif:       Effloresce, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base:          1rem;
+
+$headings-font-family:  $font-family-serif;
+
+$link-color:            $a-green-tile;
+$link-hover-color:      $a-green-button;
+$link-decoration:       none !default;
+$link-hover-decoration: underline !default;
+
+// navbar adjustments
+// bootswatch flatly uses fixed $success color
+// now you can adjust those values
+$mir-navlink-color: white;
+$mir-navlink-hover-color: white;
+$mir-navlink-active-color: white;
+// dark mode colors from flatly were not useful
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;
+
+$navbar-padding-y: 0;
+$nav-link-padding-y: 0;

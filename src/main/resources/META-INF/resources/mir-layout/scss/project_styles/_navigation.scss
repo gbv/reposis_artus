@@ -9,6 +9,105 @@
 // No media query since the xxl breakpoint has no upper bound on its width
 
 
+  // overwrite bootwatch flatly settings
+  // for link colors in navbars
+  // was set to $success before
+  .bg-primary .navbar-nav,
+  .navbar-nav {
+    color: $mir-navlink-color;
+    .navbar-nav {
+      .nav-link {
+        &:hover,
+        &:focus {
+          color: $mir-navlink-hover-color !important;
+        }
+      }
+      .show,
+      .active {
+        & > .nav-link {
+          color: $mir-navlink-active-color !important;
+        }
+      }
+    }
+  }
+
+  // enables the bootstrap settings for navbar
+  // disabled from bootwatch flatly with its important flag
+  .navbar-dark {
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+        a:hover, a:focus {
+          color: $navbar-dark-hover-color !important;
+        }
+      }
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-dark-active-color !important;
+      }
+    }
+  }
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-light-color;
+        a:hover, a:focus {
+          color: $navbar-light-hover-color !important;
+        }
+      }
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-light-active-color !important;
+      }
+    }
+  }
+
+  .mir-prop-nav {
+      .navbar-nav {
+          > li > a
+          {
+              color: $link-color;
+              .caret {
+                  border-top-color: $link-color;
+              }
+              &:hover,
+              &:focus
+              {
+                  color: $link-hover-color;
+              }
+          }
+          > li.active > a {
+              color: $link-color;
+              background-color: transparent;
+              &:hover,
+              &:focus
+              {
+                  color: $link-hover-color;
+                  background-color: transparent;
+              }
+              .caret {
+                border-top-color: $link-color;
+              }
+          }
+      }
+  }
+
+  .mir-main-nav {
+    .navbar-nav {
+      & > li:not(:last-child) {
+        border-right: 1px solid white;
+      }
+    }
+  }
+
+  .internal_links {
+    display: flex;
+    gap: 1rem;
+  }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {

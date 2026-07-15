@@ -8,7 +8,16 @@
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
 
-
+  // removes text decoration from links with badge class
+  a {
+    &.badge {
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {
