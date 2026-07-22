@@ -6,7 +6,91 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  .mir-start_page {
 
+    & > section {
+      padding-bottom: 0;
+    }
+
+    .intro-search {
+      display: flex;
+      justify-content: center;
+      form {
+        flex: 0 0 60%;
+        .input-group-lg > .form-control {
+          border-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-color: $a-green-tile;
+          border-right-width: 0;
+        }
+        .btn {
+          color: $a-green-tile;
+          background-color: white;
+          border-radius: 20px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-left-width: 0;
+        }
+      }
+    }
+
+    .intro-body {
+      background-image: url('../../../../images/background-document-max.png');
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-bottom: 50px;
+    }
+
+    .header__search {
+      visibility: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .intro-text {
+      font-size: 1.25rem;
+    }
+
+    .intro-tiles {
+      margin-top: 6rem;
+      .intro-tiles {
+        display: flex;
+        justify-content: space-between;
+        .intro-tile {
+          position: relative;
+          flex: 0 0 18%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 2rem;
+          background-image: url('../../../../images/background-tile.svg');
+          background-position: top left;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    .intro-hint {
+      margin-top: 8rem;
+      background-color: $a-gray-menu;
+      border: 1px solid $a-green-logo;
+      border-radius: 1.25rem;
+      width: 66%;
+      padding: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
