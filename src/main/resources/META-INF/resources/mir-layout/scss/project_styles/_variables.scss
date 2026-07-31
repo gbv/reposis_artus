@@ -21,12 +21,21 @@ $a-gray-menu:     #f0f0f0;
 $a-purple:        #561c8c;
 $a-black-text:    #222222;
 
+$a-web-green:     #0b9706;
+$a-web-orange:    #e3b87d;
+$a-web-blue:      #006ba1;
+
+$a-onrange-contrast: #A06B22;
+
 // --------------------------------------------------
 //  overwrite bootstrap
 // --------------------------------------------------
 
 $primary: $a-green-tile;
 $secondary: $a-green-button;
+$success: $a-web-green;
+$warning: $a-onrange-contrast;
+$info: $a-web-blue;
 
 $body-color: $a-black-text;
 
@@ -35,7 +44,7 @@ $font-family-sans-serif:  Montserrat, "Helvetica Neue", Arial, "Noto Sans", "Lib
 $font-family-serif:       Effloresce, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base:          1rem;
 
-$headings-font-family:  $font-family-serif;
+//$headings-font-family:  $font-family-serif;
 
 $link-color:            $a-green-tile;
 $link-hover-color:      $a-green-button;
@@ -55,3 +64,21 @@ $navbar-dark-active-color: white;
 
 $navbar-padding-y: 0;
 $nav-link-padding-y: 0;
+
+// Pagination
+// overwrite bootswatch width bs default
+$prefix: "bs-";
+$component-active-bg:$primary;
+
+$pagination-color:                  var(--#{$prefix}link-color);
+$pagination-bg:                     var(--#{$prefix}body-bg);
+$pagination-border-width:           var(--#{$prefix}border-width);
+$pagination-border-color:           var(--#{$prefix}border-color);
+$pagination-hover-color:            var(--#{$prefix}link-hover-color);
+$pagination-hover-bg:               var(--#{$prefix}tertiary-bg);
+$pagination-hover-border-color:     var(--#{$prefix}border-color);
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $component-active-bg;
+$pagination-disabled-color:         var(--#{$prefix}secondary-color);
+$pagination-disabled-bg:            var(--#{$prefix}secondary-bg);
+$pagination-disabled-border-color:  var(--#{$prefix}border-color);

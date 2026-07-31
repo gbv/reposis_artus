@@ -8,6 +8,10 @@
 
   .mir-start_page {
 
+    h1 {
+      font-family: $font-family-serif;
+    }
+
     & > section {
       padding-bottom: 0;
     }

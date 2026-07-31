@@ -13,12 +13,22 @@
 
   // ARTUS-52 make result list more compact
   // TODO: remove this when solution was done in MIR
+  .hit_tnd_container,
+  .hit_title,
+  .hit_author,
+  .hit_source,
+  .hit_abstract,
+  .hit_pub_name {
+    padding-left: 5px;
+    font-size: .875rem;
+  }
   .result_body .result_list #hit_list {
     font-size: .875rem;
     .hit_item {
+      margin-bottom: 15px;
       .hit_title {
         font-size: 1rem;
-        margin: 5px;
+        margin: 5px 0 5px 0;
       }
       .hit_source {
         margin-top: 10px;
@@ -31,6 +41,9 @@
       }
       .hit_icon {
         height: 75px;
+      }
+      .hit_download_box {
+        display: none;
       }
     }
   }
