@@ -7,6 +7,10 @@
   <menu id="brand" dir="/content/brand">
     <label xml:lang="de">MIR-Menü</label>
     <label xml:lang="en">MIR menu</label>
+  </menu>
+  <menu id="below" dir="/content/below">
+    <label xml:lang="de">Footer-Menü</label>
+    <label xml:lang="en">Footer menu</label>
     <item href="/content/brand/impressum.xml" type="intern">
       <label xml:lang="de">Impressum</label>
       <label xml:lang="en">Impressum</label>
@@ -27,11 +31,6 @@
       <label xml:lang="en">Privacy Policy</label>
       <label xml:lang="fr">Politique de confidentialité</label>
     </item>
-
-  </menu>
-  <menu id="below" dir="/content/below">
-    <label xml:lang="de">Footer-Menü</label>
-    <label xml:lang="en">Footer menu</label>
   </menu>
   <menu id="search">
     <!-- search menu  -->

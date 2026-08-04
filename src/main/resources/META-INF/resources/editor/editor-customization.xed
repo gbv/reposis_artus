@@ -219,8 +219,8 @@
 
     <!-- ========== project specific templates ========== -->
     <xed:template id="artus.sections">
-        <div class="form-group row">
-            <label class="col-md-3 col-form-label text-right">
+        <div class="mir-form-group row">
+            <label class="col-md-3 col-form-label text-end form-label">
                 <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
             </label>
             <xed:bind
@@ -230,7 +230,7 @@
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
                 <div class="col-md-6">
                     <div class="controls">
-                        <select class="form-control form-control-inline">
+                        <select class="form-control form-control-inline form-select">
                             <option value="">
                                 <xed:output i18n="mir.select.optional"/>
                             </option>
@@ -248,35 +248,32 @@
     </xed:template>
     <!--    Overwrite rights template-->
     <xed:template id="rights">
-
     <xed:bind xpath="mods:accessCondition[@type='use and reproduction']"
               initially="rights_reserved">
       <xed:if test="xed:call-java('org.mycore.common.xml.MCRXMLFunctions','isCurrentUserInRole','admin')">
 
-        <div class="form-group row required {$xed-validation-marker}" name="mir-license">
-          <label class="col-md-3 col-form-label text-right">
-            <xed:output i18n="mir.rights"/>
-            <xed:output value="$attrName"/>
+        <div class="mir-form-group row required {$xed-validation-marker}">
+          <label class="col-md-3 col-form-label text-end form-label">
+            <xed:output i18n="mir.rights" />
             :
           </label>
           <div class="col-md-6">
-            <select class="form-control form-control-inline">
+            <select class="form-control form-control-inline form-select">
               <option value="">
-                <xed:output i18n="mir.select"/>
+                <xed:output i18n="mir.select" />
               </option>
-              <xed:include
-                uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses"/>
+              <xed:include uri="xslStyle:license-filter,items2options?genre={$genre_intern}:classification:editor:-1:children:mir_licenses" />
             </select>
           </div>
-          <mir:help-pmud help-text="{i18n:mir.help.rights}"/>
+          <mir:help-pmud help-text="{i18n:mir.help.rights}" />
         </div>
       </xed:if>
     </xed:bind>
   </xed:template>
 
     <xed:template id="artus.parts">
-        <div class="form-group row">
-            <label class="col-md-3 col-form-label text-right">
+        <div class="mir-form-group row">
+            <label class="col-md-3 col-form-label text-end form-label">
                 <xed:output i18n="component.mods.metaData.dictionary.artus.parts"/>
             </label>
             <xed:bind
@@ -286,7 +283,7 @@
                     xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
                 <div class="col-md-6">
                     <div class="controls">
-                        <select class="form-control form-control-inline">
+                        <select class="form-control form-control-inline form-select">
                             <option value="">
                                 <xed:output i18n="mir.select.optional"/>
                             </option>
