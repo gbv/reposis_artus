@@ -22,49 +22,58 @@
       <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />
       <xed:cleanup-rule xpath="//condition[@selectable='true']" relevant-if="@id = ../selectCondition/@keep" />
       <xed:cleanup-rule xpath="//*/@selectable|//selectCondition" relevant-if="false()" />
-      <xed:source uri="searchInput:{$id}" />
-      <xed:source uri="webapp:editor/search/template/simple.xml" />
+      <xed:source uri="searchInput:{id}" />
+      <xed:source uri="webapp:editor/search/template/simple_intern.xml" />
       <xed:bind xpath="query">
-        <xed:bind xpath="@mask" default="content/main/search/simple.xed" />
-        <xed:bind xpath="@qt" default="/selectPublic" />
-        <xed:bind xpath="conditions/boolean">
-          <xed:bind xpath="boolean[@operator='or']/condition[@field='createdby']/@value" default="{$CurrentUser}" />
-          <div class="card">
-            <div class="card-header">
-              <h1 class="card-title h3">
-                <xed:output i18n="component.mods.editor.search.label" />
-              </h1>
-            </div>
-            <div class="card-body">
+        <xed:bind xpath="@mask" default="search/simple_intern.xed" />
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
+              <xed:output i18n="component.mods.editor.search.label" />
+            </h3>
+          </div>
+          <div class="card-body">
+
+            <xed:bind xpath="conditions/boolean[@operator='and']">
             <!-- Title -->
               <mir:template name="textInput" xpath="condition[@field='mods.title']/@value" id="inputTitle1" i18n="editor.search.mir.title" tooltip="editor.search.mir.title.tooltip" />
             <!-- Name -->
               <mir:template name="textInput" xpath="condition[@field='mods.name']/@value" id="inputName1" i18n="editor.search.mir.name" tooltip="editor.search.mir.name.tooltip" />
             <!-- Metadata -->
               <mir:template name="textInput" xpath="condition[@field='allMeta']/@value" id="inputMeta1" i18n="editor.search.metadata" tooltip="editor.search.metadata.tooltip" />
+
+        <!-- /xed:bind> TODO: realize search dependent on current user and state
+        <xed:bind xpath="boolean[@operator='or']" default="{$CurrentUser}" -->
+          <!-- xed:bind xpath="condition[@field='createdby']/@value" default="{$CurrentUser}" / -->
+            <!-- Status -->
+              <mir:template name="selectInput" xpath="condition[@field='state'][1]/@value" id="inputStatus1" i18n="editor.search.status" tooltip="editor.search.status.tooltip"
+                uri="xslStyle:items2options:classification:editor:-1:children:state" />
               <!-- Sections -->
               <mir:template name="selectInput"
-                            xpath="condition[@field='artus.sections'][1]/@value"
+                            xpath="condition[@field='artus.sections'][2]/@value"
                             id="artus.sections"
                             uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"
                             i18n="component.mods.metaData.dictionary.artus_sections"
                             tooltip="artus.help.artus.sections" />
               <!--  Parts  -->
               <mir:template name="selectInput"
-                            xpath="condition[@field='artus.parts'][2]/@value"
+                            xpath="condition[@field='artus.parts'][3]/@value"
                             id="artus.parts"
                             uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"
                             i18n="component.mods.metaData.dictionary.artus.parts"
                             tooltip="artus.help.artus.parts"/>
-            </div>
-            <!-- submit -->
-            <div class="card-footer clearfix">
-              <div class="float-right">
-                <mir:template name="submitButton" i18n="editor.search.search" target="servlet_MCRQLSearchServlet" />
-              </div>
+        <!-- /xed:bind>
+        <xed:bind xpath="conditions/boolean[@operator='and']" -->
+
+            </xed:bind>
+          </div>
+         <!-- submit -->
+          <div class="card-footer clearfix">
+            <div class="float-end">
+              <mir:template name="submitButton" i18n="editor.search.search" target="servlet_MCRQLSearchServlet" />
             </div>
           </div>
-        </xed:bind>
+        </div>
       </xed:bind>
     </xed:form>
   </section>
