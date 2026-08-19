@@ -313,5 +313,70 @@
   </xed:template>
 
 
+  <xed:template id="related.item.search.host">
+    <fieldset>
+      <legend class="mir-fieldset-legend"><xed:output i18n="mir.relatedItem.host" /></legend>
+      <xed:repeat xpath="mods:relatedItem[@type='host']" min="1" max="10">
+        <div class="mir-fieldset-content mir-related-item-search">
+          <div class="mir-form-group row">
+            <div class="col-md-3">
+              <xed:bind xpath="@type" initially="host">
+                <input type="hidden" />
+              </xed:bind>
+            </div>
+            <div class="col-md-6">
+              <div class="controls d-flex gap-2 align-items-center">
+                <input type="button" class="form-control mir-relatedItem-select" data-fq="-id:{$id}" value="{i18n:mir.editing.related.select}" />
+                <span />
+                <xed:bind xpath="@xlink:href">
+                  <input type="hidden" />
+                </xed:bind>
+              </div>
+            </div>
+            <mir:help-pmud help-text="{i18n:mir.help.related.item}" pmud="true" />
+          </div>
+          <xed:include ref="title.nonrequired" />
+          <xed:include ref="genre.simple.nonrequired" />
+          <xed:include ref="host.volume" />
+          <xed:include ref="host.pages" />
+        </div>
+      </xed:repeat>
+      <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js" type="text/javascript"></script>
+    </fieldset>
+  </xed:template>
+
+
+
+  <xed:template id="related.item.search.reviewOf">
+    <fieldset>
+      <legend class="mir-fieldset-legend"><xed:output i18n="mir.relatedItem.reviewOf" /></legend>
+      <xed:repeat xpath="mods:relatedItem[@type='reviewOf']" min="0" max="10">
+        <div class="mir-fieldset-content mir-related-item-search">
+          <div class="mir-form-group row">
+            <div class="col-md-3">
+              <xed:bind xpath="@type" initially="reviewOf">
+                <input type="hidden" />
+              </xed:bind>
+            </div>
+            <div class="col-md-6">
+              <div class="controls d-flex gap-2 align-items-center">
+                <input type="button" class="form-control mir-relatedItem-select" data-fq="-id:{$id}" value="{i18n:mir.editing.related.select}" />
+                <span />
+                <xed:bind xpath="@xlink:href">
+                  <input type="hidden" />
+                </xed:bind>
+              </div>
+            </div>
+            <mir:help-pmud help-text="{i18n:mir.help.related.item}" pmud="true" />
+          </div>
+          <xed:include ref="title.nonrequired" />
+          <xed:include ref="genre.simple.nonrequired" />
+          <xed:include ref="host.volume" />
+          <xed:include ref="host.pages" />
+        </div>
+      </xed:repeat>
+      <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js" type="text/javascript"></script>
+    </fieldset>
+  </xed:template>
 </xed:template>
 
