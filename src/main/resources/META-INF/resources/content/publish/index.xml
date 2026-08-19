@@ -48,34 +48,7 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-7 col-sm-12">
-          <h2> Publikation aus anderen Datenquellen importieren</h2>
-          <p>
-            Es ist nicht verpflichtend, hier eine DOI/ISBN einzugeben. Wenn ein Identifikator wie eine DOI oder eine
-            ISBN übernommen wird, kann es sein, dass automatisch Informationen (z.B. aus Online-Katalogen) eingetragen
-            werden, die bitte gewissenhaft auf Korrektheit überprüft werden müssten.
-          </p>
-        </div>
-      </div>
 
-      <div class="row mir-form-group">
-        <div class="col-sm-3 col-lg-2 control-label">
-          <select name="type" class="form-control form-select">
-            <option value="doi">DOI</option>
-            <option value="scopus">Scopus-ID</option>
-            <option value="pubmed">PubMed-ID</option>
-            <option value="isbn">ISBN</option>
-            <option value="issn">ISSN</option>
-            <option value="ieee">IEEE</option>
-            <option value="ppn">K10plus-PPN</option>
-            <option value="zdbid">ZDB-ID</option>
-          </select>
-        </div>
-        <div class="col-sm-7 col-md-5 col-lg-4">
-          <input class="form-control" type="text" name="modsId"/>
-        </div>
-      </div>
 
       <!-- submit -->
       <div class="row mir-form-group mt-4">
@@ -130,34 +103,7 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-7 col-sm-12">
-          <h2>Import publication metadata from other databases</h2>
-          <p>
-            It is not required to enter a DOI or ISBN here. If an identifier such as a DOI or an
-            ISBN is imported, information (e.g., from online catalogs) may be automatically entered,
-            and you should carefully check this information for accuracy.
-          </p>
-        </div>
-      </div>
 
-      <div class="row mir-form-group">
-        <div class="col-sm-3 col-lg-2 control-label">
-          <select name="type" class="form-control form-select">
-            <option value="doi">DOI</option>
-            <option value="scopus">Scopus-ID</option>
-            <option value="pubmed">PubMed-ID</option>
-            <option value="isbn">ISBN</option>
-            <option value="issn">ISSN</option>
-            <option value="ieee">IEEE</option>
-            <option value="ppn">K10plus-PPN</option>
-            <option value="zdbid">ZDB-ID</option>
-          </select>
-        </div>
-        <div class="col-sm-7 col-md-5 col-lg-4">
-          <input class="form-control" type="text" name="modsId"/>
-        </div>
-      </div>
 
       <!-- submit -->
       <div class="row mir-form-group mt-4">
