@@ -378,5 +378,9 @@
       <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js" type="text/javascript"></script>
     </fieldset>
   </xed:template>
+  <xed:template id="reviewer.repeated">
+    <mir:role.repeated role="aut" label="artus.role.reviewer" help-text="{i18n:mir.help.role.author}" />
+  </xed:template>
+
 </xed:template>
 

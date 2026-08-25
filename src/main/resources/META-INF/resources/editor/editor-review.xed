@@ -40,11 +40,13 @@ than the admin editor, this editor helps achieve that exactly.
           <xed:include ref="genre"/>
         </div>
         <xed:include ref="artus.sections"/>
-        <xed:include ref="author.repeated"/>
+        <xed:include ref="reviewer.repeated"/>
         <xed:include ref="author.metadataContact.repeated"/>
         <xed:include ref="year.issued"/>
         <xed:include ref="language"/>
         <xed:include ref="identifier.managed"/>
+        <xed:include ref="link.repeated" />
+        <xed:include ref="doi.handle.urn.repeated" />
         <xed:include ref="rights"/>
         <xed:include ref="related.item.search.reviewOf"/>
         <xed:include ref="related.item.search.host"/>
