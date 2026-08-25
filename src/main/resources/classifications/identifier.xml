@@ -44,5 +44,9 @@
       <label xml:lang="de" text="Patent number" />
       <label xml:lang="en" text="Patentnummer" />
     </category>
+    <category ID="pqdp">
+      <label xml:lang="de" text="PQ DP" />
+      <label xml:lang="en" text="PQ DP" />
+    </category>
   </categories>
 </mycoreclass>
