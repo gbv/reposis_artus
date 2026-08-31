@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
 
-    //We do not want to use the standard action mapping for adding reviews with "create-child"
+    // We do not want to use the standard action mapping for adding reviews with "create-child"
     $("a[href*='editor-admins.xed']").each(function () {
         try {
             const url = new URL($(this).attr("href"));
@@ -27,6 +27,16 @@ $(document).ready(function () {
                 url.searchParams.get("genre") === "review"
             ) {
                 url.pathname = url.pathname.replace("editor-admins.xed", "editor-review.xed");
+
+                // Changed relatedItemType from host to reviewOf
+                if (url.searchParams.get("relatedItemType") === "host") {
+                    url.searchParams.set("relatedItemType", "reviewOf");
+                }
+
+                if (url.searchParams.has("genre")) {
+                    url.searchParams.delete("genre");
+                }
+
                 $(this).attr("href", url.toString());
             }
         } catch (e) {
@@ -34,7 +44,8 @@ $(document).ready(function () {
         }
     });
 });
-//Deletes all selectable genre options except those listed
+
+// Deletes all selectable genre options except those listed
 $(document).ajaxComplete(function () {
     $("select#genre option").filter(function () {
         return ![
@@ -43,22 +54,16 @@ $(document).ajaxComplete(function () {
             "collection",
             "thesis",
             "dissertation"
-
         ].includes($(this).val());
     }).remove();
 
-//Deletes all selectable host options except those listed
+    // Deletes all selectable host options except those listed
     $("select#host option").filter(function () {
         return ![
             "standalone",
             "journal",
             "collection",
             "series"
-        ]
-            .includes($(this).val());
+        ].includes($(this).val());
     }).remove();
 });
-
-
-
-
