@@ -15,6 +15,7 @@
             <xsl:value-of select="count(structure/derobjects/derobject)&gt;0" />
         </field>
         <xsl:apply-imports />
+        <xsl:apply-templates select="metadata/def.modsContainer/modsContainer/mods:mods" mode="timebarExtension"/>
     </xsl:template>
 
 
@@ -31,7 +32,20 @@
                 <xsl:value-of select="substring-after(@valueURI, '#')" />
             </field>
         </xsl:for-each>
+        <xsl:for-each select="mods:language/mods:languageTerm[@type='code']">
+            <field name="mods.language">
+                <xsl:value-of select="text()" />
+            </field>
+        </xsl:for-each>
+    </xsl:template>
 
+    <xsl:template match="mods:mods" mode="timebarExtension">
+
+        <xsl:if test="mods:originInfo/mods:dateIssued">
+            <field name="artus.dateIssued_range">
+                <xsl:value-of select="mods:originInfo/mods:dateIssued" />
+            </field>
+        </xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>

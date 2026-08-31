@@ -12,5 +12,26 @@
       "type": "string",
       "indexed": true
     }
+  },
+  {
+    "add-field": {
+      "name": "mods.language",
+      "type": "string",
+      "indexed": true,
+      "stored": true,
+      "multiValued": true
+    }
+  },
+  {
+    "add-field-type": {
+      "name": "artus.date_range",
+      "class": "solr.DateRangeField"
+    }
+  },
+  {
+    "add-field": {
+      "name": "artus.dateIssued_range",
+      "type": "artus.date_range"
+    }
   }
 ]

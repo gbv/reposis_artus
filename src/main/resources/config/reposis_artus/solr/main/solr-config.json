@@ -26,6 +26,9 @@
         "facet": "true",
         "facet.field": [
           "mods.genre",
+          "artus.sections",
+          "artus.parts",
+          "mods.language",
           "worldReadableComplete"
         ],
         "facet.mincount": "1"
@@ -53,6 +56,9 @@
         "facet": "true",
         "facet.field": [
           "mods.genre",
+          "artus.sections",
+          "artus.parts",
+          "mods.language",
           "worldReadableComplete"
         ],
         "facet.mincount": "1"
@@ -83,6 +89,9 @@
         "facet": "true",
         "facet.field": [
           "mods.genre",
+          "artus.sections",
+          "artus.parts",
+          "mods.language",
           "worldReadableComplete"
         ],
         "facet.mincount": "1"
@@ -107,7 +116,10 @@
       "appends": {
         "facet": "true",
         "facet.field": [
-          "mods.genre"
+          "mods.genre",
+          "artus.sections",
+          "artus.parts",
+          "mods.language"
         ],
         "facet.mincount": "1"
       }
