@@ -21,8 +21,7 @@
           <h1>Publizieren</h1>
           <p>
             Bitte wählen sie den Typ der Publikation aus. Anschließend werden sie auf das passende
-            Eingabeformular weitergeleitet. Falls der Datensatz bereits einen Identifikator besitzt,
-            können ggf. Metadaten aus anderen Datenquellen übernommen werden.
+            Eingabeformular weitergeleitet.
           </p>
           <h2>Publikationstyp festlegen</h2>
         </div>
@@ -75,9 +74,7 @@
           <h1>Publication</h1>
           <p>
             Please select the type of the publication. Afterwards you will be directed
-            to the appropriate form. If you know an identifier for the publication record
-            you may enter it here. It will be used to look up and reuse metadata from
-            external databases.
+            to the appropriate form.
           </p>
           <h2>Set publication type</h2>
         </div>

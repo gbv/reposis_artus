@@ -65,6 +65,13 @@
 
       <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="x-mapping" text="marcgt:series diniPublType2022:EditedCollection schemaOrg:Book" />
+      <category ID="festschrift">
+        <label xml:lang="de" text="Festschrift" />
+        <label xml:lang="en" text="Festschrift" />
+        <label xml:lang="x-hosts" text="series standalone" />
+        <label xml:lang="x-mapping" text="marcgt:festschrift diniPublType2022:Report schemaOrg:Report" />
+      </category>
+
       <category ID="lexicon">
         <label xml:lang="de" text="Lexikon" />
         <label xml:lang="en" text="Lexicon" />
