@@ -3,6 +3,10 @@
   <menu id="main" dir="/content/main">
     <label xml:lang="de">Hauptmenü</label>
     <label xml:lang="en">Main menu</label>
+    <item href="/content/index.xml" type="intern">
+      <label xml:lang="de">Start</label>
+      <label xml:lang="en">Start</label>
+    </item>
   </menu>
   <menu id="brand" dir="/content/brand">
     <label xml:lang="de">MIR-Menü</label>
