@@ -1,12 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="179.935" height="188.057" viewBox="0 0 179.935 188.057" preserveAspectRatio="none">
-  <g id="Gruppe_13" data-name="Gruppe 13" transform="translate(-682.065 -473.638)">
-    <g id="Rechteck_9" data-name="Rechteck 9" transform="matrix(0.995, -0.105, 0.105, 0.995, 682.065, 490.611)" fill="#5d7454" stroke="#96b880" stroke-width="1">
-      <rect width="162.372" height="172.027" rx="30" stroke="none"/>
-      <rect x="0.5" y="0.5" width="161.372" height="171.027" rx="29.5" fill="none"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="179.935"
+   height="188.057"
+   viewBox="0 0 179.935 188.057"
+   preserveAspectRatio="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="background-tile.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.5252236"
+     inkscape:cx="90.050799"
+     inkscape:cy="94.028503"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Rechteck_9" />
+  <g
+     id="Gruppe_13"
+     data-name="Gruppe 13"
+     transform="translate(-682.065 -473.638)">
+    <g
+       id="Rechteck_9"
+       data-name="Rechteck 9"
+       transform="matrix(0.995,-0.105,0.105,0.995,682.065,490.611)"
+       fill="#5d7454"
+       stroke="#96b880"
+       stroke-width="1"
+       style="display:inline;fill:#5d7454;fill-opacity:0.5;stroke:none;stroke-width:1.99895;stroke-dasharray:none;stroke-opacity:0.5">
+      <rect
+         width="162.37199"
+         height="172.02699"
+         rx="30"
+         stroke="none"
+         id="rect1"
+         x="0"
+         y="0"
+         style="fill:#5d7454;fill-opacity:0.5;stroke:none;stroke-width:1.99895;stroke-dasharray:none;stroke-opacity:0.5" />
+      <rect
+         x="0.5"
+         y="0.5"
+         width="161.37199"
+         height="171.02699"
+         rx="29.5"
+         fill="none"
+         id="rect2"
+         style="fill:#96b77e;fill-opacity:0.50196081;stroke:none;stroke-width:1.99895;stroke-dasharray:none;stroke-opacity:0.5" />
     </g>
-    <g id="Rechteck_10" data-name="Rechteck 10" transform="translate(693 474)" fill="#fff" stroke="#96b880" stroke-width="1">
-      <rect width="169" height="172" rx="30" stroke="none"/>
-      <rect x="0.5" y="0.5" width="168" height="171" rx="29.5" fill="none"/>
+    <g
+       id="Rechteck_10"
+       data-name="Rechteck 10"
+       transform="translate(693,474)"
+       fill="#ffffff"
+       stroke="#96b880"
+       stroke-width="1"
+       style="display:inline;stroke:#5c7454;stroke-width:2;stroke-dasharray:none;stroke-opacity:1">
+      <rect
+         width="169"
+         height="172"
+         rx="30"
+         stroke="none"
+         id="rect3"
+         style="stroke:#5c7454;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         x="0"
+         y="0" />
+      <rect
+         x="0.5"
+         y="0.5"
+         width="168"
+         height="171"
+         rx="29.5"
+         fill="none"
+         id="rect4"
+         style="stroke:#5c7454;stroke-width:2;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
