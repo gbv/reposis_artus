@@ -15,12 +15,20 @@
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MCR-Workshop2018_Rochowski_XEditor_Erweiterungen_Praxis.pdf
     -->
     </xed:modify>
+  <xed:modify ref="genres.book">
+    <xed:include ref="editor.repeated" after="author.repeated"/>
+  </xed:modify>
 
     <xed:modify ref="genres.book.common">
-        <xed:include ref="artus.sections" after="year.issued"/>
+      <xed:include ref="artus.sections" after="year.issued"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
       <xed:include ref="author.metadataContact.repeated"/>
+      <xed:remove ref="identifier.isbn"/>
+      <xed:include ref="identifier.repeated" after="doi.handle.urn.repeated" />
+      <xed:include ref="link.repeated" after="identifier.repeated" />
+      <xed:remove ref="doi.handle.urn.repeated"/>
     </xed:modify>
+
     <xed:modify ref="genres.journal.common">
         <xed:include ref="artus.sections" after="title.abbreviated"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
@@ -29,6 +37,9 @@
     <xed:modify ref="genres.publication.common">
         <xed:include ref="artus.sections" after="author.repeated"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
+      <xed:include ref="identifier.repeated" after="doi.handle.urn.repeated" />
+      <xed:include ref="link.repeated" after="identifier.repeated" />
+      <xed:remove ref="doi.handle.urn.repeated"/>
       <xed:include ref="author.metadataContact.repeated"/>
     </xed:modify>
     <xed:modify ref="genres.report.common">
@@ -53,6 +64,10 @@
         <xed:include ref="artus.parts" after="artus.sections"/>
       <xed:remove ref="identifier.isbn" />
       <xed:remove ref="type.of.resource.repeated" />
+      <xed:include ref="abstract.simple" after="abstract.repeated"/>
+      <xed:remove ref="abstract.repeated"/>
+      <xed:include ref="identifier.repeated" after="doi.handle.urn.repeated" />
+      <xed:remove ref="doi.handle.urn.repeated" />
     </xed:modify>
 
     <xed:modify ref="genres.teaching_material">
@@ -70,52 +85,20 @@
         <xed:include ref="artus.parts" after="artus.sections"/>
       <xed:include ref="author.metadataContact.repeated"/>
     </xed:modify>
-    <xed:modify ref="genres.interview">
-        <xed:include ref="artus.sections" after="author.interviewee.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
     <xed:modify ref="genres.speech">
         <xed:include ref="artus.sections" after="author.repeated"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
       <xed:include ref="author.metadataContact.repeated"/>
     </xed:modify>
-    <xed:modify ref="genres.patent">
-        <xed:include ref="artus.sections" after="inventor.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
-    <xed:modify ref="genres.poster">
-        <xed:include ref="artus.sections" after="author.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
-    <xed:modify ref="genres.research_data">
-        <xed:include ref="artus.sections" after="research.data.person.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
-    <xed:modify ref="genres.lecture">
-        <xed:include ref="artus.sections" after="name.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
-    <xed:modify ref="genres.picture">
-        <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
-    <xed:modify ref="genres.blog">
-        <xed:include ref="artus.sections" after="artist.photographer.repeated"/>
-        <xed:include ref="artus.parts" after="artus.sections"/>
-      <xed:include ref="author.metadataContact.repeated"/>
-    </xed:modify>
   <xed:modify ref="titles.thesis.common">
     <xed:remove ref="title.translated" />
+
   </xed:modify>
   <xed:modify ref="genres.dissertation">
     <xed:remove ref="date.submitted.datetimepicker" />
     <xed:remove ref="date.accepted.datetimepicker" />
+
+
   </xed:modify>
 
 
@@ -158,6 +141,12 @@
 
   </xed:template>
   <!-- ========== overwrite mir templates and set them empty ========== -->
+  <xed:template id="host.articlenumber">
+    <!-- do nothing -->
+  </xed:template>
+
+
+
 
     <xed:template id="sdnb">
         <!-- do nothing -->
@@ -192,21 +181,13 @@
         <!-- do nothing -->
     </xed:template>
 
-    <xed:template id="shelfmark.festschrift.relItemsearch">
-        <!-- do nothing -->
-    </xed:template>
+
 
     <xed:template id="shelfmark.lexicon.relItemsearch">
         <!-- do nothing -->
     </xed:template>
 
-    <xed:template id="shelfmark.proceedings.relItemsearch">
-        <!-- do nothing -->
-    </xed:template>
 
-    <xed:template id="shelfmark.proceedings.relItemsearch">
-        <!-- do nothing -->
-    </xed:template>
 
     <xed:template id="embargo">
         <!-- do nothing -->
@@ -215,6 +196,20 @@
     <xed:template id="embargo.datetimepicker">
         <!-- do nothing -->
     </xed:template>
+
+  <xed:template id="host.pages">
+    <div class="mir-form-group row mir-modspart">
+      <label class="col-md-3 col-form-label text-end form-label">
+        <xed:output i18n="mir.pages" />:
+      </label>
+      <div class="col-md-6">
+        <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
+          <input type="text" size="20" class="form-control form-control-inline" placeholder="{i18n:mir.placeholder.host.pages}"/>
+        </xed:bind>
+      </div>
+      <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
+    </div>
+  </xed:template>
 
 
     <!-- ========== project specific templates ========== -->
@@ -300,7 +295,8 @@
         </div>
     </xed:template>
   <xed:template id="author.metadataContact.repeated">
-    <mir:role.repeated role="mdc" label="mir.role.metadataContact" help-text="{i18n:mir.help.role.author}" />
+    <mir:role.repeated role="mdc" label="mir.role.metadataContact" help-text="{i18n:mir.help.role.author}" class="required" required="true"
+                       required-i18n="artus.validation.mdc"/>
   </xed:template>
 
 
@@ -380,6 +376,11 @@
   </xed:template>
   <xed:template id="reviewer.repeated">
     <mir:role.repeated role="aut" label="artus.role.reviewer" help-text="{i18n:mir.help.role.author}" />
+  </xed:template>
+
+  <xed:template id="comment">
+    <mir:textarea xpath="mods:note[@type='admin']" label="mir.comment.intern" help-text="{i18n:mir.help.comment}" rows="2" />
+    <mir:textarea xpath="mods:note[@type='content']" label="mir.comment.content" help-text="{i18n:mir.help.comment.content}" rows="2" />
   </xed:template>
 
 </xed:template>
