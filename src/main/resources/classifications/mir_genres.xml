@@ -8,7 +8,7 @@
       <label xml:lang="de" text="Artikel / Aufsatz" />
       <label xml:lang="en" text="Article / Chapter" />
       <label xml:lang="fr" text="Article / Chapter" />
-      <label xml:lang="x-hosts" text="journal newspaper collection" />
+      <label xml:lang="x-hosts" text="journal collection" />
       <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Article schemaOrg:ScholarlyArticle" />
       <category ID="chapter">
         <label xml:lang="de" text="Buchkapitel" />
@@ -46,7 +46,7 @@
         <label xml:lang="en" text="Review" />
         <label xml:lang="fr" text="Review" />
 
-        <label xml:lang="x-hosts" text="journal newspaper collection  book article thesis" />
+        <label xml:lang="x-hosts" text="journal collection book article dissertation monograph" />
         <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Recension schemaOrg:Review" />
       </category>
     </category>
@@ -110,14 +110,6 @@
         <label xml:lang="x-hosts" text="standalone journal series" />
         <label xml:lang="x-mapping" text="marcgt:issue diniPublType2022:PeriodicalPart schemaOrg:PublicationIssue" />
       </category>
-    </category>
-    <category ID="newspaper">
-      <label xml:lang="de" text="Zeitung" />
-      <label xml:lang="en" text="Newspaper" />
-      <label xml:lang="fr" text="Newspaper" />
-
-      <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="x-mapping" text="marcgt:newspaper diniPublType2022:Periodical schemaOrg:Periodical" />
     </category>
     <category ID="series">
       <label xml:lang="de" text="Reihe" />
