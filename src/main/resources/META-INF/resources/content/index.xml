@@ -5,17 +5,14 @@
   <section title="Bibliographie der internationalen Artusgesellschaft" xml:lang="de">
     <div class="jumbotwo"/>
 
-    <h1>Bibliographie der internationalen Artusgesellschaft</h1>
+    <h1>Bibliographie der Internationalen Artusgesellschaft</h1>
 
     <div class="intro-text">
       <p>
-        BIAS ist eine umfassende Forschungsbibliographie zur Matière de Bretagne, die jährlich seit Mitte des 20.
-        Jahrhunderts Editionen mittelalterlicher Texte und aktuelle wissenschaftliche Literatur zu ihnen verzeichnet.
+        BIAS ist eine umfassende Forschungsbibliographie zum Stoffkreis um König Artus, die jährlich seit Mitte des 20.&#160;Jahrhunderts Editionen mittelalterlicher Texte und aktuelle wissenschaftliche Literatur verzeichnet.
       </p>
       <p class="d-none">
-        BIAS (Bibliography of the International Arthurian Society) ist ein Werkzeug für alle, die sich für die
-        Erforschung des Stoffkreises um König Artus in Geschichte, Literatur und materieller Überlieferung
-        interessieren.
+        BIAS (Bibliography of the International Arthurian Society) ist ein Werkzeug für alle, die sich für die Erforschung des Stoffkreises um König Artus in Geschichte, Literatur und materieller Überlieferung interessieren.
       </p>
     </div>
 
@@ -39,21 +36,19 @@
         -->
         <div class="intro-tiles">
           <div class="intro-tile">
-            <a href="#1" class="stretched-link">Nach Titeln und Autor*innen suchen</a>
+            <a href="#1" class="stretched-link">Titel und Autor:innen</a>
           </div>
           <div class="intro-tile">
-            <a href="#2" class="stretched-link">Inhaltsangaben zu Forschungsliteratur finden</a>
+            <a href="#2" class="stretched-link">Inhaltsangaben zu Forschungs&#173;literatur</a>
           </div>
           <div class="intro-tile">
-            <a href="#3" class="stretched-link">Durch Zeiträume oder Sektionen der Artusgesellschaft browsen</a>
+            <a href="#3" class="stretched-link">Zeiträume und Sektionen</a>
           </div>
           <div class="intro-tile">
-            <a href="#4" class="stretched-link">Editionen zu einem Primärtext heraussuchen</a>
+            <a href="#4" class="stretched-link">Editionen zu einem Primärtext</a>
           </div>
           <div class="intro-tile">
-            <a href="#5" class="stretched-link">Online-Zugänge zu E-Books, Artikeln und anderen digitalen Ressourcen
-              finden
-            </a>
+            <a href="#5" class="stretched-link">Zugänge zu digitalen Ressourcen</a>
           </div>
         </div>
       </div>

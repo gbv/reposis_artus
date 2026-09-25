@@ -8,6 +8,13 @@
 
   .mir-start_page {
 
+    #main_content {
+      background-image: url('../../../../images/background-document-max.png');
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+
     h1 {
       font-family: $font-family-serif;
     }
@@ -28,27 +35,26 @@
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
           border-color: $a-green-tile;
+          border-width: 2px;
           border-right-width: 0;
+
         }
         .btn {
-          color: $a-green-tile;
-          background-color: white;
+          color: white;
+          background-color: $a-green-tile;
           border-radius: 20px;
           border-top-left-radius: 20px;
           border-bottom-left-radius: 20px;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
+          border-width: 2px;
           border-left-width: 0;
         }
       }
     }
 
     .intro-body {
-      background-image: url('../../../../images/background-document-max.png');
-      background-position: bottom left;
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding-bottom: 50px;
+      padding-bottom: 80px;
     }
 
     .header__search {
@@ -56,30 +62,43 @@
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
+      margin-bottom: 0;
     }
 
     .intro-text {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      p {
+        line-height: 2.2rem;
+      }
     }
 
     .intro-tiles {
       margin-top: 6rem;
       .intro-tiles {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem 1rem;
         .intro-tile {
           position: relative;
-          flex: 0 0 18%;
+          flex: 0 0 225px;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           text-align: center;
-          padding: 2rem;
+          padding: 3rem 2rem 1rem 2rem;
           background-image: url('../../../../images/background-tile.svg');
           background-position: top left;
           background-repeat: no-repeat;
           background-size: 100% 100%;
+          min-height: 200px;
+          a {
+            color: $a-black-text;
+            font-size: 1.2rem;
+          }
         }
       }
     }

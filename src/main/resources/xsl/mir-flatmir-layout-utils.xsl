@@ -13,7 +13,7 @@
 
     <div class="header container-lg">
       <div class="header__logo">
-        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}">
+        <a href="{i18n:translate('artus.home')}">
            <img
              src="{$WebApplicationBaseURL}images/ias-logo-small-inverted.svg"
              alt="IAS Logo" />
@@ -35,6 +35,11 @@
             id="mir-main-nav-collapse-box"
             class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}">
+                  <i class="fas fa-house"/>
+                </a>
+              </li>
               <xsl:for-each select="$loaded_navigation_xml/menu">
                 <xsl:choose>
                   <xsl:when test="@id='main'"/>
@@ -106,7 +111,7 @@
         </div>
         <div class="header__login">
           <nav class="navbar navbar-dark navbar-expand-sm">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" title="{i18n:translate('artus.login')}">
               <xsl:call-template name="mir.loginMenu" />
             </ul>
           </nav>
