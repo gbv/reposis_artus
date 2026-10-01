@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+
+  <section xml:lang="de">
+    <head>
+      <meta name="title" content="Texttypen"/>
+      <meta name="description" content="Texttypen durchsuchen"/>
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="Types of text"/>
+      <meta name="description" content="Browse text types"/>
+    </head>
+  </section>
+  <section xml:lang="fr">
+    <head>
+      <meta name="title" content="Les types de texte"/>
+      <meta name="description" content="Parcourir les types de texte"/>
+    </head>
+  </section>
+
+  <section i18n="browse.genre" xml:lang="all">
+
+    <div class="row">
+      <div class="col-md-8" lang="de">
+        <h3><i18n key="browse.genre" /></h3>
+        <classificationbrowser classification="mir_genres"
+                                   objecttype="mods"
+                                  restriction="+category.top:&quot;state:published&quot;"
+                                        field="category.top"
+                                 countresults="true"
+                                   addclassid="true"
+                                  emptyleaves="false"
+                                        style="bootstrap"
+                                   parameters="sort=mods.dateIssued+desc"
+                                 addParameter="XSL.template=template_mir"
+        />
+      </div>
+    </div>
+
+  </section>
+
+</MyCoReWebPage>
