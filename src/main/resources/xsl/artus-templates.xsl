@@ -9,12 +9,8 @@
     <xsl:variable name="core">
       <xsl:call-template name="getLayoutSearchSolrCore" />
     </xsl:variable>
-    <form
-      action="../servlets/solr/{$core}"
-      id="project-searchMainPage"
-      class="form-inline d-flex justify-content-center mt-5"
-      role="search" >
-      <div class="input-group input-group-lg">
+    <form action="../servlets/solr/{$core}" id="project-searchMainPage" class="mt-5" role="search"> <!-- Suchleiste -->
+      <div class="input-group input-group-lg form-inline d-flex justify-content-center ">
         <input
           name="condQuery"
           placeholder="{mcri18n:translate('artus.index.search.placeholder')}"
@@ -25,6 +21,24 @@
           <i class="fa fa-search"></i>
         </button>
       </div>
+      <div class="d-flex justify-content-center mt-3">
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="switchReviews" />
+
+          <label
+            class="custom-control-label"
+            for="switchReviews">
+        <xsl:value-of select="mcri18n:translate('artus.review.visibility')"/>
+          </label>
+        </div>      </div>
+      <input
+        name="fq"
+        type="hidden"
+        value="-mods.relatedItem:*reviewOf*"
+        id="filterReviews" />
     </form>
     <script src="../js/index.js" />
   </xsl:template>
