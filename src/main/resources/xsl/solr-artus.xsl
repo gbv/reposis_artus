@@ -9,8 +9,13 @@
     <xsl:include href="mods-utils.xsl" />
 
     <xsl:template match="mycoreobject[contains(@ID,'_mods_')]">
+        <xsl:variable name="published"
+                      select="not(service/servstates/servstate)
+                              or service/servstates/servstate/@categid='published'" />
 
-        <xsl:apply-templates select="metadata/def.modsContainer/modsContainer/mods:mods" mode="artus"/>
+        <xsl:apply-templates select="metadata/def.modsContainer/modsContainer/mods:mods" mode="artus">
+            <xsl:with-param name="published" select="$published" />
+        </xsl:apply-templates>
         <field name="hasFiles">
             <xsl:value-of select="count(structure/derobjects/derobject)&gt;0" />
         </field>
@@ -20,6 +25,8 @@
 
 
     <xsl:template match="mods:mods" mode="artus">
+        <xsl:param name="published" select="false()" />
+
         <xsl:for-each select="mods:classification[
         @authorityURI='https://arthurianbibliography.info/classifications/artus_sections']">
             <field name="artus.sections">
@@ -36,6 +43,20 @@
             <field name="mods.language">
                 <xsl:value-of select="text()" />
             </field>
+        </xsl:for-each>
+
+        <xsl:for-each select="mods:subject/mods:topic">
+            <xsl:variable name="sindexname" select="normalize-space(.)" />
+            <xsl:if test="string-length($sindexname) &gt; 0">
+                <field name="mods.sindexname">
+                    <xsl:value-of select="$sindexname" />
+                </field>
+                <xsl:if test="$published">
+                    <field name="mods.sindexname.published">
+                        <xsl:value-of select="$sindexname" />
+                    </field>
+                </xsl:if>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 

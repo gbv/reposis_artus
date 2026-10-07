@@ -102,6 +102,36 @@
     }
   },
   {
+    "add-requestHandler": {
+      "name": "/subjectindexp",
+      "class": "solr.StandardRequestHandler",
+      "defaults": { "echoParams": "explicit", "wt": "xml" },
+      "invariants": {
+        "terms": "true",
+        "terms.fl": "mods.sindexname.published",
+        "terms.sort": "index",
+        "terms.regex.flag": "case_insensitive",
+        "terms.limit": "-1"
+      },
+      "components": [ "terms" ]
+    }
+  },
+  {
+    "add-requestHandler": {
+      "name": "/subjectindex",
+      "class": "solr.StandardRequestHandler",
+      "defaults": { "echoParams": "explicit", "wt": "xml" },
+      "invariants": {
+        "terms": "true",
+        "terms.fl": "mods.sindexname",
+        "terms.sort": "index",
+        "terms.regex.flag": "case_insensitive",
+        "terms.limit": "-1"
+      },
+      "components": [ "terms" ]
+    }
+  },
+  {
     "update-requestHandler": {
       "name": "/select",
       "class": "solr.SearchHandler",
