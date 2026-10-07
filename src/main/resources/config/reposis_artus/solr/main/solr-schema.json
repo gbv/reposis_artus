@@ -33,5 +33,19 @@
       "name": "artus.dateIssued_range",
       "type": "artus.date_range"
     }
+  },
+  {
+    "add-field": {
+      "name": "mods.sindexname",
+      "type": "string",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.sindexname.published",
+      "type": "string",
+      "multiValued": true
+    }
   }
 ]
