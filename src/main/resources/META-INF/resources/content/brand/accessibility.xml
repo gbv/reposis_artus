@@ -1,22 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-    <section xml:lang="de" title="Hinweis zur Barrierefreiheit">
+    <section xml:lang="de" title="Erklärung zur Barrierefreiheit">
         <head>
-            <meta name="title" content="Hinweis zur Barrierefreiheit"/>
+            <meta name="title" content="Erklärung zur Barrierefreiheit"/>
         </head>
         <div class="row">
             <div class="col-12">
-                <h1 class="page-header">Erklärung zur Barrierefreiheit</h1>
-
+                <h1 class="page-header">Vorläufige Erklärung zur Barrierefreiheit</h1>
             </div>
         </div>
         <div class="row mt-3">
             <div class="col-12">
-                <p>Diese Seite befindet sich noch im Aufbau. Für weitere Informationen besuchen Sie bitte
-                    <a href="https://www.gbv.de/erklaerung-zur-barrierefreiheit" target="_blank">die Seite der GBV für
-                        Barrierefreiheit
-                    </a>
-                </p>
+            <p>
+                Die Internationale Artusgesellschaft (International Arthurian Society, IAG)
+                ist bemüht, die hier bereitgestellte Bibliographie zur Artusforschung (Bibliographie
+                der Internationalen Artusgesellschaft, BIAS) möglichst barrierefrei zugänglich zu
+                gestalten.
+            </p>
+
+            <h2>Stand der Vereinbarkeit mit den Anforderungen</h2>
+
+            <p>
+                Die Website ist derzeit teilweise mit den Anforderungen an die
+                Barrierefreiheit vereinbar.
+            </p>
+
+            <p>
+                Im Rahmen einer aktuellen Prüfung wurden insbesondere bei der
+                Tastaturbedienung, der Navigation mit Screenreadern sowie bei
+                Farbkontrasten noch Barrieren festgestellt. Diese werden derzeit
+                schrittweise behoben.
+            </p>
+
+            <p>Zu den derzeit bekannten Einschränkungen gehören insbesondere:</p>
+
+            <ul>
+                <li>
+                    ein noch fehlender Link zum direkten Überspringen der Navigation
+                    zum Hauptinhalt,
+                </li>
+                <li>
+                    teilweise nicht optimale Reihenfolgen bei der Tastaturnavigation,
+                </li>
+                <li>
+                    fehlende zugängliche Bezeichnungen einzelner Bedienelemente,
+                </li>
+                <li>
+                    teilweise fehlende sichtbare Fokuskennzeichnungen,
+                </li>
+                <li>
+                    nicht ausreichende Farbkontraste bei einzelnen Texten und
+                    Bedienelementen,
+                </li>
+                <li>
+                    teilweise zu geringe Abstände bzw. Zielgrößen bei interaktiven
+                    Elementen.
+                </li>
+            </ul>
+
+            <p>
+                Die genannten Punkte werden im Rahmen der laufenden Weiterentwicklung
+                der Website berücksichtigt und schrittweise verbessert.
+            </p>
+
+            <h2>Feedback und Kontakt</h2>
+
+            <p>
+                Wenn Sie auf der Website auf eine Barriere stoßen oder Inhalte in
+                einer für Sie zugänglichen Form benötigen, freuen wir uns über einen
+                entsprechenden Hinweis.
+            </p>
+
+            <address>
+                <strong>International Arthurian Society (Internationale Artusgesellschaft)</strong><br />
+                <a href="https://ias-sia-iag.org/de/kontakt/" target="_blank">zur Kontaktseite der internationalen Artus-Gesellschaft</a>
+            </address>
+
+            <p>
+                Die technische Bereitstellung und der Betrieb der BIAS-Website
+                erfolgen durch die Verbundzentrale des GBV (VZG). Technische Hinweise
+                zur Website können daher ergänzend an
+                <a href="mailto:barrierefreiheit@gbv.de">barrierefreiheit@gbv.de</a>
+                gerichtet werden.
+            </p>
+
+            <h2>Durchsetzungs- und Schlichtungsverfahren</h2>
+
+            <p>
+                Sollten Sie der Ansicht sein, dass Ihr Hinweis auf eine Barriere
+                nicht angemessen berücksichtigt wurde, besteht – sofern die
+                gesetzlichen Voraussetzungen hierfür vorliegen – die Möglichkeit,
+                sich an die zuständige Schlichtungsstelle zu wenden.
+            </p>
+
+            <p>
+                Weitere Informationen zum Schlichtungsverfahren finden Sie bei der
+                <a href="https://www.schlichtungsstelle-bgg.de/">
+                    Schlichtungsstelle nach § 16 BGG
+                </a>.
+            </p>
+
+            <h2>Erstellung und Aktualisierung dieser Erklärung</h2>
+
+            <p>
+                Diese Erklärung wurde am 07.10.2026 erstellt bzw. zuletzt aktualisiert.
+            </p>
+
+            <p>
+                Die Einschätzung der Barrierefreiheit beruht auf einer aktuellen
+                Prüfung der Website. Die Umsetzung weiterer Verbesserungsmaßnahmen
+                ist vorgesehen.
+            </p>
             </div>
         </div>
     </section>
