@@ -17,12 +17,12 @@
 
     & > section {
       padding-bottom: 0;
-      font-family: $font-family-serif;
     }
 
     h1 {
-      font-size: 3rem;
       margin-bottom: 0;
+      font-family: $font-family-serif;
+      font-size: 3rem;
     }
 
     .intro-text {
@@ -141,6 +141,28 @@
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
   // add/overwrite styles for responsive level lg and lower
+
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        padding-left: 5rem;
+        flex-basis: auto;
+      }
+    }
+    .intro-search {
+      form {
+        flex: 0 0 100%;
+      }
+    }
+    .intro-tiles {
+      margin-top: 8rem;
+      .intro-tiles {
+        justify-content: center;
+        width: auto;
+      }
+    }
+  }
+
 }
 
 // Medium devices (tablets) and below: <= 992px

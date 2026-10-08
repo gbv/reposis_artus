@@ -15,7 +15,7 @@
       <div class="header__logo">
         <a href="{i18n:translate('artus.home')}">
            <img
-             src="{$WebApplicationBaseURL}images/ias-logo-small-inverted.svg"
+             src="{$WebApplicationBaseURL}images/ias-logo-small-inverted-black.svg"
              alt="IAS Logo" />
         </a>
       </div>
