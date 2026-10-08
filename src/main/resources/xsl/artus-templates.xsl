@@ -21,11 +21,11 @@
           <i class="fa fa-search"></i>
         </button>
       </div>
-      <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-2">
         <div class="custom-control custom-switch">
           <input
             type="checkbox"
-            class="custom-control-input"
+            class="custom-control-input me-2"
             id="switchReviews" />
 
           <label
