@@ -25,14 +25,13 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mir-main-nav-collapse-box"
-            aria-controls="mir-main-nav-collapse-box"
+            data-bs-target=".mir-main-nav__entries--mobile"
+            aria-controls="mir-main-nav__entries--mobile"
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            id="mir-main-nav-collapse-box"
             class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
               <li class="nav-item">
@@ -117,6 +116,39 @@
           </nav>
         </div>
       </div>
+    </div>
+
+    <div class="collapse mir-main-nav__entries--mobile">
+      <button
+        class="mir-main-nav__entries--mobile-close btn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".mir-main-nav__entries--mobile"
+        aria-controls="mir-main-nav__entries--mobile"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="far fa-times-circle "></i>
+      </button>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}">
+            <i class="fas fa-house"/>
+          </a>
+        </li>
+        <xsl:for-each select="$loaded_navigation_xml/menu">
+          <xsl:choose>
+            <xsl:when test="@id='main'"/>
+            <xsl:when test="@id='brand'"/>
+            <xsl:when test="@id='below'"/>
+            <xsl:when test="@id='user'"/>
+            <xsl:otherwise>
+              <xsl:apply-templates select="."/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:for-each>
+        <xsl:call-template name="mir.basketMenu" />
+      </ul>
     </div>
 
   </xsl:template>

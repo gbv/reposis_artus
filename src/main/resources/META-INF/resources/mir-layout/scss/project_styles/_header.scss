@@ -104,6 +104,12 @@
     &__options {
       order: 2;
     }
+    .mir-main-nav {
+      &__entries {
+        order: 5;
+        flex-basis: 100%;
+      }
+    }
   }
 }
 
