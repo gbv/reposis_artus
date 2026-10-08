@@ -383,5 +383,22 @@
     <mir:textarea xpath="mods:note[@type='content']" label="mir.comment.content" help-text="{i18n:mir.help.comment.content}" rows="2" />
   </xed:template>
 
+  <xed:template id="place">
+    <xed:repeat xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" min="1"
+                max="10">
+      <div class="mir-form-group row">
+        <label class="col-md-3 col-form-label text-end d-inline form-label">
+          <xed:output i18n="mir.place"/>
+        </label>
+        <div class="col-md-6">
+          <xed:bind xpath=".">
+            <input class="form-control" type="text"/>
+          </xed:bind>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.place}" pmud="true"/>
+      </div>
+    </xed:repeat>
+  </xed:template>
+
 </xed:template>
 
