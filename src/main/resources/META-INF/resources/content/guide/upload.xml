@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Upload &amp; Download">
+    <head>
+      <meta name="title" content="Upload &amp; Download"/>
+      <meta name="description" content="Informationen zu Volltexten, Downloads und dem Hochladen von Aufsätzen in die Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Upload &amp; Download</h1>
+
+
+      <h2>Volltexte direkt aus der Bibliographie</h2>
+      <p>
+        Das MyCoRe-System ermöglicht es, über die reinen bibliographischen
+        Angaben hinaus auch die Aufsätze selbst bereitzustellen. Wo die
+        Rechtefrage geklärt ist, sind die Texte damit nicht nur nachgewiesen,
+        sondern unmittelbar zugreifbar.
+      </p>
+
+      <p>
+        Ein prominentes Beispiel: Sämtliche Aufsätze des
+        „Bulletin bibliographique de la Société Internationale Arthurienne“
+        sind direkt aus der Bibliographie heraus abrufbar.
+        Ein Beispiel-Datensatz finden Sie
+        <a href="https://arthurianbibliography.gbv.de/receive/artus_mods_00000033"
+           target="_blank">
+          hier
+        </a>.
+      </p>
+
+      <h2>Download</h2>
+      <p>
+        Ist zu einem Datensatz ein Volltext vorhanden, erscheint auf der Seite
+        des Datensatzes ein Download-Link, über den Sie den Beitrag als PDF
+        öffnen und speichern können.
+      </p>
+
+      <h2>Laden Sie Ihre Aufsätze hoch!</h2>
+      <p>
+        Wir laden alle Autorinnen und Autoren herzlich ein, ihre Aufsätze in die
+        Bibliographie einzuspeisen und so der internationalen Artusforschung
+        unmittelbar zugänglich zu machen – sofern die Rechtefrage geklärt ist,
+        etwa durch die Zustimmung des Verlags oder durch das
+        Zweitveröffentlichungsrecht. Auf diesem Weg wächst ein frei zugänglicher
+        Bestand arthuristischer Forschung, von dem die gesamte Fachgemeinschaft
+        profitiert.
+      </p>
+
+      <p>
+        Für Rückfragen und zur Einreichung Ihrer Texte wenden Sie sich bitte an
+        die bibliographischen SekretärInnen Ihrer Sektion.
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>

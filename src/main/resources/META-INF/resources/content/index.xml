@@ -36,19 +36,19 @@
         -->
         <div class="intro-tiles">
           <div class="intro-tile">
-            <a href="#1" class="stretched-link">Titel und Autor:innen</a>
+            <a href="guide/searching.xml" class="stretched-link">Suchen &amp; Finden</a>
           </div>
           <div class="intro-tile">
-            <a href="#2" class="stretched-link">Inhaltsangaben zu Forschungs&#173;literatur</a>
+            <a href="guide/summary.xml" class="stretched-link">Inhaltsangaben</a>
           </div>
           <div class="intro-tile">
-            <a href="#3" class="stretched-link">Zeiträume und Sektionen</a>
+            <a href="guide/sections.xml" class="stretched-link">Zeiten und Sektionen</a>
           </div>
           <div class="intro-tile">
-            <a href="#4" class="stretched-link">Editionen zu einem Primärtext</a>
+            <a href="guide/editions.xml" class="stretched-link">Editionen finden</a>
           </div>
           <div class="intro-tile">
-            <a href="#5" class="stretched-link">Zugänge zu digitalen Ressourcen</a>
+            <a href="guide/upload.xml" class="stretched-link">Upload &amp; Download</a>
           </div>
         </div>
       </div>

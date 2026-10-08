@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Editionen finden">
+    <head>
+      <meta name="title" content="Editionen finden"/>
+      <meta name="description" content="Informationen zum Finden von Editionen und Übersetzungen arthurischer Texte in der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Editionen finden</h1>
+      <h2>Editionen und Übersetzungen in der Bibliographie</h2>
+      <p>
+        Die Bibliographie verzeichnet nicht nur die Forschungsliteratur zur
+        Artusforschung, sondern auch Editionen und Übersetzungen zahlreicher
+        arthurischer Texte des Mittelalters – von den Romanen Chrétiens de
+        Troyes über Wolframs „Parzival“, Gottfrieds „Tristan“ und den
+        Lancelot-Graal-Zyklus bis hin zu den kleineren und weniger bekannten
+        Texten der europäischen Artusdichtung.
+      </p>
+
+      <h2>Die Schlagwortfunktion</h2>
+      <p>
+        Um gezielt nach Editionen und Übersetzungen eines bestimmten Textes zu
+        suchen, nutzen Sie am besten die Schlagwortfunktion. Jeder arthurische
+        Text des Mittelalters ist mit einem eigenen Schlagwort verzeichnet –
+        die Schlagwortliste umfasst sämtliche arthurischen Texte des Mittelalters.
+        Hinter jedem Schlagwort versammeln sich alle zugehörigen Datensätze:
+        Editionen, Übersetzungen und die Forschungsliteratur zu diesem Text.
+      </p>
+
+      <h2>So gehen Sie vor</h2>
+      <p>
+        Anleitung folgt
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>
