@@ -67,6 +67,7 @@
   }
 
   .mir-prop-nav {
+      z-index: unset;
       .navbar-nav {
           > li > a
           {
@@ -173,7 +174,7 @@
 @include media-breakpoint-down(lg) {
   // md and lower
 
-  .navbar-nav .dropdown-menu {
+  .mir-main-nav .navbar-nav .dropdown-menu {
     position: static !important;
     transform: none !important;
   }

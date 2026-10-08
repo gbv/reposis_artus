@@ -82,7 +82,13 @@
     }
 
     .header__search {
-      visibility: hidden;
+      display: none;
+    }
+
+    .header__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .intro-tiles {
@@ -154,12 +160,6 @@
 // Large devices (desktops, less than 1200px)
 @include media-breakpoint-down(xl) {
   // lg and lower
-
-  .mir-start_page {
-    .header__search {
-      display: none;
-    }
-  }
 
 }
 

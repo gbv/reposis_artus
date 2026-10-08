@@ -50,8 +50,7 @@
     }
     &__options {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding-top: .5rem;
       padding-bottom: .5rem;
     }
@@ -92,21 +91,31 @@
       flex: 0 0 70%;
     }
     &__menu {
-      order: 4;
+      order: 2;
       flex: 0 0 auto;
       .navbar {
         justify-content: end;
       }
     }
-    &__search {
+    &__box {
       order: 3;
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 100%;
+    }
+    &__search {
+      order: 1;
     }
     &__options {
       order: 2;
     }
+    &__login {
+    }
+    &__lang {
+    }
     .mir-main-nav {
       &__entries {
-        order: 5;
+        order: 4;
         flex-basis: 100%;
       }
     }
@@ -117,25 +126,22 @@
 @include media-breakpoint-down(sm) {
   // xs
   .header {
-    flex-wrap: wrap;
     &__logo {
-      order: 1;
-      flex: 0 0 100%;
-    }
-    &__menu {
-      order: 3;
-      flex: 0 0 50%;
-      .navbar {
-        justify-content: start;
+      img {
+        width: 200px;
       }
     }
+    &__box {
+      flex-wrap: wrap;
+    }
     &__search {
-      order: 2;
-      flex: 0 0 100%;
+      margin-top: 1rem;
+      flex-basis: 100%;
     }
     &__options {
-      order: 4;
-      flex: 0 0 50%;
+      align-self: flex-end;
+      flex-basis: 100%;
     }
   }
+
 }
