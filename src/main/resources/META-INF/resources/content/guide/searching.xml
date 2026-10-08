@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Suchen &amp; Finden">
+    <head>
+      <meta name="title" content="Suchen &amp; Finden"/>
+      <meta name="description" content="Informationen zur einfachen und komplexen Suche in der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Suchen &amp; Finden</h1>
+      <h2>Das Suchfeld</h2>
+      <p>
+        Die einfache Suche bietet einen schnellen Einstieg in die Bibliographie.
+        Sie besteht aus einem einzigen Suchfeld, das alle Datenfelder der Datensätze
+        gleichzeitig durchsucht – also Autorennamen, Titel, Erscheinungsjahr,
+        Schlagwörter und Abstracts gleichermaßen. Sie eignet sich besonders für erste
+        Orientierungen: Geben Sie einfach einen Autorennamen, einen Begriff wie
+        „Wald“ oder einen Texttitel ein und erhalten Sie sofort eine Trefferliste.
+      </p>
+
+      <h2>Einfache und komplexe Suche</h2>
+      <p>
+        Wenn Sie gezielter suchen möchten, nutzen Sie die beiden Suchfunktionen im Menü.
+        Hier stehen Ihnen mehrere Suchfelder zur Verfügung, die Sie miteinander verknüpfen können.
+        So lassen sich beispielsweise ein Autor mit einem Schlagwort kombinieren, ein Titelbegriff
+        mit einem Erscheinungszeitraum oder ein Stichwort mit einer bestimmten Sektion.
+      </p>
+      <p>
+        Auf diese Weise lassen sich auch mehrstufige Fragen präzise beantworten,
+        etwa: „Welche Publikationen zu Chrétien de Troyes sind in der britischen Sektion
+        in den 1990er-Jahren erschienen?“
+      </p>
+      <p>
+        Auch eine gezielte Suche in den Abstracts ist über die komplexe Suche möglich –
+        dazu mehr auf der Seite
+        <a href="summary.xml">Inhaltsangaben</a>.
+      </p>
+
+      <h2>Tipps für die Suche</h2>
+      <ul>
+        <li>
+          <strong>Rezensionen:</strong>
+          Die Anzeige der Rezensionen bläht das Ergebnis unnötig auf.
+          Sie können sie gezielt ausschalten.
+        </li>
+        <li>
+          <strong>Trunkierung:</strong>
+          Mit dem Sternchen <code>*</code> kürzen Sie Suchbegriffe ab
+          (z. B. „artus*“ findet Artus, Artusepik, Artustradition).
+        </li>
+        <li>
+          <strong>Exakte Phrasen:</strong>
+          Wenn Sie anstelle von „enthält“ die Einstellung „Phrase“ verwenden,
+          können Sie nach einer zusammenhängenden Wortfolge suchen.
+        </li>
+        <li>
+          <strong>Ergebnisse eingrenzen:</strong>
+          Kombinieren Sie Ihre Suche mit der Facettensuche
+          (siehe Seite <a href="sections.xml">Zeiten und Sektionen</a>).
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+</MyCoReWebPage>

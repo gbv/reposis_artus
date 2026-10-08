@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Inhaltsangaben">
+    <head>
+      <meta name="title" content="Inhaltsangaben"/>
+      <meta name="description" content="Informationen zur Herkunft, zum Inhalt und zu den Annotationen der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Inhaltsangaben</h1>
+
+      <h2>Woher die Daten stammen</h2>
+      <p>
+        Die vorliegende Bibliographie wird seit 1949 von der Internationalen
+        Artusgesellschaft (Société Internationale Arthurienne, SIA)
+        zusammengetragen. Zuständig ist jeweils die Sektion des Landes bzw.
+        Sprachraums, in dem eine Publikation erschienen ist. Auf diese Weise
+        wird die internationale Artusforschung in ihrer ganzen Breite erfasst.
+        Die Bibliographie wird jährlich fortgeschrieben und wächst von Jahr zu
+        Jahr weiter an.
+      </p>
+
+      <h2>Was wird verzeichnet?</h2>
+      <p>
+        Die Bibliographie umfasst vier Kategorien:
+      </p>
+      <ol>
+        <li>
+          <strong>Editionen von Primärtexten</strong> –
+          Neuausgaben, kritische Editionen und Übersetzungen arthurischer
+          Texte des Mittelalters
+        </li>
+        <li>
+          <strong>Einschlägige Sekundärliteratur</strong> –
+          Monographien, Aufsätze und Sammelbände zur Artusforschung
+        </li>
+        <li>
+          <strong>Ungedruckte Dissertationen</strong> –
+          auch noch nicht publizierte Abschlussarbeiten werden nachgewiesen
+        </li>
+        <li>
+          <strong>Rezensionen</strong> –
+          Besprechungen einschlägiger Literatur
+        </li>
+      </ol>
+
+      <h2>Die Annotation – sofort wissen, worum es geht</h2>
+      <p>
+        Jeder Datensatz enthält neben den klassischen bibliographischen Angaben
+        (Autor, Titel, Erscheinungsort, Jahr usw.) einen knappen Abstract,
+        der den Inhalt des Textes zusammenfasst. So erkennen Sie auf einen Blick,
+        ob ein Beitrag für Ihre Fragestellung relevant ist – besonders hilfreich
+        bei Titeln in fremden Sprachen.
+      </p>
+
+      <p>
+        <strong>Tipp:</strong>
+        In der komplexen Suche können Sie gezielt in den Abstracts suchen.
+        So finden Sie auch Literatur zu einem Thema, das im Titel selbst nicht
+        genannt wird.
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>

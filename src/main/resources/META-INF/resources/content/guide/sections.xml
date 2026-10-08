@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Zeiten und Sektionen">
+    <head>
+      <meta name="title" content="Zeiten und Sektionen"/>
+      <meta name="description" content="Informationen zu Zeiträumen, Sektionen und der Facettensuche in der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Zeiten und Sektionen</h1>
+
+      <h2>Die Struktur hinter den Daten</h2>
+      <p>
+        Die Datengrundlage der Bibliographie beruht auf der Arbeit der Sektionen
+        der Internationalen Artusgesellschaft: Seit 1949 trägt jede Sektion
+        jährlich die Publikationen zusammen, die in ihrem Gebiet erschienen
+        sind. Jeder Datensatz trägt daher Informationen zu seinem
+        Entstehungskontext – dem Erscheinungsjahr und der verzeichnenden Sektion.
+      </p>
+
+      <h2>Gezielt nach Zeiträumen und Sektionen suchen</h2>
+      <p>
+        Diese Struktur können Sie sich zunutze machen: Sowohl in der
+        einfachen/komplexen Suche als auch über die Facettensuche lassen sich
+        Treffer auf bestimmte Zeiträume und Sektionen eingrenzen. Sie können
+        etwa die Forschung eines bestimmten Jahrzehnts betrachten oder sich
+        gezielt anzeigen lassen, was eine einzelne Sektion verzeichnet hat.
+      </p>
+
+      <h2>Was ist die Facettensuche?</h2>
+      <p>
+        Die Facettensuche ist eine Filterfunktion, die Ihnen nach einer Suche
+        zur Verfügung steht: Neben der Trefferliste werden sogenannte Facetten
+        angezeigt – Kategorien wie Erscheinungsjahr, Sektion, Dokumententyp oder
+        Sprache. Durch Anklicken einer Facette schränken Sie die Trefferliste
+        schrittweise ein. Mehrere Facetten lassen sich beliebig kombinieren.
+      </p>
+
+      <p>
+        <strong>Beispiel:</strong>
+        Sie suchen nach „grail“ und erhalten mehrere hundert Treffer.
+        Über die Facette „Sektion“ wählen Sie die deutschsprachige Sektion aus,
+        über die Facette „Jahr“ grenzen Sie die Ergebnisse auf die 2020er-Jahre ein –
+        übrig bleibt eine überschaubare, präzise Trefferliste (aktuell: 6 Treffer).
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>
