@@ -27,6 +27,8 @@ $a-web-blue:      #006ba1;
 
 $a-onrange-contrast: #A06B22;
 
+$start-page-content-width: 85%;
+
 // --------------------------------------------------
 //  overwrite bootstrap
 // --------------------------------------------------
@@ -43,8 +45,6 @@ $web-font-path:           "https://webfonts.gbv.de/css2?family=Montserrat:ital,w
 $font-family-sans-serif:  Montserrat, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-serif:       Effloresce, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base:          1rem;
-
-//$headings-font-family:  $font-family-serif;
 
 $link-color:            $a-green-tile;
 $link-hover-color:      $a-green-button;
@@ -65,11 +65,16 @@ $navbar-dark-active-color: white;
 $navbar-padding-y: 0;
 $nav-link-padding-y: 0;
 
-// Pagination
+$enable-shadows: true;
+$dropdown-link-color: $a-black-text;
+$dropdown-spacer: .625rem;
+$dropdown-border-color: $a-green-tile;
+
 // overwrite bootswatch width bs default
 $prefix: "bs-";
 $component-active-bg:$primary;
 
+// Pagination
 $pagination-color:                  var(--#{$prefix}link-color);
 $pagination-bg:                     var(--#{$prefix}body-bg);
 $pagination-border-width:           var(--#{$prefix}border-width);
