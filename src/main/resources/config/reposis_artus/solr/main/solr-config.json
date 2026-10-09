@@ -154,5 +154,22 @@
         "facet.mincount": "1"
       }
     }
+  },
+
+  {
+    "add-requestHandler": {
+      "name": "/createdbyindex",
+      "class": "solr.StandardRequestHandler",
+      "defaults": { "echoParams": "explicit", "wt": "xml" },
+      "invariants": {
+        "q": "objectType:mods",
+        "rows": "0",
+        "facet": "true",
+        "facet.field": "createdby",
+        "facet.mincount": "1",
+        "facet.limit": "-1",
+        "facet.sort": "count"
+      }
+    }
   }
 ]
