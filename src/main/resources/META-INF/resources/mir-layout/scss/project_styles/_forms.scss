@@ -6,6 +6,12 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  .form-switch {
+    input,
+    label {
+      cursor: pointer;
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
