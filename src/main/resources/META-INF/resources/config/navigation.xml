@@ -74,6 +74,11 @@
       <label xml:lang="de">Personen</label>
       <label xml:lang="en">Persons</label>
     </item>
+    <item href="/servlets/MCRActionMappingServlet/subjectindex/browse" type="extern">
+      <label xml:lang="de">Schlagwortsuche</label>
+      <label xml:lang="en">Subject Search</label>
+    </item>
+
   </menu>
   <menu id="publish" dir="/content/publish">
     <label xml:lang="de">Daten erfassen</label>
