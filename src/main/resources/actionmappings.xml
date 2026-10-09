@@ -6,7 +6,7 @@
       <when condition="true" url="/servlets/solr/personindexp?XSL.Style=person&amp;terms.regex=%5Ba%7C%C3%A4%7C%C3%84%5D.*" />
     </action>
   </collection>
-  <collection action="subjectindex">
+  <collection name="subjectindex">
   <action action="browse">
     <when condition="(group = admin) or (group = editor)"
           url="/servlets/solr/subjectindex?XSL.Style=subject&amp;terms.regex=%5Ba%7C%C3%A4%7C%C3%84%5D.*" />

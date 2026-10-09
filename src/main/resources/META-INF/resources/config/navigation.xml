@@ -117,6 +117,11 @@
       <label xml:lang="en">Upload &amp; Download</label>
       <label xml:lang="fr">Dépôt et téléchargement</label>
     </item>
+    <item href="/servlets/MCRActionMappingServlet/subjectindex/browse" type="extern">
+      <label xml:lang="de">Schlagwortsuche</label>
+      <label xml:lang="en">Subject Search</label>
+    </item>
+
   </menu>
   <menu id="publish" dir="/content/publish">
     <label xml:lang="de">Daten erfassen</label>
