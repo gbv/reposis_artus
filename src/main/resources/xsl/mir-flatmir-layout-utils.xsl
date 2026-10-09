@@ -22,7 +22,7 @@
       </div>
 
       <div class="header__menu mir-main-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
           <button
             class="navbar-toggler"
             type="button"
