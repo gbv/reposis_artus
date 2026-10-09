@@ -72,6 +72,9 @@
           > li > a
           {
               color: $link-color;
+              font-size: 100%;
+              padding-top: 0;
+              padding-bottom: 0;
               .caret {
                   border-top-color: $link-color;
               }
