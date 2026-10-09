@@ -61,14 +61,14 @@
       <div class="header__box">
         <div class="header__options">
           <div class="header__login">
-            <nav class="navbar navbar-dark navbar-expand-sm">
+            <nav class="navbar navbar-dark navbar-expand">
               <ul class="navbar-nav" title="{i18n:translate('artus.login')}">
                 <xsl:call-template name="mir.loginMenu" />
               </ul>
             </nav>
           </div>
           <div class="header__lang mir-prop-nav">
-            <nav class="navbar navbar-dark navbar-expand-sm">
+            <nav class="navbar navbar-dark navbar-expand">
               <ul class="navbar-nav">
                 <xsl:call-template name="mir.languageMenu" />
               </ul>
