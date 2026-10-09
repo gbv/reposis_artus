@@ -67,10 +67,14 @@
   }
 
   .mir-prop-nav {
+      z-index: unset;
       .navbar-nav {
           > li > a
           {
               color: $link-color;
+              font-size: 100%;
+              padding-top: 0;
+              padding-bottom: 0;
               .caret {
                   border-top-color: $link-color;
               }
@@ -130,6 +134,35 @@
     }
   }
 
+  .mir-main-nav__entries--mobile {
+    overflow:auto;
+    height: 90vh;
+    width: 90vw;
+    min-width: 240px;
+    position: absolute;
+    z-index: 1004;
+    top: 5vh;
+    left: 5vw;
+    padding: 5vh 5vw;
+    background-color: $a-green-tile;
+    border: 1px solid white;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.1);
+    .navbar-nav .dropdown-menu.show {
+      position: static !important;
+      transform: none !important;
+      display: block !important;
+      overflow: hidden;
+    }
+    &-close {
+      position: absolute;
+      z-index: 1005;
+      top: 0;
+      right: 0;
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xxl) {
   // add/overwrite styles for responsive level xl and lower
@@ -143,11 +176,39 @@
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(lg) {
   // md and lower
+
+  .mir-main-nav .navbar-nav .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .mir-main-nav__entries--mobile {
+    .nav-item,
+    #basket-list-item {
+      padding: .5rem 1rem;
+      border-bottom: 1px solid white;
+    }
+    .dropdown-menu {
+      margin: .5rem 0 !important;
+    }
+    .mir-list-item {
+      padding: .5rem 1rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid $a-green-tile;
+      }
+    }
+  }
+
 }
 
 // Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(md) {
   // sm and lower
+  .internal_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 // X-Small devices (portrait phones, less than 576px)

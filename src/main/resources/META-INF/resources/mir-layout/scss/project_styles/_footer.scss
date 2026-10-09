@@ -50,6 +50,17 @@
 // Large devices (desktops, less than 1200px)
 @include media-breakpoint-down(xl) {
   // lg and lower
+  .artus-copyright {
+    border-right: none;
+    padding-right: 15px;
+    order: 2;
+    margin-top: 3rem;
+    flex-basis: 100%;
+  }
+  .footer-menu {
+    padding-left: 15px;
+    order: 1;
+  }
 }
 
 // Medium devices (tablets, less than 992px)

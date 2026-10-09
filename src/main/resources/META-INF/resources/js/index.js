@@ -43,8 +43,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   const form = document.getElementById('project-searchMainPage');
   const input = document.getElementById('project-searchInput');
   const switchReviews = document.getElementById('switchReviews');
+  const filterReviews = document.getElementById('filterReviews');
 
   form?.addEventListener('submit', ignoreEmptyFieldsOnSubmit);
+
+  const syncFilter = () => { filterReviews.disabled = switchReviews.checked; };
+  switchReviews?.addEventListener('change', syncFilter);
+  syncFilter();
 
   if (input) {
     try {

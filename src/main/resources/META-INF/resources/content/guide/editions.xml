@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Editionen finden">
+    <head>
+      <meta name="title" content="Editionen finden"/>
+      <meta name="description"
+            content="Informationen zum Finden von Editionen und Übersetzungen arthurischer Texte in der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Editionen finden</h1>
+      <h2>Editionen und Übersetzungen in der Bibliographie</h2>
+      <p>
+        Die Bibliographie verzeichnet nicht nur die Forschungsliteratur zur
+        Artusforschung, sondern auch Editionen und Übersetzungen zahlreicher
+        arthurischer Texte des Mittelalters – von den Romanen Chrétiens de
+        Troyes über Wolframs „Parzival“, Gottfrieds „Tristan“ und den
+        Lancelot-Graal-Zyklus bis hin zu den kleineren und weniger bekannten
+        Texten der europäischen Artusdichtung.
+      </p>
+
+      <h2>Die Schlagwortfunktion</h2>
+      <p>
+        Um gezielt nach Editionen und Übersetzungen eines bestimmten Textes zu
+        suchen, nutzen Sie am besten die Schlagwortfunktion. Jeder arthurische
+        Text des Mittelalters ist mit einem eigenen Schlagwort verzeichnet –
+        die Schlagwortliste umfasst sämtliche arthurischen Texte des Mittelalters.
+        Hinter jedem Schlagwort versammeln sich alle zugehörigen Datensätze:
+        Editionen, Übersetzungen und die Forschungsliteratur zu diesem Text.
+      </p>
+
+      <h2>So gehen Sie vor</h2>
+      <p>
+        Anleitung folgt
+      </p>
+    </div>
+  </section>
+
+
+  <section xml:lang="en" title="Finding Editions">
+    <head>
+      <meta name="title" content="Finding Editions"/>
+      <meta name="description"
+            content="Information on Finding Editions and Translations of Arthurian Texts in the Bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Note:</strong>
+        This is an automated translation.
+      </div>
+
+      <h1 class="page-header">Finding Editions</h1>
+      <h2>Editions and Translations in the Bibliography</h2>
+      <p>
+        The bibliography records not only the scholarly literature on Arthurian studies, but also editions and
+        translations of numerous medieval Arthurian texts – from the romances of Chrétien de Troyes via Wolfram's
+        'Parzival', Gottfried's 'Tristan', and the Lancelot-Grail Cycle to the minor and lesser-known texts of European
+        Arthurian literature.
+      </p>
+
+      <h2>The Keyword Function</h2>
+      <p>
+        To search specifically for editions and translations of a particular text, it is best to use the keyword
+        function. Every medieval Arthurian text is recorded with its own keyword – the keyword list comprises all
+        medieval Arthurian texts. Behind each keyword, all related entries are
+        gathered: editions, translations, and the scholarly literature on that text.
+
+      </p>
+
+      <h2>How to Proceed</h2>
+      <p>
+        Instructions to follow
+      </p>
+    </div>
+  </section>
+
+  <section xml:lang="fr" title="Trouver les éditions">
+    <head>
+      <meta name="title" content="Trouver les éditions"/>
+      <meta name="description"
+            content="Informations sur la recherche d'éditions et de traductions de textes arthuriens dans la bibliographie"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Remarque:</strong>il s'agit d'une traduction automatisée
+      </div>
+
+      <h1 class="page-header">Trouver les éditions</h1>
+      <h2>Éditions et traductions dans la bibliographie</h2>
+      <p>
+        La bibliographie répertorie non seulement les études critiques
+        consacrées à la recherche arthurienne, mais aussi des éditions et des
+        traductions de nombreux textes arthuriens du Moyen Âge – des romans de
+        Chrétien de Troyes au 'Parzival' de Wolfram, au 'Tristan' de Gottfried
+        et au cycle du Lancelot-Graal, jusqu'aux textes mineurs et moins connus
+        de la littérature arthurienne européenne.
+      </p>
+
+      <h2>La fonction de mots-clés</h2>
+      <p>
+        Pour rechercher de manière ciblée des éditions et des traductions d'un
+        texte particulier, le mieux est d'utiliser la fonction de mots-clés.
+        Chaque texte arthurien du Moyen Âge est répertorié avec un mot-clé qui
+        lui est propre – la liste des mots-clés comprend tous les textes
+        arthuriens du Moyen Âge. Derrière chaque mot-clé se regroupent toutes
+        les entrées correspondantes : éditions, traductions et études critiques
+        consacrées à ce texte.
+      </p>
+
+      <h2>Comment procéder</h2>
+      <p>
+        Mode d'emploi à venir
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>

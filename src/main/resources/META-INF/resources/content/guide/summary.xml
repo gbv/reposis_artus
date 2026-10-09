@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MyCoReWebPage>
+
+<MyCoReWebPage>
+  <section xml:lang="de" title="Inhaltsangaben">
+    <head>
+      <meta name="title" content="Inhaltsangaben"/>
+      <meta name="description"
+            content="Informationen zur Herkunft, zum Inhalt und zu den Annotationen der Bibliographie"/>
+    </head>
+    <div>
+      <h1 class="page-header">Inhaltsangaben</h1>
+
+      <h2>Woher die Daten stammen</h2>
+      <p>
+        Die vorliegende Bibliographie wird seit 1949 von der Internationalen
+        Artusgesellschaft (Société Internationale Arthurienne, SIA)
+        zusammengetragen. Zuständig ist jeweils die Sektion des Landes bzw.
+        Sprachraums, in dem eine Publikation erschienen ist. Auf diese Weise
+        wird die internationale Artusforschung in ihrer ganzen Breite erfasst.
+        Die Bibliographie wird jährlich fortgeschrieben und wächst von Jahr zu
+        Jahr weiter an.
+      </p>
+
+      <h2>Was wird verzeichnet?</h2>
+      <p>
+        Die Bibliographie umfasst vier Kategorien:
+      </p>
+      <ol>
+        <li>
+          <strong>Editionen von Primärtexten</strong>
+          –
+          Neuausgaben, kritische Editionen und Übersetzungen arthurischer
+          Texte des Mittelalters
+        </li>
+        <li>
+          <strong>Einschlägige Sekundärliteratur</strong>
+          –
+          Monographien, Aufsätze und Sammelbände zur Artusforschung
+        </li>
+        <li>
+          <strong>Ungedruckte Dissertationen</strong>
+          –
+          auch noch nicht publizierte Abschlussarbeiten werden nachgewiesen
+        </li>
+        <li>
+          <strong>Rezensionen</strong>
+          –
+          Besprechungen einschlägiger Literatur
+        </li>
+      </ol>
+
+      <h2>Die Annotation – sofort wissen, worum es geht</h2>
+      <p>
+        Jeder Datensatz enthält neben den klassischen bibliographischen Angaben
+        (Autor, Titel, Erscheinungsort, Jahr usw.) einen knappen Abstract,
+        der den Inhalt des Textes zusammenfasst. So erkennen Sie auf einen Blick,
+        ob ein Beitrag für Ihre Fragestellung relevant ist – besonders hilfreich
+        bei Titeln in fremden Sprachen.
+      </p>
+
+      <p>
+        <strong>Tipp:</strong>
+        In der komplexen Suche können Sie gezielt in den Abstracts suchen.
+        So finden Sie auch Literatur zu einem Thema, das im Titel selbst nicht
+        genannt wird.
+      </p>
+    </div>
+  </section>
+
+
+  <section xml:lang="en" title="Abstracts">
+    <head>
+      <meta name="title" content="Abstracts"/>
+      <meta name="description" content="Information on the origin, content, and annotations of the bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Note:</strong> This is an automated translation.
+      </div>
+
+      <h1 class="page-header">Abstracts</h1>
+
+      <h2>Where the Data Comes From</h2>
+      <p>
+        This bibliography has been compiled since 1949 by the International Arthurian Society (Société Internationale
+        Arthurienne, SIA).
+        Responsibility lies with the branch of the country or language area in which a publication appeared. In this
+        way, international Arthurian research is recorded in all its breadth. The bibliography is updated annually and
+        continues to grow from year to year.
+      </p>
+
+      <h2>What Is Recorded?</h2>
+      <p>
+        The bibliography comprises four categories:
+      </p>
+      <ol>
+        <li>
+          <strong>Editions and translations of primary texts</strong>
+          – new editions, critical editions, and translations of medieval Arthurian texts
+        </li>
+        <li>
+          <strong>Relevant critical and historical studies</strong>
+          –
+          monographs, articles, and collections on Arthurian research
+        </li>
+        <li>
+          <strong>Unpublished dissertations</strong>
+          –
+          theses that have not yet been published are also recorded
+        </li>
+        <li>
+          <strong>Reviews</strong>
+          –
+          reviews of relevant literature
+        </li>
+      </ol>
+
+      <h2>The Annotation – Know at a Glance What It Is About</h2>
+      <p>
+        In addition to the classic bibliographic details (author, title, place of publication, year, etc.), each entry
+        contains a brief abstract summarizing the content of the text. This allows you to see at a glance whether a
+        contribution is relevant to your research question – particularly helpful for titles in foreign languages.
+      </p>
+
+      <p>
+        <strong>Tip:</strong>
+        In the advanced search, you can search specifically within the abstracts. This also allows you to find
+        literature on a topic that is not mentioned in the title itself.
+      </p>
+    </div>
+  </section>
+
+
+
+  <section xml:lang="fr" title="Résumés">
+    <head>
+      <meta name="title" content="Résumés"/>
+      <meta name="description" content="Informations sur l'origine, le contenu et les annotations de la bibliographie"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Remarque:</strong>il s'agit d'une traduction automatisée
+      </div>
+
+      <h1 class="page-header">Résumés</h1>
+
+      <h2>Provenance des données</h2>
+      <p>
+        La présente bibliographie est compilée depuis 1949 par la Société
+        Internationale Arthurienne (SIA). Chaque publication relève de la
+        branche du pays ou de l'aire linguistique dans laquelle elle est parue.
+        De cette manière, la recherche arthurienne internationale est recensée
+        dans toute son ampleur. La bibliographie est actualisée chaque année et
+        ne cesse de croître d'année en année.
+      </p>
+
+      <h2>Qu'est-ce qui est répertorié?</h2>
+      <p>
+        La bibliographie comprend quatre catégories:
+      </p>
+      <ol>
+        <li>
+          <strong>Éditions et traductions de textes primaires</strong>
+          – nouvelles éditions, éditions critiques et traductions de textes arthuriens du Moyen Âge
+        </li>
+        <li>
+          <strong>Études critiques et historiques pertinentes</strong>
+          – monographies,
+          articles et ouvrages collectifs consacrés à la recherche arthurienne
+        </li>
+        <li>
+          <strong>Thèses non publiées</strong>
+          –les travaux non encore publiés sont également répertoriés
+        </li>
+        <li>
+          <strong>Recensions</strong>
+          –comptes rendus de la littérature pertinente
+        </li>
+      </ol>
+
+      <h2>L'annotation – savoir immédiatement de quoi il s'agit</h2>
+      <p>
+        Outre les indications bibliographiques classiques (auteur, titre, lieu
+        de publication, année, etc.), chaque entrée contient un bref résumé qui
+        synthétise le contenu du texte. Vous voyez ainsi d'un coup d'œil si une
+        contribution est pertinente pour votre question de recherche –
+        particulièrement utile pour les titres en langues étrangères.
+
+      </p>
+
+      <p>
+        <strong>Conseil:</strong>
+        dans la recherche avancée, vous pouvez effectuer une recherche
+        ciblée dans les résumés. Vous trouverez ainsi également de la
+        littérature sur un sujet qui n'est pas mentionné dans le titre lui-même.
+      </p>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
+  </meta>
+
+
+</MyCoReWebPage>

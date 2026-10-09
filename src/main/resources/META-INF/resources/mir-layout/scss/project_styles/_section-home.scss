@@ -2,9 +2,8 @@
  *  - settings for homepage only
  */
 
-// Extra large devices (large desktops)
-// set the defaults for all responsive levels here
-// no (xl) media query necessary (desktop first)
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
 
   .mir-start_page {
 
@@ -15,19 +14,40 @@
       background-size: 50%;
     }
 
-    h1 {
-      font-family: $font-family-serif;
-    }
-
     & > section {
       padding-bottom: 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-family: $font-family-serif;
+      font-size: 3rem;
+    }
+
+    .intro-text {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      &__content {
+        background-image: url("../../../../images/border-green.svg");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 4rem;
+        flex-basis: $start-page-content-width;
+        font-size: 1.4rem;
+        p {
+          line-height: 2.2rem;
+        }
+      }
     }
 
     .intro-search {
       display: flex;
       justify-content: center;
+      margin-top: 2rem;
       form {
-        flex: 0 0 60%;
+        flex: 0 0 $start-page-content-width;
         .input-group-lg > .form-control {
           border-radius: 20px;
           border-top-right-radius: 20px;
@@ -37,6 +57,8 @@
           border-color: $a-green-tile;
           border-width: 2px;
           border-right-width: 0;
+          padding: 1.5rem 2rem;
+          font-size: 1.5rem;
 
         }
         .btn {
@@ -49,6 +71,8 @@
           border-bottom-left-radius: 0;
           border-width: 2px;
           border-left-width: 0;
+          padding: 1.5rem 2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -58,79 +82,131 @@
     }
 
     .header__search {
-      visibility: hidden;
+      display: none;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0;
-    }
-
-    .intro-text {
-      font-size: 1.4rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      p {
-        line-height: 2.2rem;
-      }
+    .header__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .intro-tiles {
-      margin-top: 6rem;
-      .intro-tiles {
+      margin-top: 8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem 1rem;
+      width: $start-page-content-width;
+      margin-left: auto;
+      margin-right: auto;
+      .intro-tile {
+        position: relative;
+        flex: 0 0 180px;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem 1rem;
-        .intro-tile {
-          position: relative;
-          flex: 0 0 225px;
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          text-align: center;
-          padding: 3rem 2rem 1rem 2rem;
-          background-image: url('../../../../images/background-tile.svg');
-          background-position: top left;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          min-height: 200px;
-          a {
-            color: $a-black-text;
-            font-size: 1.2rem;
-          }
+        align-items: flex-start;
+        text-align: center;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        border: 2px solid $a-green-tile;
+        border-radius: 20px;
+        background-color: white;
+        a {
+          color: $a-black-text;
+          font-size: 1.2rem;
         }
       }
     }
 
     .intro-hint {
-      margin-top: 8rem;
+      margin-top: 3rem;
       background-color: $a-gray-menu;
       border: 1px solid $a-green-logo;
       border-radius: 1.25rem;
-      width: 66%;
+      width: $start-page-content-width;
       padding: 2rem;
       margin-left: auto;
       margin-right: auto;
     }
   }
 
-// Large devices (desktops) and below: <= 1200px
+// X-Large devices (large desktops, less than 1400px)
+@include media-breakpoint-down(xxl) {
+  // add/overwrite styles for responsive level xl and lower
+
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        flex-basis: auto;
+      }
+    }
+    .intro-search {
+      form {
+        flex: 0 0 100%;
+      }
+    }
+    .intro-tiles {
+      margin-top: 8rem;
+      width: auto;
+    }
+    .intro-hint {
+      width: auto;
+    }
+  }
+
+}
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(xl) {
+  // lg and lower
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(lg) {
-  // add/overwrite styles for responsive level lg and lower
+  // md and lower
+
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        padding-left: 6rem;
+      }
+    }
+
+    .intro-tiles {
+      justify-content: center;
+    }
+  }
+
 }
 
-// Medium devices (tablets) and below: <= 992px
+// Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(md) {
-  // add/overwrite styles for responsive level md and lower
+  // sm and lower
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        background-size: 4rem;
+      }
+    }
+  }
 }
 
-// Small devices (landscape phones) and below: <= 768px
+// X-Small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(sm) {
-  // add/overwrite styles for responsive level sm and lower
-}
-
-// Extra small devices (portrait phones): <= 576px
-@include media-breakpoint-down(xs) {
-  // add/overwrite styles for responsive level xs
+  // xs
+  .mir-start_page {
+    .intro-text {
+      &__content {
+        padding-left: 0;
+        background-image: none;
+      }
+    }
+  }
 }

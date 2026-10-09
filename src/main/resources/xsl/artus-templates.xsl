@@ -21,15 +21,15 @@
           <i class="fa fa-search"></i>
         </button>
       </div>
-      <div class="d-flex justify-content-center mt-3">
-        <div class="custom-control custom-switch">
+      <div class="d-flex justify-content-center mt-2">
+        <div class="form-check form-switch">
           <input
             type="checkbox"
-            class="custom-control-input"
+            class="form-check-input me-2"
             id="switchReviews" />
 
           <label
-            class="custom-control-label"
+            class="form-check-label"
             for="switchReviews">
         <xsl:value-of select="mcri18n:translate('artus.review.visibility')"/>
           </label>
