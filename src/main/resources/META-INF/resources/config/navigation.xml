@@ -42,9 +42,9 @@
   </menu>
   <menu id="search">
     <!-- search menu  -->
-    <label xml:lang="de">Suche nach Dokumenten</label>
-    <label xml:lang="en">Search for documents</label>
-    <label xml:lang="fr">Recherche de documents</label>
+    <label xml:lang="de">Suche</label>
+    <label xml:lang="en">Search</label>
+    <label xml:lang="fr">Recherche</label>
     <item href="/content/search/simple.xed" type="intern">
       <label xml:lang="de">einfach</label>
       <label xml:lang="en">simple</label>
@@ -77,14 +77,45 @@
     <label xml:lang="en">Browse</label>
     <label xml:lang="fr">Parcourir</label>
     <item href="/content/browse/genres.xml" type="intern">
-      <label xml:lang="de">Dokumenttypen</label>
-      <label xml:lang="en">Type of document</label>
-      <label xml:lang="fr">Types de documents</label>
+      <label xml:lang="de">Texttypen</label>
+      <label xml:lang="en">Types of text</label>
+      <label xml:lang="fr">Les types de texte</label>
     </item>
     <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern">
       <label xml:lang="de">Personen</label>
       <label xml:lang="en">Persons</label>
       <label xml:lang="fr">Personnes</label>
+    </item>
+  </menu>
+  <menu id="faq">
+  <!-- guide menu  -->
+    <label xml:lang="de">FAQ</label>
+    <label xml:lang="en">FAQ</label>
+    <label xml:lang="fr">FAQ</label>
+    <item href="/content/guide/searching.xml" type="intern">
+      <label xml:lang="de">Suchen &amp; Finden</label>
+      <label xml:lang="en">Search &amp; Find</label>
+      <label xml:lang="fr">Rechercher et trouver</label>
+    </item>
+    <item href="/content/guide/summary.xml" type="intern">
+      <label xml:lang="de">Inhaltsangaben</label>
+      <label xml:lang="en">Abstracts</label>
+      <label xml:lang="fr">Résumés</label>
+    </item>
+    <item href="/content/guide/sections.xml" type="intern">
+      <label xml:lang="de">Zeiten und Sektionen</label>
+      <label xml:lang="en">Periods and Branches</label>
+      <label xml:lang="fr">Périodes et branches</label>
+    </item>
+    <item href="/content/guide/editions.xml" type="intern">
+      <label xml:lang="de">Editionen finden</label>
+      <label xml:lang="en">Finding Editions</label>
+      <label xml:lang="fr">Trouver les éditions</label>
+    </item>
+      <item href="/content/guide/upload.xml" type="intern">
+      <label xml:lang="de">Upload &amp; Download</label>
+      <label xml:lang="en">Upload &amp; Download</label>
+      <label xml:lang="fr">Dépôt et téléchargement</label>
     </item>
   </menu>
   <menu id="publish" dir="/content/publish">
