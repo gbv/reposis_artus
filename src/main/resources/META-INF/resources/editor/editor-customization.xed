@@ -9,6 +9,7 @@
         <xed:include ref="subject.simple" after="subject.complex"/>
         <xed:remove ref="subject.complex"/>
         <xed:include ref="artus.parts" after="artus.sections"/>
+        <xed:remove  ref="related.item.other.search.of.all.items" />
 
     <!-- for details see
          https://cmswiki.rrz.uni-hamburg.de/hummel/MyCoRe/Organisation/AnwenderWorkshop2018?action=AttachFile&do=view&target=MyCoRe+XEditor+Erweiterungen+2018-11-14.pdf
