@@ -8,14 +8,6 @@
     <category ID="cre">
       <label xml:lang="de" text="Urheber(in)" description="Eine Person oder Institution, die für den intellektuellen oder künstlerischen Inhalt eines Werkes verantwortlich ist." />
       <label xml:lang="en" text="Creator" description="Use for a person or organization responsible for the intellectual or artistic content of a work." />
-      <category ID="wst">
-        <label xml:lang="de" text="Verfasser(in) ergänzender Textinhalte" description="Eine Person oder Organisation, die bedeutsames Material verfasst, das eine Tonaufnahme oder anderes audiovisuelles Material begleitet." />
-        <label xml:lang="en" text="Writer of supplementary textual content" description="Use for a person or organization who writes significant material which accompanies a sound recording or other audiovisual material." />
-      </category>
-      <category ID="ant">
-        <label xml:lang="de" text="Bibliografischer Urheber" />
-        <label xml:lang="en" text="bibliographic antecedent" />
-      </category>
       <category ID="aut">
         <label xml:lang="de" text="Autor(in)" description="Eine Person oder Institution, die für den geistigen oder gestalterischen Inhalt hauptsächlich verantwortlich ist, insbesondere für gedruckten text. Dieser Ausdruck kann auch verwendet wenn mehr als eine Person betroffen ist." />
         <label xml:lang="en" text="Author" description="Use for a person or organization chiefly responsible for the intellectual or artistic content of a work, usually printed text. This term may also be used when more than one person or body bears such responsibility. " />
@@ -52,13 +44,41 @@
     <category ID="ctb">
       <label xml:lang="de" text="Beitragende(r)" description="Eine Person oder Institution dessen Arbeit zu einem größeren Werk beiträgt, z. B. eine Anthologie, Serienpublikation oder andere Zusammenstellung individueller Werke. Nicht zu verwenden, wenn spezifischere Rollenangabe möglich ist. " />
       <label xml:lang="en" text="Contributor" description="Use for a person or organization one whose work has been contributed to a larger work, such as an anthology, serial publication, or other compilation of individual works. Do not use if the sole function in relation to a work is as author, editor, ..." />
-      <category ID="fon">
-        <label xml:lang="de" text="Gründer(in)" description="Eine Person oder Organisation, die für die Gründung einer Publikation, eines Programms oder einer Körperschaft verantwortlich ist." />
-        <label xml:lang="en" text="Founder" description="Use for a person or organization responsible for the founding of a publication, program, or corporation." />
+      <category ID="aft">
+        <label xml:lang="de" text="Autor(in) des Nachworts, Kolophons usw." description="Eine Person oder Organisation, die für ein Nachwort, einen Anhang, ein Kolophon usw. verantwortlich ist, aber nicht der Hauptautor des Werkes ist." />
+        <label xml:lang="en" text="Author of afterword, colophon, etc." description="Use for a person or organization responsible for an afterword, postface, colophon, etc. but who is not the chief author of a work." />
+      </category>
+      <category ID="ant">
+        <label xml:lang="de" text="Bibliografischer Vorgänger" description="Eine Person oder Organisation, die für ein Werk verantwortlich ist, auf dem das im Katalogeintrag dargestellte Werk basiert. Dies kann für Adaptionen, Fortsetzungen, Indizes usw. angemessen sein." />
+        <label xml:lang="en" text="Bibliographic antecedent" description="Use for a person or organization responsible for a work upon which the work represented by the catalog record is based. This may be appropriate for adaptations, sequels, continuations, indexes, etc." />
+      </category>
+      <category ID="aui">
+        <label xml:lang="de" text="Autor(in) der Einleitung usw." description="Eine Person oder Organisation, die für eine Einleitung, ein Vorwort oder andere kritische einleitende Inhalte verantwortlich ist, aber nicht der Hauptautor des Werkes ist." />
+        <label xml:lang="en" text="Author of introduction, etc." description="Use for a person or organization responsible for an introduction, preface, foreword, or other critical introductory matter, but who is not the chief author." />
+      </category>
+      <category ID="win">
+        <label xml:lang="de" text="Verfasser(in) der Einleitung" description="Eine Person oder Organisation, die für das Verfassen einer Einleitung zu einem Werk verantwortlich ist." />
+        <label xml:lang="en" text="Writer of introduction" description="Use for a person or organization responsible for writing an introduction to a work." />
+      </category>
+      <category ID="wpr">
+        <label xml:lang="de" text="Verfasser(in) des Vorworts" description="Eine Person oder Organisation, die für das Verfassen eines Vorworts zu einem Werk verantwortlich ist." />
+        <label xml:lang="en" text="Writer of preface" description="Use for a person or organization responsible for writing a preface to a work." />
+      </category>
+      <category ID="wst">
+        <label xml:lang="de" text="Verfasser(in) ergänzender Textinhalte" description="Eine Person oder Organisation, die bedeutsames Material verfasst, das eine Tonaufnahme oder anderes audiovisuelles Material begleitet." />
+        <label xml:lang="en" text="Writer of supplementary textual content" description="Use for a person or organization who writes significant material which accompanies a sound recording or other audiovisual material." />
+      </category>
+      <category ID="com">
+        <label xml:lang="de" text="Zusammensteller(in)" description="Eine Person oder Organisation, die ein Werk oder eine Publikation erstellt, indem sie Material aus Werken verschiedener Personen oder Körperschaften auswählt und zusammenstellt." />
+        <label xml:lang="en" text="Compiler" description="Use for a person or organization who produces a work or publication by selecting and putting together material from the works of various persons or bodies." />
       </category>
       <category ID="ths">
         <label xml:lang="de" text="Akademische Betreuung" description="Eine Person, unter deren Betreuung ein Kandidat eine Dissertation oder Abschlussarbeit entwickelt und präsentiert." />
         <label xml:lang="en" text="Thesis advisor" description="Use for a person under whose supervision a degree candidate develops and presents a thesis, mémoire, or text of a dissertation. " />
+      </category>
+      <category ID="dgs">
+        <label xml:lang="de" text="Akademische(r) Betreuer(in)" description="Eine Person, die einen höheren akademischen Grad beaufsichtigt." />
+        <label xml:lang="en" text="Degree supervisor" description="Use for a person overseeing a higher level academic degree." />
       </category>
       <category ID="rev">
         <label xml:lang="de" text="Gutachter(in), Rezensent(in)" description="Eine Person oder Institution, die für die Begutachtung von Büchern, Filmen, Aufführungen, etc. verantwortlich ist." />
@@ -83,6 +103,10 @@
       <category ID="drt">
         <label xml:lang="de" text="Regie" description="Eine Person oder Institution, die für das generelle Management einer Arbeit oder Überwachung der Produktion einer Bühnendarstellung, eines Filmes oder einer Audioaufnahme verantwortlich ist." />
         <label xml:lang="en" text="Director" description="Use for a person or organization who is responsible for the general management of a work or who supervises the production of a performance for stage, screen, or sound recording." />
+      </category>
+      <category ID="fon">
+        <label xml:lang="de" text="Gründer(in)" description="Eine Person oder Organisation, die für die Gründung einer Publikation, eines Programms oder einer Körperschaft verantwortlich ist." />
+        <label xml:lang="en" text="Founder" description="Use for a person or organization responsible for the founding of a publication, program, or corporation." />
       </category>
       <category ID="fnd">
         <label xml:lang="de" text="Finanzielle Förderung" description="Eine Person oder Institution, die finanzielle Unterstützung für die Erstellung einer Arbeit bereitstellt." />
@@ -156,6 +180,10 @@
         <label xml:lang="de" text="Kommentator(in)" description="A performer contributing to a work by providing interpretation, analysis, or a discussion of the subject matter on a recording, film, or other audiovisual medium." />
         <label xml:lang="en" text="Commentator" description="A performer contributing to a work by providing interpretation, analysis, or a discussion of the subject matter on a recording, film, or other audiovisual medium." />
       </category>
+      <category ID="wac">
+        <label xml:lang="de" text="Verfasser(in) zusätzlicher Kommentare" description="Eine Person oder Körperschaft, die für die Erstellung von Kommentaren oder erläuternden Anmerkungen zu einem bestehenden Werk verantwortlich ist." />
+        <label xml:lang="en" text="Writer of added commentary" description="Use for a person or corporate body responsible for the creation of a commentary or explanatory notes added to an existing work." />
+      </category>
       <category ID="mrk">
         <label xml:lang="de" text="Markup-Ersteller(in)" description="A person or organization performing the coding of SGML, HTML, or XML markup of metadata, text, etc." />
         <label xml:lang="en" text="Markup editor" description="A person or organization performing the coding of SGML, HTML, or XML markup of metadata, text, etc." />
@@ -192,6 +220,10 @@
     <category ID="oth">
       <label xml:lang="de" text="Sonstige" description="Eine Rolle die nicht in der Liste vorkommt." />
       <label xml:lang="en" text="Other" description="A role that has no equivalent in the list." />
+    </category>
+    <category ID="dgg">
+      <label xml:lang="de" text="Grad-verleihende Institution" description="Eine Organisation, die einen akademischen Grad verleiht, für den die beschriebene These oder Dissertation vorgelegt wurde." />
+      <label xml:lang="en" text="Degree granting institution" description="Use for an organization granting an academic degree for which the thesis or dissertation described was presented." />
     </category>
   </categories>
 </mycoreclass>
