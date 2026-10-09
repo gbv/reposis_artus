@@ -2,7 +2,7 @@
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
 
-  <section title="Bibliographie der internationalen Artusgesellschaft" xml:lang="de">
+  <section title="Bibliographie der Internationalen Artusgesellschaft" xml:lang="de">
     <div class="jumbotwo"/>
 
 
@@ -10,10 +10,7 @@
       <div class="intro-text__content">
         <h1>Bibliographie der Internationalen Artusgesellschaft</h1>
         <p>
-          BIAS ist eine umfassende Forschungsbibliographie zum Stoffkreis um König Artus, die jährlich seit Mitte des 20.&#160;Jahrhunderts Editionen mittelalterlicher Texte und aktuelle wissenschaftliche Literatur verzeichnet.
-        </p>
-        <p class="d-none">
-          BIAS (Bibliography of the International Arthurian Society) ist ein Werkzeug für alle, die sich für die Erforschung des Stoffkreises um König Artus in Geschichte, Literatur und materieller Überlieferung interessieren.
+          BIAS ist eine umfassende Forschungsbibliographie zum Stoffkreis um König Artus, die jährlich seit Mitte des 20. Jahrhunderts Editionen mittelalterlicher Texte und aktuelle wissenschaftliche Literatur verzeichnet.
         </p>
       </div>
     </div>
@@ -43,13 +40,10 @@
 
       <div class="intro-hint">
         <p>
-          Bitte beachten Sie, dass die Datenbank ständig aktualisiert und laufend erweitert wird. Derzeit ist die
-          Forschungsliteratur der Jahrgänge 2015–2022 verzeichnet.
+          Bitte beachten Sie, dass die Datenbank ständig aktualisiert und laufend erweitert wird. Derzeit ist die Forschungsliteratur der Jahrgänge 2015–2024 verzeichnet.
         </p>
         <p>
-          Aktuell liegt die Datenbank in einer Beta-Version vor. Wir arbeiten daran, weitere Literatur und
-          Neuerscheinung einzupflegen. Wenn Sie etwas vermissen oder Verbesserungsideen haben, melden Sie sich gerne
-          unter:
+          Aktuell liegt die Datenbank in einer Beta-Version vor. Wir arbeiten daran, weitere Literatur und Neuerscheinung einzupflegen. Wenn Sie etwas vermissen oder Verbesserungsideen haben, melden Sie sich gerne unter:
           <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
         </p>
       </div>
@@ -60,87 +54,103 @@
   <section title="Bibliography of the International Arthurian Society" xml:lang="en">
     <div class="jumbotwo"/>
 
-    <h1>Bibliography of the International Arthurian Society</h1>
 
-    <p>
-      This database is a tool for anyone interested in the legend of King Arthur in history, literature, and material
-      culture.
-    </p>
+    <div class="intro-text">
+      <div class="intro-text__content">
+        <h1>Bibliography of the International Arthurian Society</h1>
+        <p>
+          BIAS, a comprehensive research bibliography on the Matter of Britain, has been annually recording editions of medieval texts and current scholarly publications since the mid-20th century.
+        </p>
 
-    <p>
-      BIAS is a comprehensive research bibliography on the Matter of Britain, which has been recording editions of
-      medieval texts and current scholarly publications on them annually since the mid-20th century.
-    </p>
+      </div>
+    </div>
 
-    <p>
-      With this database, you can:
-    </p>
-    <ul>
-      <li>search for titles and authors of primary and secondary texts</li>
-      <li>find brief summaries of research literature in the languages of the International Arthurian Society (German,
-        English, French)
-      </li>
-      <li>browse through publications by time period or geographical sections of the International Arthurian Society
-      </li>
-      <li>search for specific topics and primary texts using the keyword index</li>
-      <li>find online access to e-books, articles, and other digital resources.</li>
-    </ul>
+    <div class="intro-search">
+      <index-search-form/>
+    </div>
 
-    <p>
-      Please note that the database is constantly being updated and expanded. Currently, it lists text editions and
-      scholarly publications from the years 2015 to 2022.
-    </p>
+    <div class="intro-body">
+      <div class="intro-tiles">
+        <div class="intro-tile">
+          <a href="guide/searching.xml" class="stretched-link">Search &amp; Find</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/summary.xml" class="stretched-link">Abstracts</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/sections.xml" class="stretched-link">Periods</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/editions.xml" class="stretched-link">Finding Editions</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/upload.xml" class="stretched-link">Upload &amp; Download</a>
+        </div>
+      </div>
 
-    <p>
-      The database is currently provided in a beta version as we are working to add more publications. If you notice any
-      missing items or have suggestions for improvement, please contact us at:
-      <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
-    </p>
+      <div class="intro-hint">
+        <p>
+          Please note that the database is constantly being updated and expanded. It currently includes research literature from 2015 to 2024.
+        </p>
+        <p>
+          The database is currently in beta. We are working on adding further literature and new publications. If you notice anything missing or have suggestions for improvements, please feel free to contact us at:
+          <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
+        </p>
+      </div>
+    </div>
+
   </section>
 
   <section title="Bibliographie de la Société Internationale Arthurienne" xml:lang="fr">
     <div class="jumbotwo"/>
 
-    <h1>Bibliographie de la Société Internationale Arthurienne</h1>
 
-    <p>
-      Cette base de données est outil destiné à toutes les personnes qui s’intéressent à la légende du roi Arthur d’un
-      point de vue historique, littéraire et culturel.
-    </p>
+    <div class="intro-text">
+      <div class="intro-text__content">
+        <h1>Bibliographie de la Société Internationale Arthurienne</h1>
+        <p>
+          Le BBSIA (le Bulletin Bibliographique de la Société Internationale Arthurienne) est une très vaste bibliographie de recherche sur la matière de Bretagne, qui recense chaque année, depuis le milieu du XXe siècle, les éditions de textes médiévaux et les publications scientifiques récentes sur le sujet.
+        </p>
+      </div>
+    </div>
 
-    <p>
-      Le BBSIA (le Bulletin Bibliographique de la Société Internationale Arthurienne) est une vaste bibliographie de
-      recherche sur la matière de Bretagne ; depuis le milieu du XXe siècle, il enregistre année après année les
-      éditions des textes médiévaux aussi bien que les travaux académiques qui les étudient.
-    </p>
+    <div class="intro-search">
+      <index-search-form/>
+    </div>
 
-    <p>
-      Avec cette base de données, il est possible de:
-    </p>
-    <ul>
-      <li>Faire des recherches à partir d’un titre ou d’un auteur de littérature primaire ou secondaire</li>
-      <li>Trouver de brefs résumés de littérature critique dans toutes les langues officielles de la Société
-        Internationale Arthurienne (Allemand, Anglais et Français)
-      </li>
-      <li>Faire une recherche par période de publication ou section géographique de la SIA</li>
-      <li>Faire une recherche sur des sujets ou des textes précis à partir de mots-clés regroupés dans un index</li>
-      <li>Trouver un accès en ligne à des livres numériques, des articles et autres ressources électroniques.</li>
-    </ul>
+    <div class="intro-body">
+      <div class="intro-tiles">
+        <div class="intro-tile">
+          <a href="guide/searching.xml" class="stretched-link">Rechercher et trouver</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/summary.xml" class="stretched-link">Résumés</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/sections.xml" class="stretched-link">Périodes et branches</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/editions.xml" class="stretched-link">Trouver les éditions</a>
+        </div>
+        <div class="intro-tile">
+          <a href="guide/upload.xml" class="stretched-link">Dépôt et téléchargement</a>
+        </div>
+      </div>
 
-    <p>
-      Notez que la base est en constante expansion et sans cesse actualisée. À ce jour, elle contient des éditions de
-      textes et des travaux académiques parus de 2015 à 2022.
-    </p>
+      <div class="intro-hint">
+        <p>
+          Veuillez noter que la base de données est constamment mise à jour et enrichie. Elle recense actuellement la littérature scientifique publiée entre 2015 et 2024.
+        </p>
+        <p>
+          La base de données est actuellement disponible en version bêta. Nous travaillons à l'intégration de nouveaux ouvrages et de nouvelles publications. Si vous constatez des lacunes ou si vous avez des suggestions d'amélioration, n'hésitez pas à nous contacter à l'adresse suivante:
+          <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
+        </p>
+      </div>
+    </div>
 
-    <p>
-      La base est pour le moment fournie dans une version bêta car nous travaillons à ajouter des publications. Si vous
-      relevez des items manquants ou souhaitez faire des suggestions pour améliorer la base, contactez-nous à l’adresse
-      suivante:
-      <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
-    </p>
   </section>
 
   <meta>
-    <log date="2025-04-29" time="13:03" labelPath=" » Start" lastEditor="Tilo Neumann"/>
+    <log date="2026-10-09" time="13:03" labelPath=" » Start" lastEditor="Tilo Neumann"/>
   </meta>
 </MyCoReWebPage>
