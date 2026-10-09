@@ -6,7 +6,8 @@
   <section xml:lang="de" title="Zeiten und Sektionen">
     <head>
       <meta name="title" content="Zeiten und Sektionen"/>
-      <meta name="description" content="Informationen zu Zeiträumen, Sektionen und der Facettensuche in der Bibliographie"/>
+      <meta name="description"
+            content="Informationen zu Zeiträumen, Sektionen und der Facettensuche in der Bibliographie"/>
     </head>
     <div>
       <h1 class="page-header">Zeiten und Sektionen</h1>
@@ -44,6 +45,109 @@
         Über die Facette „Sektion“ wählen Sie die deutschsprachige Sektion aus,
         über die Facette „Jahr“ grenzen Sie die Ergebnisse auf die 2020er-Jahre ein –
         übrig bleibt eine überschaubare, präzise Trefferliste (aktuell: 6 Treffer).
+      </p>
+    </div>
+  </section>
+
+
+  <section xml:lang="en" title="Periods and Branches">
+    <head>
+      <meta name="title" content="Periods and Branches"/>
+      <meta name="description"
+            content="Information on time periods, sections, and the faceted search in the bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Note:</strong>
+        This is an automated translation.
+      </div>
+
+      <h1 class="page-header">Periods and Branches</h1>
+
+      <h2>The Structure Behind the Data</h2>
+      <p>
+        The bibliographic data is based on the work of the branches of the International Arthurian Society: since 1949,
+        each branch has annually compiled the publications that appeared in its territory. Each entry therefore carries
+        information about its context of origin – the year of publication and the branch that recorded it.
+      </p>
+
+      <h2>Searching Specifically by Periods and Branches</h2>
+      <p>
+        You can put this structure to use: both in the simple/advanced search and via the faceted search, results can be
+        narrowed down to specific periods and branches. For example, you can view the research of a particular decade or
+        specifically display what a single branch has recorded.
+      </p>
+
+      <h2>What Is Faceted Search?</h2>
+      <p>
+        Faceted search is a filter function that is available to you after a
+        search: next to the results list, so-called facets are displayed – categories such as year of publication,
+        branch, document type, or language. By clicking on a facet, you gradually narrow down the results list. Several
+        facets can be combined in any way you like.
+
+      </p>
+
+      <p>
+        <strong>Example:</strong>
+        You search for "grail" and receive several hundred results.
+        Using the "Branch" facet, you select the German-Austrian branch; using the "Year" facet, you narrow the results
+        down to the 2020s – what remains is a manageable, precise list of results (currently: 6 results).
+
+      </p>
+    </div>
+  </section>
+
+
+  <section xml:lang="fr" title="Périodes et branches">
+    <head>
+      <meta name="title" content="Périodes et branches"/>
+      <meta name="description"
+            content="Informations sur les périodes, les sections et la recherche par facettes dans la bibliographie"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Remarque:</strong>il s'agit d'une traduction automatisée
+      </div>
+
+      <h1 class="page-header">Périodes et branches</h1>
+
+      <h2>La structure qui sous-tend les données</h2>
+      <p>
+        La base de données de la bibliographie repose sur le travail des
+        branches de la Société Internationale Arthurienne : depuis 1949, chaque
+        branche recense chaque année les publications parues sur son territoire.
+        Chaque entrée porte donc des informations sur son contexte de création –
+        l'année de publication et la branche qui l'a répertoriée.
+      </p>
+
+      <h2>Rechercher ciblément par périodes et par branches</h2>
+      <p>
+        Vous pouvez tirer parti de cette structure : aussi bien dans la
+        recherche simple/avancée que via la recherche à facettes, les résultats
+        peuvent être restreints à des périodes et à des branches déterminées.
+        Vous pouvez par exemple examiner la recherche d'une décennie donnée ou
+        afficher spécifiquement ce qu'une seule branche a répertorié.
+      </p>
+
+      <h2>Qu'est-ce que la recherche à facettes?</h2>
+      <p>
+        La recherche à facettes est une fonction de filtrage qui s'offre à vous
+        après une recherche : à côté de la liste des résultats s'affichent des
+        facettes – des catégories telles que l'année de publication, la branche,
+        le type de document ou la langue. En cliquant sur une facette, vous
+        restreignez progressivement la liste des résultats. Plusieurs facettes
+        peuvent être combinées librement.
+      </p>
+
+      <p>
+        <strong>Exemple:</strong>
+        vous recherchez « grail » et obtenez plusieurs centaines
+        de résultats. Via la facette « Branche », vous sélectionnez la branche
+        germanique ; via la facette « Année », vous restreignez les résultats
+        aux années 2020 – il reste une liste de résultats claire et précise
+        (actuellement : 6 résultats).
       </p>
     </div>
   </section>

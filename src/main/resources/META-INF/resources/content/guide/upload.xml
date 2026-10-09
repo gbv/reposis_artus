@@ -6,7 +6,8 @@
   <section xml:lang="de" title="Upload &amp; Download">
     <head>
       <meta name="title" content="Upload &amp; Download"/>
-      <meta name="description" content="Informationen zu Volltexten, Downloads und dem Hochladen von Aufsätzen in die Bibliographie"/>
+      <meta name="description"
+            content="Informationen zu Volltexten, Downloads und dem Hochladen von Aufsätzen in die Bibliographie"/>
     </head>
     <div>
       <h1 class="page-header">Upload &amp; Download</h1>
@@ -55,6 +56,120 @@
       </p>
     </div>
   </section>
+
+
+  <section xml:lang="en" title="Upload &amp; Download">
+    <head>
+      <meta name="title" content="Upload &amp; Download"/>
+      <meta name="description"
+            content="Information on full texts, downloads, and uploading articles to the bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Note:</strong>
+        This is an automated translation.
+      </div>
+
+      <h1 class="page-header">Upload &amp; Download</h1>
+
+
+      <h2>Full Texts Directly from the Bibliography</h2>
+      <p>
+        The MyCoRe system makes it possible to provide the articles themselves, beyond the purely bibliographic details.
+        Where the rights situation has been clarified, the texts are thus not only recorded but immediately accessible.
+      </p>
+
+      <p>
+        A prominent example: all the articles of the 'Bulletin bibliographique de la Société Internationale Arthurienne'
+        can be retrieved directly from the bibliography. You can find an example entry
+        <a href="https://arthurianbibliography.gbv.de/receive/artus_mods_00000033"
+           target="_blank">
+          here
+        </a>.
+      </p>
+
+      <h2>Download</h2>
+      <p>
+        If a full text is available for an entry, a download link appears on the entry's page, allowing you to open and
+        save the article as a PDF.
+      </p>
+
+      <h2>Upload Your Articles!</h2>
+      <p>
+        We warmly invite all authors to upload their articles to the bibliography and thereby make them directly
+        accessible to international Arthurian research – provided that the rights situation has been clarified, for
+        example through the publisher's consent or through the right of secondary publication. In this way, a freely
+        accessible body of Arthurian research is growing, from which the entire scholarly community benefits.
+      </p>
+
+      <p>
+        For any questions and to submit your texts, please contact the bibliographic secretaries of your branch.
+      </p>
+    </div>
+  </section>
+
+
+  <section xml:lang="fr" title="Dépôt et téléchargement">
+    <head>
+      <meta name="title" content="Dépôt et téléchargement"/>
+      <meta name="description"
+            content="Information on full texts, downloads, and uploading articles to the bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Remarque:</strong>il s'agit d'une traduction automatisée
+      </div>
+
+      <h1 class="page-header">Dépôt et téléchargement</h1>
+
+
+      <h2>Textes intégraux directement depuis la bibliographie</h2>
+      <p>
+        Le système MyCoRe permet de mettre à disposition, au-delà des seules
+        données bibliographiques, les articles eux-mêmes. Là où la question des
+        droits est clarifiée, les textes ne sont donc pas seulement répertoriés,
+        mais directement accessibles.
+
+      </p>
+
+      <p>
+        Un exemple emblématique : tous les articles du 'Bulletin bibliographique
+        de la Société Internationale Arthurienne' sont consultables directement
+        depuis la bibliographie. Vous trouverez un exemple d'entrée
+        <a href="https://arthurianbibliography.gbv.de/receive/artus_mods_00000033"
+           target="_blank">
+          ici
+        </a>.
+      </p>
+
+      <h2>Téléchargement</h2>
+      <p>
+        Si un texte intégral est disponible pour une entrée, un lien de
+        téléchargement apparaît sur la page de l'entrée, vous permettant
+        d'ouvrir et d'enregistrer l'article au format PDF.
+
+      </p>
+
+      <h2>Déposez vos articles!</h2>
+      <p>
+        Nous invitons chaleureusement toutes les auteures et tous les auteurs à
+        déposer leurs articles dans la bibliographie et à les rendre ainsi
+        directement accessibles à la recherche arthurienne internationale – à
+        condition que la question des droits soit clarifiée, par exemple grâce à
+        l'accord de l'éditeur ou au droit de seconde publication. De cette
+        manière se constitue un fonds librement accessible de recherches
+        arthuriennes, dont profite l'ensemble de la communauté scientifique.
+      </p>
+
+      <p>
+        Pour toute question et pour soumettre vos textes, veuillez vous adresser
+        aux secrétaires bibliographiques de votre branche.
+      </p>
+    </div>
+  </section>
+
 
   <meta>
     <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>

@@ -64,6 +64,129 @@
     </div>
   </section>
 
+
+  <section xml:lang="en" title="Search &amp; Find">
+    <head>
+      <meta name="title" content="Search &amp; Find"/>
+      <meta name="description" content="Information on Simple and Advanced Searches in the Bibliography"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Note:</strong>
+        This is an automated translation.
+      </div>
+
+      <h1 class="page-header">Search &amp; Find</h1>
+      <h2>The Search Field</h2>
+      <p>
+        The simple search offers a quick way into the bibliography. It consists of a single search field that searches
+        all data fields of the entries simultaneously – author names, titles, publication years, keywords, and abstracts
+        alike. It is particularly useful for initial orientation:
+        simply enter an author's name, a term such as "forest," or a text title, and you will immediately receive a list
+        of results.
+      </p>
+
+      <h2>Simple and Advanced Search</h2>
+      <p>
+        If you wish to search more specifically, use the two search functions in the menu. Several search fields are
+        available here, which you can combine with one another. For example, an author can be combined with a keyword, a
+        title term with a publication period, or a term with a specific branch.
+      </p>
+      <p>
+        In this way, more complex questions can
+        also be answered precisely, such as: "Which publications on Chrétien de Troyes appeared in the British branch in
+        the 1990s?"
+      </p>
+      <p>
+        A targeted search within the abstracts is also possible via the advanced search – more on this on the page
+        <a href="summary.xml">Abstracts</a>.
+      </p>
+
+      <h2>Tips for Searching</h2>
+      <ul>
+        <li>
+          <strong>Reviews:</strong>
+          Displaying reviews unnecessarily inflates the results.
+          You can selectively exclude them.
+        </li>
+        <li>
+          <strong>Truncation:</strong>
+          Use the asterisk <code>*</code> to truncate search terms (e.g., "arthur*" finds Arthur, Arthurian,
+          Arthuriana).
+        </li>
+        <li>
+          <strong>Exact Phrases:</strong>
+          If you use the "Phrase" setting instead of "contains," you can search for a contiguous sequence of words.
+        </li>
+        <li>
+          <strong>Narrowing Results:</strong>
+          Combine your search with the faceted search (see the page <a href="sections.xml">Periods and Branches</a>).
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section xml:lang="fr" title="Rechercher et trouver">
+    <head>
+      <meta name="title" content="Rechercher et trouver"/>
+      <meta name="description" content="Informations sur les recherches simples et avancées dans la bibliographie"/>
+    </head>
+    <div>
+      <div class="alert alert-warning" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>Remarque:</strong>il s'agit d'une traduction automatisée
+      </div>
+
+      <h1 class="page-header">Rechercher et trouver</h1>
+      <h2>Le champ de recherche</h2>
+      <p>
+        La recherche simple offre un accès rapide à la bibliographie. Elle se compose d'un seul champ de recherche qui
+        interroge simultanément tous les champs de données des entrées – à savoir les noms d'auteurs, les titres, les
+        années de publication, les mots-clés et les résumés. Elle convient particulièrement pour une première
+        orientation : saisissez simplement un nom d'auteur, un terme comme « forêt » ou un titre de texte, et vous
+        obtenez immédiatement une liste de résultats.
+      </p>
+
+      <h2>Recherche simple et recherche avancée</h2>
+      <p>
+        Si vous souhaitez rechercher de manière plus ciblée, utilisez les deux fonctions de recherche du menu. Vous y
+        disposez de plusieurs champs de recherche que vous pouvez lier entre eux. On peut ainsi combiner, par exemple,
+        un auteur avec un mot-clé, un terme de titre avec une période de publication ou un mot avec une branche
+        déterminée.
+      </p>
+      <p>
+        De cette manière, il est également possible de répondre avec précision à des questions plus complexes, par
+        exemple : « Quelles publications sur Chrétien de Troyes sont parues dans la branche britannique dans les années
+        1990 ? »
+      </p>
+      <p>
+        Une recherche ciblée dans les résumés est également possible via la recherche avancée – plus de détails à ce sujet sur la page
+        <a href="summary.xml">Résumés</a>.
+      </p>
+
+      <h2>Conseils pour la recherche</h2>
+      <ul>
+        <li>
+          <strong>Recensions:</strong>
+          l'affichage des recensions gonfle inutilement les résultats. Vous pouvez les exclure de manière ciblée.
+        </li>
+        <li>
+          <strong>Troncature:</strong>
+          avec l'astérisque <code>*</code>, vous tronquez les termes de recherche (p. ex. « arthur* » trouve Arthur, arthurien, arthurienne).
+        </li>
+        <li>
+          <strong>Expressions exactes:</strong>
+          si vous utilisez le paramètre « Phrase » au lieu de « contient », vous pouvez rechercher une suite de mots contiguë.
+        </li>
+        <li>
+          <strong>Restreindre les résultats:</strong>
+          combinez votre recherche avec la recherche à facettes <a href="sections.xml">Périodes et branches</a>).
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <meta>
     <log lastEditor="Antonia Friedrich" date="2026-10-08" time="13:09"/>
   </meta>
