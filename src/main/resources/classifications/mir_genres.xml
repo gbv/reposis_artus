@@ -10,41 +10,6 @@
       <label xml:lang="fr" text="Article / Chapter" />
       <label xml:lang="x-hosts" text="journal collection" />
       <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Article schemaOrg:ScholarlyArticle" />
-      <category ID="chapter">
-        <label xml:lang="de" text="Buchkapitel" />
-        <label xml:lang="en" text="Book chapter" />
-        <label xml:lang="fr" text="Book chapter" />
-        <label xml:lang="x-hosts" text="book collection" />
-        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Chapter" />
-      </category>
-      <category ID="entry">
-        <label xml:lang="de" text="Lexikoneintrag" />
-        <label xml:lang="en" text="Encyclopedia entry" />
-        <label xml:lang="fr" text="Encyclopedia entry" />
-        <label xml:lang="x-hosts" text="lexicon" />
-        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Article" />
-      </category>
-      <category ID="preface">
-        <label xml:lang="de" text="Vorwort / Nachwort" />
-        <label xml:lang="en" text="Preface (foreword) / Postface" />
-        <label xml:lang="fr" text="Preface (foreword) / Postface" />
-        <label xml:lang="x-hosts" text="journal collection   lexicon" />
-        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:BookPart schemaOrg:Chapter" />
-      </category>
-      <category ID="speech">
-        <label xml:lang="de" text="Vortrag" />
-        <label xml:lang="en" text="Lecture / Speech" />
-        <label xml:lang="fr" text="Lecture / Speech" />
-        <label xml:lang="x-hosts" text="standalone" />
-        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Other schemaOrg:Article" />
-      </category>
-      <category ID="review">
-        <label xml:lang="de" text="Rezension" />
-        <label xml:lang="en" text="Review" />
-        <label xml:lang="fr" text="Review" />
-        <label xml:lang="x-hosts" text="journal collection book article dissertation monograph" />
-        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Recension schemaOrg:Review" />
-      </category>
     </category>
     <category ID="dissertation">
       <label xml:lang="de" text="Dissertation (unveröffentlicht)" />
@@ -57,6 +22,7 @@
       <label xml:lang="de" text="Aufsatzsammlung" />
       <label xml:lang="en" text="Collection" />
       <label xml:lang="fr" text="Collection" />
+
       <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="x-mapping" text="marcgt:series diniPublType2022:EditedCollection schemaOrg:Book" />
       <category ID="festschrift">
@@ -65,13 +31,6 @@
         <label xml:lang="x-hosts" text="series standalone" />
         <label xml:lang="x-mapping" text="marcgt:festschrift diniPublType2022:Report schemaOrg:Report" />
       </category>
-      <category ID="lexicon">
-        <label xml:lang="de" text="Lexikon" />
-        <label xml:lang="en" text="Lexicon" />
-        <label xml:lang="fr" text="Lexicon" />
-        <label xml:lang="x-hosts" text="series standalone" />
-        <label xml:lang="x-mapping" text="marcgt:encyclopedia diniPublType2022:Book schemaOrg:Book" />
-      </category>
     </category>
     <category ID="book">
       <label xml:lang="de" text="Buch" />
@@ -79,13 +38,6 @@
       <label xml:lang="fr" text="Book" />
       <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="x-mapping" text="marcgt:book diniPublType2022:Book schemaOrg:Book" />
-      <category ID="monograph">
-        <label xml:lang="de" text="Monografie" />
-        <label xml:lang="en" text="Monograph" />
-        <label xml:lang="fr" text="Monograph" />
-        <label xml:lang="x-hosts" text="series standalone" />
-        <label xml:lang="x-mapping" text="marcgt:book diniPublType2022:Book schemaOrg:Book" />
-      </category>
     </category>
     <category ID="journal">
       <label xml:lang="de" text="Zeitschrift" />
