@@ -120,6 +120,7 @@
     <item href="/servlets/MCRActionMappingServlet/subjectindex/browse" type="extern">
       <label xml:lang="de">Schlagwortsuche</label>
       <label xml:lang="en">Subject Search</label>
+      <label xml:lang="fr">Recherche par vedette-matière</label>
     </item>
 
   </menu>
