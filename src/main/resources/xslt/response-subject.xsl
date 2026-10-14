@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xsl:stylesheet [
-  <!ENTITY html-output SYSTEM "xsl/xsl-output-html.fragment">
-  ]>
-<xsl:stylesheet version="1.0"
+<xsl:stylesheet version="3.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:encoder="xalan://java.net.URLEncoder"
-                xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                xmlns:xalan="http://xml.apache.org/xalan"
-                xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-                xmlns:str="http://exslt.org/strings"
-                exclude-result-prefixes="xalan i18n encoder str mcrxsl">
-  &html-output;
-  <xsl:include href="MyCoReLayout.xsl" />
-  <xsl:include href="response-utils.xsl" />
+                xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+                exclude-result-prefixes="#all">
+
+  <xsl:include href="resource:xslt/MyCoReLayout.xsl" />
+  <xsl:include href="resource:xslt/solr/response/response-utils.xsl" />
   <xsl:include href="xslInclude:solrResponse" />
 
-  <xsl:param name="WebApplicationBaseURL" />
   <xsl:param name="MCR.Results.FetchHit" />
 
   <xsl:decimal-format name="european" decimal-separator=',' grouping-separator='.' />
 
   <xsl:variable name="PageTitle">
-    <xsl:value-of select="i18n:translate('mir.editor.subject.search.modal.title')" />
+    <xsl:value-of select="mcri18n:translate('mir.editor.subject.search.modal.title')" />
   </xsl:variable>
 
-  <xsl:variable name="query"
+  <xsl:variable name="termsRegex"
                 select="/response/lst[@name='responseHeader']/lst[@name='params']/str[@name='terms.regex']" />
 
   <xsl:template match="lst[@name='mods.sindexname'] | lst[@name='mods.sindexname.published']">
@@ -37,7 +29,7 @@
     <xsl:for-each select="int">
       <xsl:sort select="@name" />
       <li>
-        <a href="{$ServletsBaseURL}solr/{$searchHandler}?q={encoder:encode(concat('mods.subject:&quot;', @name, '&quot;'), 'UTF-8')}"
+        <a href="{$ServletsBaseURL}solr/{$searchHandler}?q={encode-for-uri(concat('mods.subject:&quot;', @name, '&quot;'))}"
            title="Suche nach allen Publikationen">
           <xsl:value-of select="@name" />
         </a>
@@ -85,7 +77,7 @@
         <div class="row">
 
           <div class="col-md-4">
-            <h2><xsl:value-of select="i18n:translate('mir.editor.subject.search.options.topics')" /></h2>
+            <h2><xsl:value-of select="mcri18n:translate('mir.editor.subject.search.options.topics')" /></h2>
 
             <xsl:choose>
               <xsl:when test="lst[@name='terms']/lst[@name='mods.sindexname']/int or
@@ -97,24 +89,23 @@
                 </ul>
               </xsl:when>
               <xsl:otherwise>
-                <p><xsl:value-of select="i18n:translate('browse.subject.notFound')" /></p>
+                <p><xsl:value-of select="mcri18n:translate('browse.subject.notFound')" /></p>
               </xsl:otherwise>
             </xsl:choose>
           </div>
 
           <div class="col-md-4">
-            <h3><xsl:value-of select="i18n:translate('browse.person.firstLetter')" /></h3>
+            <h3><xsl:value-of select="mcri18n:translate('browse.person.firstLetter')" /></h3>
             <ul class="names">
-              <xsl:for-each select="xalan:nodeset($a2z)/*">
+              <xsl:for-each select="$a2z/*">
                 <li>
-                  <xsl:if test="$query = @search">
+                  <xsl:if test="$termsRegex = @search">
                     <xsl:attribute name="class">active</xsl:attribute>
                   </xsl:if>
                   <a href="{concat($proxyBaseURL, '?XSL.Style=subject&amp;terms.regex=',
-                                   encoder:encode(string(@search), 'UTF-8'))}">
+                 encode-for-uri(string(@search)))}">
                     <xsl:value-of select="name()" />
-                  </a>
-                  <xsl:if test="position() != last()">
+                  </a>                  <xsl:if test="position() != last()">
                     <span> | </span>
                   </xsl:if>
                 </li>
@@ -123,7 +114,7 @@
           </div>
 
           <div class="col-md-4">
-            <h3><xsl:value-of select="i18n:translate('browse.person.searchPerson')" /></h3>
+            <h3><xsl:value-of select="mcri18n:translate('browse.person.searchPerson')" /></h3>
             <form role="form" id="index_search_form" method="get" action="{$proxyBaseURL}">
               <xsl:for-each
                 select="lst[@name='responseHeader']/lst[@name='params']/str[not(@name='terms.regex')]">
@@ -132,11 +123,11 @@
 
               <xsl:variable name="search_value">
                 <xsl:choose>
-                  <xsl:when test="xalan:nodeset($a2z)/*[@search=$query]">
+                  <xsl:when test="$a2z/*[@search=$termsRegex]">
                     <xsl:value-of select="''" />
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="$query" />
+                    <xsl:value-of select="$termsRegex" />
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:variable>
@@ -150,7 +141,7 @@
                        type="text"
                        placeholder="Subject suchen" />
                 <button type="submit" class="btn btn-secondary search_button" tabindex="1">
-                  <xsl:value-of select="i18n:translate('button.search')" />
+                  <xsl:value-of select="mcri18n:translate('button.search')" />
                 </button>
               </div>
             </form>

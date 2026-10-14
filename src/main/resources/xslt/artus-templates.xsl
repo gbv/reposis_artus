@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-                xmlns:mcri18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
+                xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+                xmlns:mcracl="http://www.mycore.de/xslt/acl"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 exclude-result-prefixes="mcri18n">
 
@@ -46,7 +46,7 @@
 
   <xsl:template name="getLayoutSearchSolrCore">
     <xsl:choose>
-      <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+      <xsl:when test="not(mcracl:is-current-user-guest-user())">
         <xsl:text>find</xsl:text>
       </xsl:when>
       <xsl:otherwise>
