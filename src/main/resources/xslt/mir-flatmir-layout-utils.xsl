@@ -86,7 +86,7 @@
             <input
               name="condQuery"
                   placeholder="{mcri18n:translate('mir.navsearch.placeholder')}"
-                  class="form-control me-sm-2 search-query"
+                  class="form-control search-query"
               id="searchInput"
               type="text"
               aria-label="Search" />
