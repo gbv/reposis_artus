@@ -6,6 +6,12 @@
       <when condition="true" url="/servlets/solr/personindexp?XSL.Style=person&amp;terms.regex=%5Ba%7C%C3%A4%7C%C3%84%5D.*" />
     </action>
   </collection>
+  <collection name="createdbyindex">
+    <action action="browse">
+      <when condition="(group = admin)"
+            url="/servlets/solr/createdbyindex?XSL.Style=createdby&amp;terms.regex=%5Ba%7C%C3%A4%7C%C3%84%5D.*" />
+    </action>
+  </collection>
   <collection name="subjectindex">
   <action action="browse">
     <when condition="(group = admin) or (group = editor)"
