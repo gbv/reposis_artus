@@ -6,12 +6,14 @@
     <label xml:lang="x-uri" text="https://arthurianbibliography.info/classifications/artus_parts" />
     <categories>
         <category ID="TTA">
-            <label xml:lang="de" text="Texte, Übersetzungen und Adaptionen"/>
-            <label xml:lang="en" text="Texts, Translations and Adaptations"/>
+            <label xml:lang="de" text="Primärliteratur"/>
+            <label xml:lang="en" text="Editions and Translations"/>
+            <label xml:lang="fr" text="Éditions et traductions"/>
         </category>
         <category ID="CHS">
-            <label xml:lang="de" text="Critical and Historical Studies"/>
+            <label xml:lang="de" text="Sekundärliteratur"/>
             <label xml:lang="en" text="Critical and Historical Studies"/>
+            <label xml:lang="fr" text="Études critiques et historiques"/>
         </category>
     </categories>
 </mycoreclass>
