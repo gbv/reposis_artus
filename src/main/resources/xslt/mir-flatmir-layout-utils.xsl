@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-    xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
-    xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-    xmlns:calendar="xalan://java.util.GregorianCalendar"
-    exclude-result-prefixes="i18n mcrver mcrxsl calendar">
+<xsl:stylesheet version="3.0"
+                xmlns:mcracl="http://www.mycore.de/xslt/acl"
+                xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+                xmlns:mcrversion="http://www.mycore.de/xslt/mcrversion"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                exclude-result-prefixes="#all">
 
-  <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
+  <xsl:import href="resource:xslt/layout/mir-common-layout.xsl" />
 
   <xsl:template name="mir.navigation">
 
     <div class="header container-lg">
 
       <div class="header__logo">
-        <a href="{i18n:translate('artus.home')}">
-           <img
-             src="{$WebApplicationBaseURL}images/ias-logo-small-inverted-black.svg"
-             alt="IAS Logo" />
+        <a href="{mcri18n:translate('artus.home')}">
+          <img
+            src="{$WebApplicationBaseURL}images/ias-logo-small-inverted-black.svg"
+            alt="IAS Logo" />
         </a>
       </div>
 
@@ -62,7 +61,7 @@
         <div class="header__options">
           <div class="header__login">
             <nav class="navbar navbar-dark navbar-expand">
-              <ul class="navbar-nav" title="{i18n:translate('artus.login')}">
+              <ul class="navbar-nav" title="{mcri18n:translate('artus.login')}">
                 <xsl:call-template name="mir.loginMenu" />
               </ul>
             </nav>
@@ -87,8 +86,8 @@
 
             <input
               name="condQuery"
-              placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-              class="form-control search-query"
+                  placeholder="{mcri18n:translate('mir.navsearch.placeholder')}"
+                  class="form-control search-query"
               id="searchInput"
               type="text"
               aria-label="Search" />
@@ -110,7 +109,7 @@
               <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
                 <input name="owner" type="hidden" value="createdby:*" />
               </xsl:when>
-              <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+                  <xsl:when test="not(mcracl:is-current-user-guest-user())">
                 <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
               </xsl:when>
             </xsl:choose>
@@ -178,11 +177,10 @@
         </div>
         -->
         <div class="col-auto artus-copyright">
-          <xsl:variable name="tmp" select="calendar:new()" />
           <xsl:text>© </xsl:text>
-          <xsl:value-of select="calendar:get($tmp, 1)" />
+          <xsl:value-of select="year-from-date(current-date())"/>
           <xsl:text> | </xsl:text>
-          <xsl:value-of select="i18n:translate('artus.copyright')"/>
+          <xsl:value-of select="mcri18n:translate('artus.copyright')"/>
         </div>
         <div class="col footer-menu">
           <ul class="internal_links">
@@ -194,16 +192,16 @@
   </xsl:template>
 
   <xsl:template name="mir.powered_by">
-    <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+    <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrversion:complete-version())" />
     <div id="powered_by">
       <a href="http://www.mycore.de">
-        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+        <img src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg" title="{$mcr_version}" alt="powered by MyCoRe" />
       </a>
     </div>
   </xsl:template>
   <xsl:template name="getLayoutSearchSolrCore">
     <xsl:choose>
-      <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+      <xsl:when test="not(mcracl:is-current-user-guest-user())">
         <xsl:text>find</xsl:text>
       </xsl:when>
       <xsl:otherwise>

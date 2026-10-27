@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+<!-- ======================================================= -->
+<!-- ========== Template Management Notes ========== -->
+<!--
+    This XML document adds new project-specific templates as an addition to those of MIR.
+
+    Templates should be sorted alphabetically.
+    Overrides and Modifications to templates should NOT be defined here; they must be placed in the editor-customization file.
+    Circular references must be avoided to prevent loops or unintended overrides.
+-->
+<!-- ======================================================= -->
+
+  <xed:template id="artus.parts">
+    <div class="mir-form-group row">
+      <label class="col-md-3 col-form-label text-end form-label">
+        <xed:output i18n="component.mods.metaData.dictionary.artus.parts"/>
+      </label>
+      <xed:bind
+        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@displayLabel"
+        set="artus.parts"/>
+      <xed:bind
+        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor">
+        <div class="col-md-6">
+          <div class="controls">
+            <select class="form-control form-control-inline form-select">
+              <option value="">
+                <xed:output i18n="mir.select.optional"/>
+              </option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_parts"/>
+            </select>
+          </div>
+        </div>
+        <mir:help-pmud help-text="{i18n:artus.help.artus.parts}" pmud="false"/>
+      </xed:bind>
+      <xed:validate
+        xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_parts']/@valueURIxEditor"
+        required="true" i18n="mir.validation.artus_parts"
+        display="global"/>
+    </div>
+  </xed:template>
+
+  <xed:template id="artus.sections">
+    <div class="mir-form-group row">
+      <label class="col-md-3 col-form-label text-end form-label">
+        <xed:output i18n="component.mods.metaData.dictionary.artus_sections"/>
+      </label>
+      <xed:bind
+        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@displayLabel"
+        set="artus_sections"/>
+      <xed:bind
+        xpath="mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor">
+        <div class="col-md-6">
+          <div class="controls">
+            <select class="form-control form-control-inline form-select">
+              <option value="">
+                <xed:output i18n="mir.select.optional"/>
+              </option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:artus_sections"/>
+            </select>
+          </div>
+        </div>
+        <mir:help-pmud help-text="{i18n:artus.help.artus.sections}" pmud="false"/>
+      </xed:bind>
+      <xed:validate
+        xpath="//mods:classification[@authorityURI='https://arthurianbibliography.info/classifications/artus_sections']/@valueURIxEditor"
+        required="true" i18n="mir.validation.artus_sections"
+        display="global"/>
+    </div>
+  </xed:template>
+
+  <xed:template id="author.metadataContact.repeated">
+    <mir:role.repeated role="mdc"
+                       label="mir.role.metadataContact"
+                       help-text="{i18n:mir.help.role.author}"
+                       class="required"
+                       required="true"
+                       required-i18n="artus.validation.mdc"/>
+  </xed:template>
+
+
+  <xed:template id="genres.monograph">
+    <xed:include ref="title.original"/>
+    <xed:include ref="author.repeated"/>
+    <xed:include ref="genres.book.common"/>
+  </xed:template>
+
+  <xed:template id="related.item.search.host">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.relatedItem.host"/>
+      </legend>
+      <xed:repeat xpath="mods:relatedItem[@type='host']" min="1" max="10">
+        <div class="mir-fieldset-content mir-related-item-search">
+          <div class="mir-form-group row">
+            <div class="col-md-3">
+              <xed:bind xpath="@type" initially="host">
+                <input type="hidden"/>
+              </xed:bind>
+            </div>
+            <div class="col-md-6">
+              <div class="controls d-flex gap-2 align-items-center">
+                <input type="button" class="form-control mir-relatedItem-select" data-fq="-id:{$id}"
+                       value="{i18n:mir.editing.related.select}"/>
+                <span/>
+                <xed:bind xpath="@xlink:href">
+                  <input type="hidden"/>
+                </xed:bind>
+              </div>
+            </div>
+            <mir:help-pmud help-text="{i18n:mir.help.related.item}" pmud="true"/>
+          </div>
+          <xed:include ref="title.nonrequired"/>
+          <xed:include ref="genre.simple.nonrequired"/>
+          <xed:include ref="host.volume"/>
+          <xed:include ref="host.pages"/>
+        </div>
+      </xed:repeat>
+      <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js" type="text/javascript"></script>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="related.item.search.reviewOf">
+    <fieldset>
+      <legend class="mir-fieldset-legend"><xed:output i18n="mir.relatedItem.reviewOf" /></legend>
+      <xed:repeat xpath="mods:relatedItem[@type='reviewOf']" min="0" max="10">
+        <div class="mir-fieldset-content mir-related-item-search">
+          <div class="mir-form-group row">
+            <div class="col-md-3">
+              <xed:bind xpath="@type" initially="reviewOf">
+                <input type="hidden" />
+              </xed:bind>
+            </div>
+            <div class="col-md-6">
+              <div class="controls d-flex gap-2 align-items-center">
+                <input type="button" class="form-control mir-relatedItem-select" data-fq="-id:{$id}" value="{i18n:mir.editing.related.select}" />
+                <span />
+                <xed:bind xpath="@xlink:href">
+                  <input type="hidden" />
+                </xed:bind>
+              </div>
+            </div>
+            <mir:help-pmud help-text="{i18n:mir.help.related.item}" pmud="true" />
+          </div>
+          <xed:include ref="title.nonrequired" />
+          <xed:include ref="genre.simple.nonrequired" />
+          <xed:include ref="host.volume" />
+          <xed:include ref="host.pages" />
+        </div>
+      </xed:repeat>
+      <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js" type="text/javascript"></script>
+    </fieldset>
+  </xed:template>
+
+  <xed:template id="reviewer.repeated">
+    <mir:role.repeated role="aut" label="artus.role.reviewer" help-text="{i18n:mir.help.role.author}" />
+  </xed:template>
+
+</xed:template>

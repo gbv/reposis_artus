@@ -2,15 +2,13 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mods="http://www.loc.gov/mods/v3"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                exclude-result-prefixes="mods xlink">
+                xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+                exclude-result-prefixes="mods xlink mcri18n">
 
     <xsl:import href="xslImport:badges:badges/mir-badges-section.xsl"/>
-    <xsl:include href="resource:xsl/badges/mir-badges-utils.xsl"/>
+    <xsl:include href="resource:xslt/badges/mir-badges-utils.xsl"/>
     <xsl:param name="CurrentLang"/>
-    <xsl:variable name="tooltip-sections"
-                  select="substring-before(document('i18n:component.mods.metaData.dictionary.artus_sections')/i18n/text(), ':')"/>
-
-
+    <xsl:variable name="tooltip-sections" select="mcri18n:translate('component.mods.metaData.dictionary.artus_sections')"/>
     <xsl:template match="doc" mode="badge">
         <xsl:apply-imports/>
             <xsl:if test="str[@name='artus.sections']">

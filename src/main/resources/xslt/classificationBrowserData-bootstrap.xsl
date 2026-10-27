@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
   XSL to transform XML output from MCRClassificationBrowser servlet to
@@ -6,24 +6,21 @@
   data of all child categories of the requested node.
 -->
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
-                xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-                xmlns:xalan="http://xml.apache.org/xalan" exclude-result-prefixes="xalan i18n mcrxsl">
-  <xsl:param name="WebApplicationBaseURL" />
-  <xsl:param name="ServletsBaseURL" />
-  <xsl:param name="template" />
-
-  <xsl:param name="MCR.classbrowser.folder.closed" select="'fas fa-expand'" />
-  <xsl:param name="MCR.classbrowser.folder.open" select="'fas fa-compress'" />
-  <xsl:param name="MCR.classbrowser.folder.leaf" select="'fas fa-square'" />
+<xsl:stylesheet version="3.0"
+                xmlns:mcrproperty="http://www.mycore.de/xslt/property"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                exclude-result-prefixes="#all">
 
   <xsl:output method="xml" omit-xml-declaration="yes" />
 
+  <xsl:include href="default-parameters.xsl" />
+  <xsl:include href="xslInclude:functions" />
+
+
   <xsl:template match="/classificationBrowserData">
-    <xsl:variable name="folder.closed" select="$MCR.classbrowser.folder.closed" />
-    <xsl:variable name="folder.open" select="$MCR.classbrowser.folder.open" />
-    <xsl:variable name="folder.leaf" select="$MCR.classbrowser.folder.leaf" />
+    <xsl:variable name="folder.closed" select="mcrproperty:one('MCR.classbrowser.folder.closed')" />
+    <xsl:variable name="folder.open" select="mcrproperty:one('MCR.classbrowser.folder.open')" />
+    <xsl:variable name="folder.leaf" select="mcrproperty:one('MCR.classbrowser.folder.leaf')" />
     <xsl:variable name="maxLinks">
       <xsl:value-of select="category[not(@numLinks &lt; following-sibling::category/@numLinks)]/@numLinks" />
     </xsl:variable>
@@ -91,6 +88,7 @@
       <xsl:value-of select="concat('[',$cntString,']')" />
     </span>
   </xsl:template>
+
 
 
   <xsl:template name="getClassBrowserSolrCore">

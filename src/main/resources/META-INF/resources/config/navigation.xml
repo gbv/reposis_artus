@@ -86,6 +86,11 @@
       <label xml:lang="en">Persons</label>
       <label xml:lang="fr">Personnes</label>
     </item>
+    <item href="/servlets/MCRActionMappingServlet/subjectindex/browse" type="extern">
+      <label xml:lang="de">Schlagwortsuche</label>
+      <label xml:lang="en">Subject Search</label>
+      <label xml:lang="fr">Recherche par vedette-matière</label>
+    </item>
   </menu>
   <menu id="faq">
   <!-- guide menu  -->
@@ -116,11 +121,6 @@
       <label xml:lang="de">Upload &amp; Download</label>
       <label xml:lang="en">Upload &amp; Download</label>
       <label xml:lang="fr">Dépôt et téléchargement</label>
-    </item>
-    <item href="/servlets/MCRActionMappingServlet/subjectindex/browse" type="extern">
-      <label xml:lang="de">Schlagwortsuche</label>
-      <label xml:lang="en">Subject Search</label>
-      <label xml:lang="fr">Recherche par vedette-matière</label>
     </item>
 
   </menu>
@@ -221,7 +221,7 @@
         <label xml:lang="fr">WCMS</label>
       </item>
     </group>
-    <item href="/servlets/logout?url=../content/index.xml" type="intern">
+    <item href="/servlets/logout?url={WebApplicationBaseURLEncoded}/content/index.xml" type="intern">
       <label xml:lang="de">Abmelden</label>
       <label xml:lang="en">Logout</label>
       <label xml:lang="fr">Se déconnecter</label>
