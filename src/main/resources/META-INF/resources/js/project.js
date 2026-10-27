@@ -1,26 +1,28 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     // spam protection for mails
-    $('span.madress').each(function (i) {
-        var text = $(this).text();
+    document.querySelectorAll('span.madress').forEach(function (span) {
+        var text = span.textContent;
         var address = text.replace(" [at] ", "@");
-        $(this).after('<a href="mailto:' + address + '">' + address + '</a>')
-        $(this).remove();
+        span.insertAdjacentHTML('afterend', '<a href="mailto:' + address + '">' + address + '</a>')
+        span.remove();
     });
 
     // activate empty search on start page
-    $("#project-searchMainPage").submit(function (evt) {
-        $(this).find(":input").filter(function () {
-            return !this.value;
-        }).attr("disabled", true);
+    document.getElementById("project-searchMainPage")?.addEventListener("submit", function (evt) {
+        this.querySelectorAll("input, select, textarea, button").forEach(function (el) {
+            if (!el.value) {
+                el.disabled = true;
+            }
+        });
         return true;
     });
 
 
     // We do not want to use the standard action mapping for adding reviews with "create-child"
-    $("a[href*='editor-admins.xed']").each(function () {
+    document.querySelectorAll("a[href*='editor-admins.xed']").forEach(function (a) {
         try {
-            const url = new URL($(this).attr("href"));
+            const url = new URL(a.getAttribute("href"));
             if (
                 url.pathname.endsWith("editor-admins.xed") &&
                 url.searchParams.has("relatedItemId") &&
@@ -37,33 +39,37 @@ $(document).ready(function () {
                     url.searchParams.delete("genre");
                 }
 
-                $(this).attr("href", url.toString());
+                a.setAttribute("href", url.toString());
             }
         } catch (e) {
-            console.warn("Invalid URL skipped:", $(this).attr("href"));
+            console.warn("Invalid URL skipped:", a.getAttribute("href"));
         }
     });
 });
 
 // Deletes all selectable genre options except those listed
-$(document).ajaxComplete(function () {
-    $("select#genre option").filter(function () {
-        return ![
+new MutationObserver(function () {
+    document.querySelectorAll("select#genre option").forEach(function (option) {
+        if (![
             "book",
             "article",
             "collection",
             "thesis",
             "dissertation"
-        ].includes($(this).val());
-    }).remove();
+        ].includes(option.value)) {
+            option.remove();
+        }
+    });
 
     // Deletes all selectable host options except those listed
-    $("select#host option").filter(function () {
-        return ![
+    document.querySelectorAll("select#host option").forEach(function (option) {
+        if (![
             "standalone",
             "journal",
             "collection",
             "series"
-        ].includes($(this).val());
-    }).remove();
-});
+        ].includes(option.value)) {
+            option.remove();
+        }
+    });
+}).observe(document.documentElement, { childList: true, subtree: true });
