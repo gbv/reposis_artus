@@ -2,6 +2,7 @@
 <xsl:stylesheet version="3.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:mcri18n="http://www.mycore.de/xslt/i18n"
+                xmlns:mcracl="http://www.mycore.de/xslt/acl"
                 exclude-result-prefixes="#all">
 
   <xsl:import href="resource:xslt/layout/mir-layout-utils.xsl"/>
@@ -17,7 +18,7 @@
 
   <xsl:template match="/response">
     <xsl:choose>
-      <xsl:when test="document('userobjectrights:isCurrentUserInRole:admin')/boolean='true'">
+      <xsl:when test="mcracl:is-current-user-in-role('admin')">
         <h1 class="page-header">
           <xsl:value-of select="mcri18n:translate('artus.view.documents.page.title')"/>
         </h1>

@@ -19,14 +19,15 @@
             alt="IAS Logo" />
         </a>
       </div>
+
       <div class="header__menu mir-main-nav">
         <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-              data-bs-target="#mir-main-nav-collapse-box"
-              aria-controls="mir-main-nav-collapse-box"
+            data-bs-target=".mir-main-nav__entries--mobile"
+            aria-controls="mir-main-nav__entries--mobile"
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

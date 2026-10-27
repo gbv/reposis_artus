@@ -105,7 +105,8 @@
                   <a href="{concat($proxyBaseURL, '?XSL.Style=subject&amp;terms.regex=',
                  encode-for-uri(string(@search)))}">
                     <xsl:value-of select="name()" />
-                  </a>                  <xsl:if test="position() != last()">
+                  </a>
+                  <xsl:if test="position() != last()">
                     <span> | </span>
                   </xsl:if>
                 </li>

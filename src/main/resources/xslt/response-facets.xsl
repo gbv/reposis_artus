@@ -15,7 +15,7 @@
     <!-- ========================= -->
     <xsl:variable name="timebarField" select="'artus.dateIssued_range'"/>
     <div class="card">
-      <div class="card-header" data-toggle="collapse-next">
+      <div class="card-header" data-mcr-toggle="collapse-next">
         <h3 class="card-title">
           <xsl:value-of select="mcri18n:translate('mir.date.published')"/>
         </h3>
