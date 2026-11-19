@@ -18,15 +18,15 @@ $(document).ready(function () {
 
 
     // We do not want to use the standard action mapping for adding reviews with "create-child"
-    $("a[href*='editor-admins.xed']").each(function () {
+    $("a[href*='editor-admins.xed'], a[href*='editor-dynamic.xed']").each(function ()  {
         try {
             const url = new URL($(this).attr("href"));
             if (
-                url.pathname.endsWith("editor-admins.xed") &&
+                (url.pathname.endsWith("editor-admins.xed") || url.pathname.endsWith("editor-dynamic.xed")) &&
                 url.searchParams.has("relatedItemId") &&
                 url.searchParams.get("genre") === "review"
             ) {
-                url.pathname = url.pathname.replace("editor-admins.xed", "editor-review.xed");
+                url.pathname = url.pathname.replace(/editor-(admins|dynamic)\.xed$/, "editor-review.xed");
 
                 // Changed relatedItemType from host to reviewOf
                 if (url.searchParams.get("relatedItemType") === "host") {
