@@ -43,7 +43,7 @@
           Bitte beachten Sie, dass die Datenbank ständig aktualisiert und laufend erweitert wird. Derzeit ist die Forschungsliteratur der Jahrgänge 2015–2024 verzeichnet.
         </p>
         <p>
-          Aktuell liegt die Datenbank in einer Beta-Version vor. Wir arbeiten daran, weitere Literatur und Neuerscheinung einzupflegen. Wenn Sie etwas vermissen oder Verbesserungsideen haben, melden Sie sich gerne unter:
+          Aktuell liegt die Datenbank in einer Beta-Version vor. Wir arbeiten daran, weitere Literatur und Neuerscheinungen einzupflegen. Wenn Sie etwas vermissen oder Verbesserungsideen haben, melden Sie sich gerne unter:
           <a href="mailto:arthurianbibliography@uni-marburg.de">arthurianbibliography@uni-marburg.de</a>
         </p>
       </div>
@@ -78,7 +78,7 @@
           <a href="guide/summary.xml" class="stretched-link">Abstracts</a>
         </div>
         <div class="intro-tile">
-          <a href="guide/sections.xml" class="stretched-link">Periods</a>
+          <a href="guide/sections.xml" class="stretched-link">Periods &amp; Branches</a>
         </div>
         <div class="intro-tile">
           <a href="guide/editions.xml" class="stretched-link">Finding Editions</a>
