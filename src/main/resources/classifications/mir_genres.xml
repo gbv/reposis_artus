@@ -11,6 +11,13 @@
       <label xml:lang="x-hosts" text="journal collection" />
       <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Article schemaOrg:ScholarlyArticle" />
     </category>
+         <category ID="review">
+        <label xml:lang="de" text="Rezension" />
+        <label xml:lang="en" text="Review" />
+        <label xml:lang="fr" text="Review" />
+        <label xml:lang="x-hosts" text="journal collection book article dissertation" />
+        <label xml:lang="x-mapping" text="marcgt:article diniPublType2022:Recension schemaOrg:Review" />
+      </category>
     <category ID="dissertation">
       <label xml:lang="de" text="Dissertation (unveröffentlicht)" />
       <label xml:lang="en" text="Dissertation (unpublished)" />
